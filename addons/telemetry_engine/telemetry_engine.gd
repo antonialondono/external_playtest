@@ -185,8 +185,10 @@ func record_narrative_choice(choice_data: Dictionary) -> void:
 		"scenario_title": str(choice_data.get("scenario_title", "")),
 		"source_element_id": source_element_id,
 		"source_element_title": str(choice_data.get("source_element_title", "")),
+		"source_components": choice_data.get("source_components", []),
 		"target_element_id": target_element_id,
 		"target_element_title": str(choice_data.get("target_element_title", "")),
+		"target_components": choice_data.get("target_components", []),
 
 		"chosen_label": clean_label,
 		"chosen": clean_label,
@@ -962,7 +964,8 @@ func select_user_test_card_version() -> Dictionary:
 		"Fairness": 0,
 		"Care": 0
 	}
-	var key_moment_hint := ""
+	var matched_signals: Array[String] = []
+	var signal_sources: Array = []
 	var moral_choice_count := 0
 
 	for event in event_buffer:
@@ -976,17 +979,22 @@ func select_user_test_card_version() -> Dictionary:
 		var data: Dictionary = event.get("data", {})
 		var weight := int(data.get("decision_weight", 1))
 		var chosen_tags: Array = data.get("chosen_tags", data.get("tags", []))
-		var searchable_text := _build_choice_search_text(data)
 
 		for tag in chosen_tags:
 			var tag_name := str(tag)
 			if chosen_tag_scores.has(tag_name):
 				chosen_tag_scores[tag_name] = int(chosen_tag_scores[tag_name]) + weight
 
-		if bool(data.get("is_key_moment", false)):
-			var hint := _get_key_moment_hint(searchable_text)
-			if hint != "":
-				key_moment_hint = hint
+		var signal := _get_user_test_card_signal(data)
+		if signal != "":
+			matched_signals.append(signal)
+			signal_sources.append({
+				"signal": signal,
+				"scenario_title": str(data.get("scenario_title", "")),
+				"choice": str(data.get("chosen_label", data.get("chosen", "")))
+			})
+			var signal_version := _get_user_test_version_for_signal(signal)
+			scores[signal_version] = int(scores[signal_version]) + _get_user_test_signal_weight(signal)
 
 	if moral_choice_count == 0:
 		return {
@@ -1000,28 +1008,21 @@ func select_user_test_card_version() -> Dictionary:
 	var fairness := int(chosen_tag_scores.get("Fairness", 0))
 	var care := int(chosen_tag_scores.get("Care", 0))
 
-	scores[1] = liberty * 3 + care * 2 + fairness
-	scores[2] = fairness * 3 + liberty * 2 + care
-	scores[3] = fairness * 3 + care * 2 + liberty
-	scores[4] = care * 3 + fairness * 2 + liberty
+	scores[1] = int(scores[1]) + liberty * 3 + care * 2 + fairness
+	scores[2] = int(scores[2]) + fairness * 3 + liberty * 2 + care
+	scores[3] = int(scores[3]) + fairness * 3 + care * 2 + liberty
+	scores[4] = int(scores[4]) + care * 3 + fairness * 2 + liberty
 
-	match key_moment_hint:
-		"destroyed_weapon":
-			scores[1] = int(scores[1]) + 8
-		"exposed_truth":
-			scores[2] = int(scores[2]) + 8
-		"controlled_weapon":
-			scores[3] = int(scores[3]) + 8
-		"peaceful_protest":
-			scores[4] = int(scores[4]) + 8
+	var key_moment_hint := _pick_primary_user_test_signal(matched_signals)
+	var selected_version := _get_user_test_version_for_signal(key_moment_hint) if key_moment_hint != "" else 1
 
-	var selected_version := 1
-	var selected_score := int(scores[1])
-	for version in [2, 3, 4]:
-		var score := int(scores[version])
-		if score > selected_score:
-			selected_version = version
-			selected_score = score
+	if key_moment_hint == "":
+		var selected_score := int(scores[1])
+		for version in [2, 3, 4]:
+			var score := int(scores[version])
+			if score > selected_score:
+				selected_version = version
+				selected_score = score
 
 	return {
 		"version": selected_version,
@@ -1029,8 +1030,115 @@ func select_user_test_card_version() -> Dictionary:
 		"scores": scores,
 		"chosen_tag_scores": chosen_tag_scores,
 		"key_moment_hint": key_moment_hint,
+		"matched_signals": matched_signals,
+		"signal_sources": signal_sources,
 		"moral_choice_count": moral_choice_count
 	}
+
+
+func _get_user_test_card_signal(data: Dictionary) -> String:
+	var scenario_text := _normalize_selection_text(
+		str(data.get("scenario_title", "")) + " " + str(data.get("source_element_title", ""))
+	)
+	var choice_text := _normalize_selection_text(
+		str(data.get("chosen_label", data.get("chosen", ""))) + " " + str(data.get("target_element_title", ""))
+	)
+	var combined_text := scenario_text + " " + choice_text
+
+	if _contains_any(scenario_text, ["protest", "march"]) and _contains_any(choice_text, [
+		"peaceful protest",
+		"keep the protest peaceful",
+		"kept it peaceful",
+		"no violence",
+		"nonviolence"
+	]):
+		return "peaceful_protest"
+
+	if _contains_any(scenario_text, ["partner", "discovery", "truth", "conspiracy", "broadcaster"]) and _contains_any(choice_text, [
+		"help your partner",
+		"help them expose",
+		"expose the conspiracy",
+		"exposed truth",
+		"bring the truth",
+		"release the story"
+	]):
+		return "exposed_truth"
+
+	if _contains_any(combined_text, ["superweapon", "weapon"]):
+		if _contains_any(choice_text, [
+			"control the weapon",
+			"control it",
+			"kept control",
+			"keep control",
+			"negotiate peace"
+		]):
+			return "controlled_weapon"
+
+		if _contains_any(choice_text, [
+			"destroy the weapon",
+			"destroy it",
+			"remove the weapon",
+			"broken weapon"
+		]):
+			return "destroyed_weapon"
+
+	return ""
+
+
+func _normalize_selection_text(value: String) -> String:
+	var text := value.to_lower()
+	text = text.replace("’", "'")
+	text = text.replace("â€™", "'")
+	text = text.replace("—", "-")
+	text = text.replace("â€”", "-")
+	return text
+
+
+func _contains_any(text: String, needles: Array[String]) -> bool:
+	for needle in needles:
+		if text.contains(needle):
+			return true
+
+	return false
+
+
+func _pick_primary_user_test_signal(signals: Array[String]) -> String:
+	if signals.is_empty():
+		return ""
+
+	for priority_signal in ["peaceful_protest", "exposed_truth", "controlled_weapon", "destroyed_weapon"]:
+		if signals.has(priority_signal):
+			return priority_signal
+
+	return signals.back()
+
+
+func _get_user_test_version_for_signal(signal: String) -> int:
+	match signal:
+		"destroyed_weapon":
+			return 1
+		"exposed_truth":
+			return 2
+		"controlled_weapon":
+			return 3
+		"peaceful_protest":
+			return 4
+
+	return 1
+
+
+func _get_user_test_signal_weight(signal: String) -> int:
+	match signal:
+		"peaceful_protest":
+			return 120
+		"exposed_truth":
+			return 110
+		"controlled_weapon":
+			return 100
+		"destroyed_weapon":
+			return 90
+
+	return 0
 
 
 func _build_choice_search_text(data: Dictionary) -> String:
