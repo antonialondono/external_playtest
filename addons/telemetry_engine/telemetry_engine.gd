@@ -1113,8 +1113,8 @@ func _pick_primary_user_test_signal(signals: Array[String]) -> String:
 	return signals.back()
 
 
-func _get_user_test_version_for_signal(signal: String) -> int:
-	match signal:
+func _get_user_test_version_for_signal(card_signal: String) -> int:
+	match card_signal:
 		"destroyed_weapon":
 			return 1
 		"exposed_truth":
@@ -1127,8 +1127,8 @@ func _get_user_test_version_for_signal(signal: String) -> int:
 	return 1
 
 
-func _get_user_test_signal_weight(signal: String) -> int:
-	match signal:
+func _get_user_test_signal_weight(card_signal: String) -> int:
+	match card_signal:
 		"peaceful_protest":
 			return 120
 		"exposed_truth":
