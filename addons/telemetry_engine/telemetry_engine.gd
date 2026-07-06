@@ -985,16 +985,16 @@ func select_user_test_card_version() -> Dictionary:
 			if chosen_tag_scores.has(tag_name):
 				chosen_tag_scores[tag_name] = int(chosen_tag_scores[tag_name]) + weight
 
-		var signal := _get_user_test_card_signal(data)
-		if signal != "":
-			matched_signals.append(signal)
+		var card_signal := _get_user_test_card_signal(data)
+		if card_signal != "":
+			matched_signals.append(card_signal)
 			signal_sources.append({
-				"signal": signal,
+				"signal": card_signal,
 				"scenario_title": str(data.get("scenario_title", "")),
 				"choice": str(data.get("chosen_label", data.get("chosen", "")))
 			})
-			var signal_version := _get_user_test_version_for_signal(signal)
-			scores[signal_version] = int(scores[signal_version]) + _get_user_test_signal_weight(signal)
+			var signal_version := _get_user_test_version_for_signal(card_signal)
+			scores[signal_version] = int(scores[signal_version]) + _get_user_test_signal_weight(card_signal)
 
 	if moral_choice_count == 0:
 		return {
