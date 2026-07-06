@@ -335,26 +335,6 @@ func _is_scenario_start_element(element: ArcweaveElement) -> bool:
 	return false
 
 
-func _find_next_scenario_index_from(element: ArcweaveElement) -> int:
-	var next_index := current_scenario_index + 1
-
-	if element != null:
-		var current_start_index := scenario_start_ids.find(str(element.id))
-		if current_start_index != -1:
-			next_index = current_start_index + 1
-
-		var element_position := scenario_allowed_element_ids.find(str(element.id))
-		if element_position != -1:
-			for index in range(scenario_start_ids.size()):
-				var start_id := scenario_start_ids[index]
-				var start_position := scenario_allowed_element_ids.find(start_id)
-				if start_position > element_position:
-					next_index = max(next_index, index)
-					break
-
-	return next_index
-
-
 func _debug_print_scenario_starts() -> void:
 	for index in range(scenario_start_ids.size()):
 		var element_data: Dictionary = arcweave_json_data.get("elements", {}).get(scenario_start_ids[index], {})
@@ -656,6 +636,11 @@ func _on_continue_pressed() -> void:
 			_finish_session()
 			return
 
+		if _is_scenario_start_element(next_element) and _has_played_scenario_like(next_element):
+			print("Arcweave path returned to an already played scenario. Finishing session: ", next_element.id)
+			_finish_session()
+			return
+
 		current_element = ArcweaveManager.goto_element(next_element.id)
 	else:
 		current_element = ArcweaveManager.goto_next_element(current_element)
@@ -673,45 +658,22 @@ func _advance_to_next_scenario_or_finish() -> void:
 	if current_element != null and current_element.outputs.size() > 0:
 		linked_next_element = _get_first_output_target_element(current_element)
 
-	if linked_next_element != null:
-		if _is_allowed_scenario_element(linked_next_element):
-			if _is_scenario_start_element(linked_next_element):
-				if _has_played_scenario_like(linked_next_element):
-					print("Arcweave output points to a duplicate playable scenario. Looking for next playable scenario: ", linked_next_element.id)
-				else:
-					print("Advancing through Arcweave output to scenario: ", linked_next_element.id)
-					ArcweaveManager.goto_element(linked_next_element.id)
-					return
-			else:
-				print("Advancing through Arcweave output to setup/start node: ", linked_next_element.id)
-				ArcweaveManager.goto_element(linked_next_element.id)
-				return
-		else:
-			print("Arcweave output left ", PLAYABLE_BOARD_NAME, ". Looking for next playable scenario.")
-
-	if current_element != null:
-		var current_index := scenario_start_ids.find(str(current_element.id))
-		if current_index != -1:
-			current_scenario_index = current_index
-
-	var next_index := _find_next_scenario_index_from(current_element)
-	while next_index < scenario_start_ids.size():
-		var next_id := scenario_start_ids[next_index]
-		var next_element: ArcweaveElement = ArcweaveManager.get_element(next_id)
-		if next_element != null:
-			if _has_played_scenario_like(next_element):
-				print("Skipping duplicate playable scenario: ", next_id)
-				next_index += 1
-				continue
-
-			current_scenario_index = next_index
-			print("Advancing to scenario ", current_scenario_index + 1, "/", scenario_start_ids.size(), ": ", next_id)
-			ArcweaveManager.goto_element(next_id)
+	if linked_next_element != null and _is_allowed_scenario_element(linked_next_element):
+		if _is_scenario_start_element(linked_next_element) and _has_played_scenario_like(linked_next_element):
+			print("Arcweave output points to an already played scenario. Finishing session: ", linked_next_element.id)
+			_finish_session()
 			return
 
-		next_index += 1
+		print("Advancing through Arcweave output to: ", linked_next_element.id)
+		ArcweaveManager.goto_element(linked_next_element.id)
+		return
 
-	print("All scenarios complete. Opening Keepsake Overlay.")
+	if linked_next_element == null:
+		print("Arcweave path ended after this scenario.")
+	else:
+		print("Arcweave output left ", PLAYABLE_BOARD_NAME, ": ", linked_next_element.id)
+
+	print("Selected Arcweave path complete. Opening Keepsake Overlay.")
 	_finish_session()
 
 
@@ -720,10 +682,10 @@ func _get_first_output_target_element(element: ArcweaveElement) -> ArcweaveEleme
 		return null
 
 	var connection: ArcweaveConnection = ArcweaveManager.project.connections.get(element.outputs[0])
-	if connection == null or str(connection.targetid).is_empty():
+	if connection == null:
 		return null
 
-	return ArcweaveManager.get_element(connection.targetid)
+	return ArcweaveManager.get_connection_target_element(connection)
 
 
 func _prepare_scenario_start(starting_element: ArcweaveElement) -> void:

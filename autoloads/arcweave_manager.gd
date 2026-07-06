@@ -7,12 +7,18 @@ func goto_next_element(element: ArcweaveElement) -> ArcweaveElement:
 	if element.outputs.size() < 1: return null
 	
 	var default_connection: ArcweaveConnection = project.connections.get(element.outputs[0])
+	if default_connection == null:
+		return null
 	
-	return goto_element(default_connection.targetid)
+	return follow_connection(default_connection)
 
 
 func follow_connection(connection: ArcweaveConnection) -> ArcweaveElement:
-	var target_id = connection.targetid
+	if connection == null:
+		push_error("Invalid choice: no connection")
+		return null
+
+	var target_id := _get_target_id_from_connection(connection)
 
 	if target_id == "":
 		push_error("Invalid choice: no target_id")
@@ -26,6 +32,25 @@ func follow_connection(connection: ArcweaveConnection) -> ArcweaveElement:
 		interpreter.evaluate(preprocessed, false)
 
 	return goto_element(target_id)
+
+
+func get_connection_target_element(connection: ArcweaveConnection) -> ArcweaveElement:
+	var target_id := _get_target_id_from_connection(connection)
+	if target_id == "":
+		return null
+
+	return get_element(target_id)
+
+
+func _get_target_id_from_connection(connection: ArcweaveConnection) -> String:
+	if connection == null:
+		return ""
+
+	var resolved_target := _get_target_from_connection(connection.id)
+	if resolved_target != "":
+		return resolved_target
+
+	return connection.targetid
 
 func _ready() -> void:
 	if not arcweave_project_json.is_empty():
