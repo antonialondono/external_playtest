@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://626m6cmlaikk"]
+
+[ext_resource type="Script" uid="uid://b2kac1bhkg8ee" path="res://components/trolley_path_follow/trolley_path_follow.gd" id="1_yx5x4"]
+[ext_resource type="Texture2D" uid="uid://725pavd64hwq" path="res://art/programmer/trolley.png" id="2_yx5x4"]
+[ext_resource type="Script" uid="uid://nl122m5gp0n8" path="res://components/trolley_area_2d/trolley_area_2d.gd" id="3_k5yk5"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yx5x4"]
+
+[node name="TrolleyPathFollow" type="PathFollow2D" unique_id=2000868424]
+script = ExtResource("1_yx5x4")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2114661239]
+z_index = 2
+position = Vector2(6, -34)
+texture = ExtResource("2_yx5x4")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=884938453]
+script = ExtResource("3_k5yk5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1730797740]
+position = Vector2(-49, -31)
+shape = SubResource("CircleShape2D_yx5x4")

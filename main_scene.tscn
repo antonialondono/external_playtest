@@ -1,0 +1,263 @@
+[gd_scene format=3 uid="uid://lnxxnlaselg8"]
+
+[ext_resource type="Script" uid="uid://b1k3u5euq2x8x" path="res://main_scene.gd" id="1_gyfs4"]
+[ext_resource type="Script" uid="uid://dc7wg0ldiaj8q" path="res://components/path_with_line/path_with_line.gd" id="2_2c62f"]
+[ext_resource type="PackedScene" uid="uid://b7ajxgyw46mms" path="res://scenes/game_complete/game_complete.tscn" id="2_8mm7a"]
+[ext_resource type="Script" uid="uid://twfk8utxqhhf" path="res://components/victim_holder/victim_holder.gd" id="3_d5x1h"]
+[ext_resource type="FontFile" uid="uid://c35vidlkwqmyf" path="res://fonts/RobotoMono-VariableFont_wght.ttf" id="4_hq1ik"]
+
+[sub_resource type="Curve2D" id="Curve2D_o3jxj"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -160, 360, 0, 0, 0, 0, 960, 360)
+}
+point_count = 2
+
+[sub_resource type="Curve2D" id="Curve2D_0f027"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 960, 360, 0, 0, 0, 0, 2120, 360)
+}
+point_count = 2
+
+[sub_resource type="Curve2D" id="Curve2D_2c62f"]
+_data = {
+"points": PackedVector2Array(-255.51878, 1.3310001, 350, 0, 960, 360, -350, 0, 0, 0, 1500, 800, 0, 0, 0, 0, 2120, 800)
+}
+point_count = 3
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d5x1h"]
+size = Vector2(71, 641)
+
+[node name="TheTroubleWithTolleys" type="Node2D" unique_id=1331255483]
+script = ExtResource("1_gyfs4")
+scenario_start_id = "1a6d32cb-5308-4e1b-b926-f0343bcf4dee"
+game_complete_scene = ExtResource("2_8mm7a")
+
+[node name="StartPath" type="Path2D" parent="." unique_id=286425286]
+position = Vector2(-2, 0)
+curve = SubResource("Curve2D_o3jxj")
+script = ExtResource("2_2c62f")
+
+[node name="Line2D" type="Line2D" parent="StartPath" unique_id=1855267368]
+position = Vector2(2, 0)
+
+[node name="DoNothingPath" type="Path2D" parent="." unique_id=1370361825]
+curve = SubResource("Curve2D_0f027")
+script = ExtResource("2_2c62f")
+
+[node name="Line2D" type="Line2D" parent="DoNothingPath" unique_id=1063559071]
+position = Vector2(2, 0)
+
+[node name="IntervenePath" type="Path2D" parent="." unique_id=48673059]
+curve = SubResource("Curve2D_2c62f")
+script = ExtResource("2_2c62f")
+
+[node name="Line2D" type="Line2D" parent="IntervenePath" unique_id=1867046490]
+position = Vector2(2, 0)
+
+[node name="UI" type="Control" parent="." unique_id=1808297649]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TheChoiceContainer" type="VBoxContainer" parent="UI" unique_id=1388256370]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 0
+offset_left = 810.0
+offset_top = 117.0
+offset_right = 1110.0
+offset_bottom = 259.0
+
+[node name="Label" type="Label" parent="UI/TheChoiceContainer" unique_id=831412694]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "What will you do?"
+horizontal_alignment = 1
+
+[node name="InterveneButton" type="Button" parent="UI/TheChoiceContainer" unique_id=330838280]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+toggle_mode = true
+text = "Intervene?"
+
+[node name="TimerContainer" type="HBoxContainer" parent="UI/TheChoiceContainer" unique_id=1276817027]
+unique_name_in_owner = true
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="UI/TheChoiceContainer/TimerContainer" unique_id=2020789414]
+layout_mode = 2
+text = "Time Left:"
+
+[node name="TimeRemainingLabel" type="Label" parent="UI/TheChoiceContainer/TimerContainer" unique_id=725310936]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_hq1ik")
+text = "00:00"
+
+[node name="ArcweaveTextContainer" type="PanelContainer" parent="UI" unique_id=457317255]
+layout_mode = 0
+offset_left = 180.0
+offset_top = 520.0
+offset_right = 880.0
+offset_bottom = 920.0
+
+[node name="MarginContainer" type="MarginContainer" parent="UI/ArcweaveTextContainer" unique_id=664868386]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="RichTextLabel" type="RichTextLabel" parent="UI/ArcweaveTextContainer/MarginContainer" unique_id=1525428650]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 24
+theme_override_font_sizes/bold_font_size = 24
+theme_override_font_sizes/bold_italics_font_size = 24
+theme_override_font_sizes/italics_font_size = 24
+theme_override_font_sizes/mono_font_size = 24
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+[node name="Control" type="Control" parent="UI/ArcweaveTextContainer" unique_id=943717886]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+
+[node name="ContinueButton" type="Button" parent="UI/ArcweaveTextContainer/Control" unique_id=219368547]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -37.0
+offset_right = 105.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 24
+text = "Continue"
+
+[node name="VictimHolder" type="Node2D" parent="." unique_id=328880477]
+unique_name_in_owner = true
+script = ExtResource("3_d5x1h")
+
+[node name="InactionVictimHolder" type="Control" parent="VictimHolder" unique_id=1242113619]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1679.0
+offset_top = 359.0
+offset_right = 1679.0
+offset_bottom = 359.0
+
+[node name="InactionVictims" type="HBoxContainer" parent="VictimHolder/InactionVictimHolder" unique_id=30293828]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -34.0
+offset_top = -110.0
+offset_right = 34.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="TextureRect" type="TextureRect" parent="VictimHolder/InactionVictimHolder/InactionVictims" unique_id=100644192]
+visible = false
+modulate = Color(0.5409905, 0.5409905, 0.5409905, 1)
+custom_minimum_size = Vector2(68, 110)
+layout_mode = 2
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="VictimHolder/InactionVictimHolder/InactionVictims" unique_id=249724627]
+visible = false
+modulate = Color(0.5409905, 0.5409905, 0.5409905, 1)
+custom_minimum_size = Vector2(68, 110)
+layout_mode = 2
+expand_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="VictimHolder/InactionVictimHolder/InactionVictims" unique_id=1548423404]
+visible = false
+modulate = Color(0.5409905, 0.5409905, 0.5409905, 1)
+custom_minimum_size = Vector2(68, 110)
+layout_mode = 2
+expand_mode = 1
+
+[node name="TextureRect4" type="TextureRect" parent="VictimHolder/InactionVictimHolder/InactionVictims" unique_id=1196515417]
+visible = false
+modulate = Color(0.5409905, 0.5409905, 0.5409905, 1)
+custom_minimum_size = Vector2(68, 110)
+layout_mode = 2
+expand_mode = 1
+
+[node name="TextureRect5" type="TextureRect" parent="VictimHolder/InactionVictimHolder/InactionVictims" unique_id=2128455695]
+visible = false
+modulate = Color(0.5409905, 0.5409905, 0.5409905, 1)
+custom_minimum_size = Vector2(68, 110)
+layout_mode = 2
+expand_mode = 1
+
+[node name="InterventionVictimHolder" type="Control" parent="VictimHolder" unique_id=1664933432]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1678.0
+offset_top = 799.0
+offset_right = 1678.0
+offset_bottom = 799.0
+
+[node name="InterveneVictims" type="HBoxContainer" parent="VictimHolder/InterventionVictimHolder" unique_id=571817601]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -34.0
+offset_top = -110.0
+offset_right = 34.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="TextureRect" type="TextureRect" parent="VictimHolder/InterventionVictimHolder/InterveneVictims" unique_id=1174541548]
+visible = false
+modulate = Color(0.5409905, 0.5409905, 0.5409905, 1)
+custom_minimum_size = Vector2(68, 110)
+layout_mode = 2
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="VictimHolder/InterventionVictimHolder/InterveneVictims" unique_id=1120213451]
+visible = false
+modulate = Color(0.5409905, 0.5409905, 0.5409905, 1)
+custom_minimum_size = Vector2(68, 110)
+layout_mode = 2
+expand_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="VictimHolder/InterventionVictimHolder/InterveneVictims" unique_id=36811357]
+visible = false
+modulate = Color(0.5409905, 0.5409905, 0.5409905, 1)
+custom_minimum_size = Vector2(68, 110)
+layout_mode = 2
+expand_mode = 1
+
+[node name="TextureRect4" type="TextureRect" parent="VictimHolder/InterventionVictimHolder/InterveneVictims" unique_id=594296571]
+visible = false
+modulate = Color(0.5409905, 0.5409905, 0.5409905, 1)
+custom_minimum_size = Vector2(68, 110)
+layout_mode = 2
+expand_mode = 1
+
+[node name="TextureRect5" type="TextureRect" parent="VictimHolder/InterventionVictimHolder/InterveneVictims" unique_id=1517727210]
+visible = false
+modulate = Color(0.5409905, 0.5409905, 0.5409905, 1)
+custom_minimum_size = Vector2(68, 110)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Area2D" type="Area2D" parent="VictimHolder" unique_id=1171657159]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VictimHolder/Area2D" unique_id=1385677748]
+position = Vector2(1675.5, 533.5)
+shape = SubResource("RectangleShape2D_d5x1h")

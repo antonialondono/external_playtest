@@ -1,0 +1,148 @@
+[gd_scene format=3 uid="uid://b6aqk3luirriw"]
+
+[ext_resource type="Script" uid="uid://do84m3s4mk13w" path="res://scenes/title/title_menu.gd" id="1_3wys3"]
+[ext_resource type="PackedScene" uid="uid://lnxxnlaselg8" path="res://main_scene.tscn" id="2_jdgbp"]
+[ext_resource type="Script" uid="uid://iy8i7q2erjvk" path="res://scenes/title/version_label.gd" id="3_jdgbp"]
+
+[sub_resource type="Gradient" id="Gradient_q7cj6"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_3wys3"]
+gradient = SubResource("Gradient_q7cj6")
+fill_to = Vector2(0, 1)
+
+[node name="TitleMenu" type="Control" unique_id=1850419043]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3wys3")
+game_scene = ExtResource("2_jdgbp")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=781569548]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_3wys3")
+
+[node name="Control" type="Control" parent="." unique_id=1086469142]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=891162438]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/VBoxContainer" unique_id=1459512068]
+layout_mode = 2
+
+[node name="LeftTrolleyLabel" type="RichTextLabel" parent="Control/VBoxContainer/HBoxContainer" unique_id=659309288]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_font_sizes/normal_font_size = 48
+theme_override_font_sizes/bold_font_size = 48
+theme_override_font_sizes/bold_italics_font_size = 48
+theme_override_font_sizes/italics_font_size = 48
+theme_override_font_sizes/mono_font_size = 48
+text = "🤖"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+
+[node name="TitleLabel" type="RichTextLabel" parent="Control/VBoxContainer/HBoxContainer" unique_id=792526933]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 96
+theme_override_font_sizes/bold_font_size = 96
+theme_override_font_sizes/bold_italics_font_size = 96
+theme_override_font_sizes/italics_font_size = 96
+theme_override_font_sizes/mono_font_size = 96
+text = "The End of Souls"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+autowrap_trim_flags = 0
+
+[node name="RightTrolleyLabel" type="RichTextLabel" parent="Control/VBoxContainer/HBoxContainer" unique_id=16413177]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_font_sizes/normal_font_size = 48
+theme_override_font_sizes/bold_font_size = 48
+theme_override_font_sizes/bold_italics_font_size = 48
+theme_override_font_sizes/italics_font_size = 48
+theme_override_font_sizes/mono_font_size = 48
+text = "🤖"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+
+[node name="Label" type="Label" parent="Control/VBoxContainer" unique_id=2095000950]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "A Fableware and CDM collaboration."
+horizontal_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="Control" unique_id=746068993]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+theme_override_constants/margin_top = 100
+
+[node name="PlayButton" type="Button" parent="Control/MarginContainer" unique_id=851797242]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "What will you do?"
+
+[node name="Control2" type="Control" parent="." unique_id=1678494413]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+grow_horizontal = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="Control2" unique_id=1408137982]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -62.0
+offset_bottom = 19.0
+grow_horizontal = 0
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control2/MarginContainer" unique_id=511724502]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Control2/MarginContainer/HBoxContainer" unique_id=1410079604]
+layout_mode = 2
+text = "Version: "
+
+[node name="VersionLabel" type="Label" parent="Control2/MarginContainer/HBoxContainer" unique_id=1389154307]
+layout_mode = 2
+text = "0.0.0"
+script = ExtResource("3_jdgbp")

@@ -1,0 +1,170 @@
+[gd_scene format=3 uid="uid://b7ajxgyw46mms"]
+
+[ext_resource type="Script" uid="uid://b1ctbbma6ihux" path="res://scenes/game_complete/grid_container.gd" id="1_3q0gy"]
+[ext_resource type="PackedScene" uid="uid://cuvpdvsuwp6h7" path="res://scenes/game_complete/variable_outcome.tscn" id="1_hakwb"]
+
+[sub_resource type="Gradient" id="Gradient_3q0gy"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_q6xk1"]
+gradient = SubResource("Gradient_3q0gy")
+
+[node name="GameComplete" type="Control" unique_id=387684187]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1229466528]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_q6xk1")
+
+[node name="Control" type="Control" parent="." unique_id=1063848429]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+grow_horizontal = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Control" unique_id=1998241755]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+grow_horizontal = 2
+theme_override_constants/margin_top = 100
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer" unique_id=1602560220]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/MarginContainer/VBoxContainer" unique_id=1089373711]
+layout_mode = 2
+
+[node name="LeftTrolleyLabel" type="RichTextLabel" parent="Control/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1461925515]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_font_sizes/normal_font_size = 48
+theme_override_font_sizes/bold_font_size = 48
+theme_override_font_sizes/bold_italics_font_size = 48
+theme_override_font_sizes/italics_font_size = 48
+theme_override_font_sizes/mono_font_size = 48
+text = "🚒"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+
+[node name="TitleLabel" type="RichTextLabel" parent="Control/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1654400334]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 96
+theme_override_font_sizes/bold_font_size = 96
+theme_override_font_sizes/bold_italics_font_size = 96
+theme_override_font_sizes/italics_font_size = 96
+theme_override_font_sizes/mono_font_size = 96
+text = " Thanks for playing!"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+autowrap_trim_flags = 0
+
+[node name="RightTrolleyLabel" type="RichTextLabel" parent="Control/MarginContainer/VBoxContainer/HBoxContainer" unique_id=904159208]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_font_sizes/normal_font_size = 48
+theme_override_font_sizes/bold_font_size = 48
+theme_override_font_sizes/bold_italics_font_size = 48
+theme_override_font_sizes/italics_font_size = 48
+theme_override_font_sizes/mono_font_size = 48
+text = "🚒"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+
+[node name="Label" type="Label" parent="Control/MarginContainer/VBoxContainer" unique_id=1247601493]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "-------------"
+horizontal_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1212603622]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -129.0
+offset_top = -46.0
+offset_right = 129.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_bottom = 50
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=84109940]
+layout_mode = 2
+theme_override_constants/separation = 100
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/VBoxContainer" unique_id=1399175763]
+layout_mode = 2
+theme_override_constants/h_separation = 50
+theme_override_constants/v_separation = 50
+columns = 3
+script = ExtResource("1_3q0gy")
+
+[node name="VariableOutcome" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=1994520924 instance=ExtResource("1_hakwb")]
+layout_mode = 2
+
+[node name="VariableOutcome2" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=368881481 instance=ExtResource("1_hakwb")]
+layout_mode = 2
+
+[node name="VariableOutcome3" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=331954776 instance=ExtResource("1_hakwb")]
+layout_mode = 2
+
+[node name="VariableOutcome4" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=385789762 instance=ExtResource("1_hakwb")]
+layout_mode = 2
+
+[node name="VariableOutcome5" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=1373204864 instance=ExtResource("1_hakwb")]
+layout_mode = 2
+
+[node name="VariableOutcome6" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=138773834 instance=ExtResource("1_hakwb")]
+layout_mode = 2
+
+[node name="VariableOutcome7" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=2025866294 instance=ExtResource("1_hakwb")]
+layout_mode = 2
+
+[node name="VariableOutcome8" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=183090443 instance=ExtResource("1_hakwb")]
+layout_mode = 2
+
+[node name="VariableOutcome9" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=2061310718 instance=ExtResource("1_hakwb")]
+layout_mode = 2
+
+[node name="VariableOutcome10" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=405445340 instance=ExtResource("1_hakwb")]
+layout_mode = 2
+
+[node name="VariableOutcome11" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=777645248 instance=ExtResource("1_hakwb")]
+layout_mode = 2
+
+[node name="VariableOutcome12" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=1169224094 instance=ExtResource("1_hakwb")]
+layout_mode = 2
+
+[node name="VariableOutcome13" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=540893591 instance=ExtResource("1_hakwb")]
+layout_mode = 2
+
+[node name="VariableOutcome14" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=1554512065 instance=ExtResource("1_hakwb")]
+layout_mode = 2
+
+[node name="VariableOutcome15" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=420803101 instance=ExtResource("1_hakwb")]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="ReturnToTitleButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=485389]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 32
+text = "Return to Title"

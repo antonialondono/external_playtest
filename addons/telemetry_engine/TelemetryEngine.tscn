@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cyh2ctkkgws7u"]
+
+[ext_resource type="Script" uid="uid://bn6maolikg0ib" path="res://addons/telemetry_engine/telemetry_engine.gd" id="1_085yf"]
+[ext_resource type="Script" uid="uid://sbcr6dwrkpdt" path="res://addons/telemetry_engine/Keepsake/keepsake_card_config.gd" id="2_bp5ry"]
+
+[sub_resource type="Resource" id="Resource_bp5ry"]
+script = ExtResource("2_bp5ry")
+metadata/_custom_type_script = "uid://sbcr6dwrkpdt"
+
+[sub_resource type="Resource" id="Resource_7c351"]
+script = ExtResource("2_bp5ry")
+metadata/_custom_type_script = "uid://sbcr6dwrkpdt"
+
+[sub_resource type="Resource" id="Resource_qajix"]
+script = ExtResource("2_bp5ry")
+metadata/_custom_type_script = "uid://sbcr6dwrkpdt"
+
+[node name="TelemetryEngine" type="Node" unique_id=1878269687]
+script = ExtResource("1_085yf")
+base_url = "https://fbe6-206-12-10-243.ngrok-free.app/"
+card_1 = SubResource("Resource_bp5ry")
+card_2 = SubResource("Resource_7c351")
+card_3 = SubResource("Resource_qajix")

@@ -1,0 +1,51 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="The Trouble With Trolleys"
+config/description="Small trolley problem based project for Impact Tracker plugin development."
+config/version="0.1.20260616"
+run/main_scene="uid://b6aqk3luirriw"
+config/features=PackedStringArray("4.6", "Mobile")
+config/icon="res://icon.svg"
+
+[autoload]
+
+ArcweaveManager="*uid://du75mpw4omda0"
+TelemetryEngine="*uid://cyh2ctkkgws7u"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=1
+window/stretch/mode="canvas_items"
+
+[dotnet]
+
+project/assembly_name="FIT-TrolleyProblem"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/telemetry_engine/plugin.cfg")
+
+[gui]
+
+theme/custom_font="uid://cn1jvivijc73a"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="mobile"

@@ -1,0 +1,635 @@
+{
+	"startingElement": "4edf6d89-a041-4339-9668-fc40cdacc776",
+	"boards": {
+		"2ad15ff6-f2ba-4f1d-9d9d-68938c683d7e": {
+			"name": "Root",
+			"root": true,
+			"children": [
+				"c4d325d1-c1da-4461-9edd-35b6cc0ba5ee",
+                "630fdb8a-48d6-473e-9974-2460f7eb2b41"
+			]
+		},
+		"630fdb8a-48d6-473e-9974-2460f7eb2b41": {
+			"name": "Standard",
+			"notes": [
+				"f555d64f-895f-4b08-b8e8-36c83dcd01ef",
+				"1eb5d093-01b2-4537-80f0-4014b2659cce",
+				"4a1f5d41-f8a9-424e-87fa-cbe92fab8fc9",
+				"a1352c38-983f-4a40-ba9a-0065701feefd",
+				"27c41d35-6ddc-4ca0-ae13-60c7473c48eb",
+				"a51bf5ca-501b-4b13-8755-5672b90a813f",
+                "7127dd66-86d9-4d13-ab9f-93e45f3ade20"
+			],
+			"jumpers": [
+                "06a97a94-e75a-4ab6-844a-f94dabfe983b"
+			],
+			"branches": [],
+			"elements": [
+				"4edf6d89-a041-4339-9668-fc40cdacc776",
+				"6998b908-c497-4be6-94ad-7915df85bb81",
+				"947a381f-6f47-4a82-82c3-53d6afcee06c",
+				"5c8f3047-92f8-4ef0-94e0-42687855cfe6",
+				"798b8098-cdf9-4762-aadc-b01a765e848b",
+				"c125e30d-5184-4e01-871c-5a5dc12cb0e4",
+				"d7c786e0-b3bd-43d5-94c1-428dda984569",
+				"1bfa7d80-83d1-4add-8f88-1972b5bf94d2",
+				"dae4cdc0-dc1d-4f44-8f55-66bd1d0a0feb",
+				"25400628-10d9-4d40-a344-b7fa61c8169c",
+				"384b4453-14bc-40af-9d09-495c2be610a9",
+				"b76112e2-8d41-4962-b286-c4dcbd322574",
+				"9954edbe-8062-4ae4-97c4-18cbd88a76a6",
+				"8e619ccb-710a-4c17-ab65-71b140767868",
+                "54c5944d-ccf5-43f4-8aa1-f13dcdcd44d2"
+			],
+			"connections": [
+				"02de6633-0fff-4ae0-900a-188158ea7358",
+				"096d3a70-dadc-49eb-bc8d-9efca21536a6",
+				"1024235d-d221-49fb-9637-45b792ebc1c1",
+				"468ee052-7d13-402b-b1cf-b743bdc8be34",
+				"9673f06c-1129-4f0f-8c9c-4f897afecf20",
+				"f918e8c0-b753-47d2-be07-3b64f67dd5ad",
+				"74f85fce-05f6-49e9-b4e6-effbb2176216",
+				"3636aa9c-e691-4f41-88be-e933fe9e05b1",
+				"7b370b42-d4bb-478c-bd04-7e0fedb984cb",
+				"70e9b0cf-4d38-4495-ae86-d6bb46c50936",
+				"bb42fb48-e979-4bc2-a680-3163529dc1de",
+				"7acc194e-ec22-4613-b744-feccce5bf515",
+				"d28b42cc-2c1f-4da4-a0bd-8a468d8a93e1",
+				"32112631-bda6-482c-9fd9-40ed5aadef46",
+				"fa9df1bf-ee3c-4d02-a6ff-1c3e059880c4",
+				"9029dd4d-1eeb-41f5-8ede-9d37a981e3e6",
+				"049f827d-e2e2-4261-8dae-1041deeb87c7",
+                "3f26ff36-e079-491f-ae9e-b49592d85074"
+			]
+		},
+		"c4d325d1-c1da-4461-9edd-35b6cc0ba5ee": {
+			"name": "YourMama",
+			"notes": [],
+			"elements": [
+				"8f9d05a7-3a58-488b-9eb6-455f7fda5082",
+				"b6d2b20f-6cdd-43f5-8d8d-9ab43bdc1726",
+                "9a512d94-f552-4d3e-9ea1-504de25a3023"
+			],
+			"connections": [
+				"6668849f-6fe3-4969-9b4d-1dd2087ed82d",
+				"b55e81d9-23fd-472e-9cf7-50f542cd6f35",
+                "cc79521f-87c1-46ed-90e2-c6ca5782ceb1"
+			],
+			"branches": [],
+			"jumpers": []
+		}
+	},
+	"notes": {
+		"1eb5d093-01b2-4537-80f0-4014b2659cce": {
+			"theme": "default",
+			"content": "<p>Gameplay Template:<\/p><p>Copy and Paste to a new board to create a new scenario.<\/p><p>The only thing that must be changed is the variable,<\/p><p>create a new one and update the \"intervene\" label Acrscript<\/p>"
+		},
+		"4a1f5d41-f8a9-424e-87fa-cbe92fab8fc9": {
+			"theme": "cyan",
+			"content": "<p>Tutorial Flow<\/p>"
+		},
+		"27c41d35-6ddc-4ca0-ae13-60c7473c48eb": {
+			"theme": "orange",
+			"content": "<p>Visual resolves, CRASH<\/p><p>Then continue<\/p><p><\/p><p>Each scenario will have one unique global variable:<\/p><p><\/p><p><\/p><p><\/p><p><\/p><p>In this case it's `save_the_5`<\/p><p><\/p><p><\/p><p>Important note:<br>The player's choice is to intervene in the situation or let it play out as they found it. To enable this we need to auto-advance this choice via the engine, which requires the choices to be correctly ordered.<\/p><p>If the player does not intervene the first option will be selected (here: \"Do Nothing\").<\/p><p>If the player has chosen to intervene, the second path will be taken; the \"Intervene\" path.<\/p><p>Note re note:<br>connection order must be set via play mode \ud83d\ude44<\/p>"
+		},
+		"f555d64f-895f-4b08-b8e8-36c83dcd01ef": {
+			"theme": "green",
+			"content": "<p>The Trolley component triggers a timer, then the scene starts the trolley.<\/p>"
+		},
+		"a1352c38-983f-4a40-ba9a-0065701feefd": {
+			"theme": "cyan",
+			"content": "<p>The logical extension would be to do some debrief after the crash. Each path coould ask the player what they were thinking.<\/p><p>However this is likely out of scope for the current project itteration.<\/p>"
+		},
+		"a51bf5ca-501b-4b13-8755-5672b90a813f": {
+			"theme": "lightBlue",
+			"content": "<p>The number of victims for either choice is set by the quantity of \"Inaction x1\" and \"Intervention x1\" components.<\/p><p>In this case there are 5 victims from doing nothing, and 1 if the player intervenes.<\/p>"
+		},
+		"7127dd66-86d9-4d13-ab9f-93e45f3ade20": {
+			"content": "<p>The Scenario Complete component signals the end of this scenario.<\/p>",
+			"theme": "green"
+		}
+	},
+	"elements": {
+		"1bfa7d80-83d1-4add-8f88-1972b5bf94d2": {
+			"theme": "moss",
+			"outputs": [
+                "bb42fb48-e979-4bc2-a680-3163529dc1de"
+			],
+			"components": [],
+			"content": "<p>There is no correct solution to this dilemma, but the choice made reflects the player's moral and emotional fibre in this particular situation.<\/p>",
+			"title": null
+		},
+		"25400628-10d9-4d40-a344-b7fa61c8169c": {
+			"theme": "moss",
+			"outputs": [
+                "d28b42cc-2c1f-4da4-a0bd-8a468d8a93e1"
+			],
+			"components": [],
+			"content": "<pre><code>if Principle >= 1<\/code><\/pre><p><strong>Principle<\/strong><\/p><p>The player believed that the situation was not their responsibility. To divert the trolley meant they would have been directly responsible for the death that followed. This principle shields their mind from any guilt they might have felt. <\/p><pre><code>elseif Guilt >= 1<\/code><\/pre><p><strong>Guilt<\/strong><\/p><p>The player adhered to the principle that acting would mean they're directly responsible for the death of one person. They followed the principle, but still feel guilt about the five deaths. This is someone who is conflicted and prone to moral or philosopohical change.<\/p><pre><code>elseif Heroism >= 1<\/code><\/pre><p><strong>Saviour<\/strong><\/p><p>The player believes they are responsible for saving five by diverting the trolley and killing one person in the process. They percieve this to be the best outcome, which shields them from any guilt they may feel.<\/p><pre><code>else<\/code><\/pre><p><strong>Empathy <\/strong><\/p><p>The player highlights how they took responisbility for killing one person. Ignoring the fact that they saved five in the process. They ignore the ideal that saving five people was a good outcome and focus on the death of one. This perception is deeply empathetic and selfless. <\/p><pre><code>endif<\/code><\/pre>",
+			"title": null
+		},
+		"384b4453-14bc-40af-9d09-495c2be610a9": {
+			"theme": "orange",
+			"outputs": [
+				"32112631-bda6-482c-9fd9-40ed5aadef46",
+                "fa9df1bf-ee3c-4d02-a6ff-1c3e059880c4"
+			],
+			"components": [],
+			"content": "<p>Would you like to play again?<\/p>",
+			"title": "<p>Play Again?<\/p>"
+		},
+		"4edf6d89-a041-4339-9668-fc40cdacc776": {
+			"theme": "moss",
+			"outputs": [
+                "02de6633-0fff-4ae0-900a-188158ea7358"
+			],
+			"components": [],
+			"content": "<p>A trolley hurtles down a set of tracks at breakneck speed. It is about to kill five people tied to the tracks. <\/p>",
+			"title": "<p>Standard Trolley Dilemma<\/p>"
+		},
+		"54c5944d-ccf5-43f4-8aa1-f13dcdcd44d2": {
+			"theme": "pink",
+			"outputs": [],
+			"components": [
+                "b20b2bd8-4972-4c3f-83df-83b2479fe83a"
+			],
+			"content": "<p>Start the next scenario<\/p>",
+			"title": null
+		},
+		"5c8f3047-92f8-4ef0-94e0-42687855cfe6": {
+			"theme": "gold",
+			"outputs": [
+                "74f85fce-05f6-49e9-b4e6-effbb2176216"
+			],
+			"components": [],
+			"content": "<p><em>There is nothing you can do in this situation. The trolley runs over the five people, killing them instantly. <\/em><\/p>",
+			"title": "<p>Ultarian Saviour Complex<\/p>"
+		},
+		"6998b908-c497-4be6-94ad-7915df85bb81": {
+			"theme": "moss",
+			"outputs": [
+                "096d3a70-dadc-49eb-bc8d-9efca21536a6"
+			],
+			"components": [],
+			"content": "<p>You stand before a lever that can divert the trolley onto another track, but it will kill the one person tied to the track.<\/p>",
+			"title": "<p>Description<\/p>"
+		},
+		"798b8098-cdf9-4762-aadc-b01a765e848b": {
+			"theme": "red",
+			"outputs": [
+                "3636aa9c-e691-4f41-88be-e933fe9e05b1"
+			],
+			"components": [],
+			"content": "<p><em>You pull the lever and divert the trolley, killing one person in the process.<\/em><\/p>",
+			"title": "<p>Ultarian Guilt Complex<\/p>"
+		},
+		"8e619ccb-710a-4c17-ab65-71b140767868": {
+			"theme": "moss",
+			"outputs": [
+				"3f26ff36-e079-491f-ae9e-b49592d85074",
+                "049f827d-e2e2-4261-8dae-1041deeb87c7"
+			],
+			"components": [
+                "4f41e84a-9ec3-4bb5-a434-80cc705587f3"
+			],
+			"content": "<p>You stand before a lever that can divert the trolley onto another track, but it will kill the one person tied to the track.<\/p>",
+			"title": "<p>Description<\/p>"
+		},
+		"947a381f-6f47-4a82-82c3-53d6afcee06c": {
+			"theme": "orange",
+			"outputs": [
+				"9673f06c-1129-4f0f-8c9c-4f897afecf20",
+				"f918e8c0-b753-47d2-be07-3b64f67dd5ad",
+				"1024235d-d221-49fb-9637-45b792ebc1c1",
+                "468ee052-7d13-402b-b1cf-b743bdc8be34"
+			],
+			"components": [],
+			"content": "<p>What do you do?<\/p>",
+			"title": "<p>Choice<\/p>"
+		},
+		"9954edbe-8062-4ae4-97c4-18cbd88a76a6": {
+			"theme": "moss",
+			"outputs": [
+                "9029dd4d-1eeb-41f5-8ede-9d37a981e3e6"
+			],
+			"components": [
+				"844cc5fc-dfe4-4317-80bf-bed75a47fdf3",
+				"e74a6f4b-f5ca-4738-8f52-98e3b6c45013",
+				"e74a6f4b-f5ca-4738-8f52-98e3b6c45013",
+				"e74a6f4b-f5ca-4738-8f52-98e3b6c45013",
+				"e74a6f4b-f5ca-4738-8f52-98e3b6c45013",
+                "e74a6f4b-f5ca-4738-8f52-98e3b6c45013"
+			],
+			"content": "<p>A trolley hurtles down a set of tracks at breakneck speed. It is about to kill five people tied to the tracks. <\/p>",
+			"title": "<p>START<\/p>"
+		},
+		"b76112e2-8d41-4962-b286-c4dcbd322574": {
+			"theme": "pink",
+			"outputs": [],
+			"components": [],
+			"content": "<p>Thank you for playing!<\/p>",
+			"title": "<p>The End<\/p>"
+		},
+		"dae4cdc0-dc1d-4f44-8f55-66bd1d0a0feb": {
+			"theme": "moss",
+			"outputs": [
+                "7acc194e-ec22-4613-b744-feccce5bf515"
+			],
+			"components": [],
+			"content": "<p>There were only two absolute paths to act on, yet four choices were given. Built upon sub choices based on philosopy and emotion.<\/p>",
+			"title": null
+		},
+		"c125e30d-5184-4e01-871c-5a5dc12cb0e4": {
+			"theme": "lightBlue",
+			"outputs": [
+                "7b370b42-d4bb-478c-bd04-7e0fedb984cb"
+			],
+			"components": [],
+			"content": "<p><em>You pull the lever and divert the trolley, the five people tied to the tracks cry in reilief.<\/em><\/p>",
+			"title": "<p>Deontological Consequence<\/p>"
+		},
+		"d7c786e0-b3bd-43d5-94c1-428dda984569": {
+			"theme": "pink",
+			"outputs": [
+                "70e9b0cf-4d38-4495-ae86-d6bb46c50936"
+			],
+			"components": [],
+			"content": "<p><em>You pull the lever and divert the trolley, killing one person in the process.<\/em><\/p>",
+			"title": "<p>Deontological Guilt Complex<\/p>"
+		},
+		"8f9d05a7-3a58-488b-9eb6-455f7fda5082": {
+			"components": [
+				"844cc5fc-dfe4-4317-80bf-bed75a47fdf3",
+				"e74a6f4b-f5ca-4738-8f52-98e3b6c45013",
+				"e74a6f4b-f5ca-4738-8f52-98e3b6c45013",
+                "e74a6f4b-f5ca-4738-8f52-98e3b6c45013"
+			],
+			"theme": "moss",
+			"outputs": [
+                "6668849f-6fe3-4969-9b4d-1dd2087ed82d"
+			],
+			"content": "<p>A trolley hurtles down a set of tracks at breakneck speed. It is about to kill three people lounging on the tracks. <\/p>",
+			"title": "<p>START<\/p>"
+		},
+		"b6d2b20f-6cdd-43f5-8d8d-9ab43bdc1726": {
+			"components": [
+                "4f41e84a-9ec3-4bb5-a434-80cc705587f3"
+			],
+			"theme": "moss",
+			"outputs": [
+				"cc79521f-87c1-46ed-90e2-c6ca5782ceb1",
+                "b55e81d9-23fd-472e-9cf7-50f542cd6f35"
+			],
+			"content": "<p>You stand before a lever that can divert the trolley onto another track, but your mother is on the other track<\/p>",
+			"title": "<p>Description<\/p>"
+		},
+		"9a512d94-f552-4d3e-9ea1-504de25a3023": {
+			"components": [
+                "b20b2bd8-4972-4c3f-83df-83b2479fe83a"
+			],
+			"theme": "pink",
+			"outputs": [],
+			"content": "<p>Start the next scenario<\/p>",
+			"title": null
+		}
+	},
+	"jumpers": {
+		"06a97a94-e75a-4ab6-844a-f94dabfe983b": {
+			"align": {
+				"x": "left",
+				"y": "center"
+			},
+			"width": 185,
+			"height": 86,
+			"elementId": "4edf6d89-a041-4339-9668-fc40cdacc776"
+		}
+	},
+	"connections": {
+		"f918e8c0-b753-47d2-be07-3b64f67dd5ad": {
+			"type": "Bezier",
+			"theme": "default",
+			"sourceid": "947a381f-6f47-4a82-82c3-53d6afcee06c",
+			"targetid": "d7c786e0-b3bd-43d5-94c1-428dda984569",
+			"sourceType": "elements",
+			"targetType": "elements",
+			"labelLocation": 0.54337284482759,
+			"label": "<p>I do nothing. I've killed the five people.<\/p><pre><code>Guilt += 5<\/code><\/pre>"
+		},
+		"02de6633-0fff-4ae0-900a-188158ea7358": {
+			"type": "Bezier",
+			"theme": "default",
+			"sourceid": "4edf6d89-a041-4339-9668-fc40cdacc776",
+			"targetid": "6998b908-c497-4be6-94ad-7915df85bb81",
+			"sourceType": "elements",
+			"targetType": "elements",
+			"label": null
+		},
+		"096d3a70-dadc-49eb-bc8d-9efca21536a6": {
+			"type": "Bezier",
+			"theme": "default",
+			"sourceid": "6998b908-c497-4be6-94ad-7915df85bb81",
+			"targetid": "947a381f-6f47-4a82-82c3-53d6afcee06c",
+			"sourceType": "elements",
+			"targetType": "elements",
+			"label": null
+		},
+		"1024235d-d221-49fb-9637-45b792ebc1c1": {
+			"type": "Bezier",
+			"theme": "default",
+			"sourceid": "947a381f-6f47-4a82-82c3-53d6afcee06c",
+			"targetid": "5c8f3047-92f8-4ef0-94e0-42687855cfe6",
+			"sourceType": "elements",
+			"targetType": "elements",
+			"labelLocation": 0.5,
+			"label": "<p>I divert the train. I save the five people.<\/p><pre><code>Heroism += 5<\/code><\/pre>"
+		},
+		"32112631-bda6-482c-9fd9-40ed5aadef46": {
+			"type": "Bezier",
+			"theme": "default",
+			"sourceid": "384b4453-14bc-40af-9d09-495c2be610a9",
+			"targetid": "06a97a94-e75a-4ab6-844a-f94dabfe983b",
+			"sourceType": "elements",
+			"targetType": "jumpers",
+			"labelLocation": 0.5,
+			"label": "<p>Yes.<\/p>"
+		},
+		"3636aa9c-e691-4f41-88be-e933fe9e05b1": {
+			"type": "Bezier",
+			"theme": "default",
+			"sourceid": "798b8098-cdf9-4762-aadc-b01a765e848b",
+			"targetid": "1bfa7d80-83d1-4add-8f88-1972b5bf94d2",
+			"sourceType": "elements",
+			"targetFace": "left",
+			"targetType": "elements",
+			"label": null
+		},
+		"468ee052-7d13-402b-b1cf-b743bdc8be34": {
+			"type": "Bezier",
+			"theme": "default",
+			"sourceid": "947a381f-6f47-4a82-82c3-53d6afcee06c",
+			"targetid": "798b8098-cdf9-4762-aadc-b01a765e848b",
+			"sourceType": "elements",
+			"targetType": "elements",
+			"label": "<p>I divert the train. I kill the one person.<\/p><pre><code>Empathy += 5<\/code><\/pre>"
+		},
+		"fa9df1bf-ee3c-4d02-a6ff-1c3e059880c4": {
+			"type": "Bezier",
+			"theme": "default",
+			"sourceid": "384b4453-14bc-40af-9d09-495c2be610a9",
+			"targetid": "b76112e2-8d41-4962-b286-c4dcbd322574",
+			"sourceType": "elements",
+			"targetType": "elements",
+			"labelLocation": 0.5,
+			"label": "<p>No (Quit).<\/p>"
+		},
+		"70e9b0cf-4d38-4495-ae86-d6bb46c50936": {
+			"type": "Bezier",
+			"theme": "default",
+			"sourceid": "d7c786e0-b3bd-43d5-94c1-428dda984569",
+			"targetid": "1bfa7d80-83d1-4add-8f88-1972b5bf94d2",
+			"sourceType": "elements",
+			"targetFace": "bottom",
+			"targetType": "elements",
+			"label": null
+		},
+		"74f85fce-05f6-49e9-b4e6-effbb2176216": {
+			"type": "Bezier",
+			"theme": "default",
+			"sourceid": "5c8f3047-92f8-4ef0-94e0-42687855cfe6",
+			"targetid": "1bfa7d80-83d1-4add-8f88-1972b5bf94d2",
+			"sourceType": "elements",
+			"targetFace": "top",
+			"targetType": "elements",
+			"label": null
+		},
+		"7acc194e-ec22-4613-b744-feccce5bf515": {
+			"type": "Bezier",
+			"theme": "default",
+			"sourceid": "dae4cdc0-dc1d-4f44-8f55-66bd1d0a0feb",
+			"targetid": "25400628-10d9-4d40-a344-b7fa61c8169c",
+			"sourceType": "elements",
+			"targetType": "elements",
+			"label": null
+		},
+		"049f827d-e2e2-4261-8dae-1041deeb87c7": {
+			"sourceType": "elements",
+			"sourceid": "8e619ccb-710a-4c17-ab65-71b140767868",
+			"targetid": "54c5944d-ccf5-43f4-8aa1-f13dcdcd44d2",
+			"targetType": "elements",
+			"targetFace": "left",
+			"type": "Bezier",
+			"theme": "default",
+			"labelLocation": 0.5078125,
+			"label": "<p>Intervene<\/p><pre><code>saved_the_5 = true<\/code><\/pre>"
+		},
+		"7b370b42-d4bb-478c-bd04-7e0fedb984cb": {
+			"type": "Bezier",
+			"theme": "default",
+			"sourceid": "c125e30d-5184-4e01-871c-5a5dc12cb0e4",
+			"targetid": "1bfa7d80-83d1-4add-8f88-1972b5bf94d2",
+			"sourceType": "elements",
+			"targetFace": "left",
+			"targetType": "elements",
+			"label": null
+		},
+		"9029dd4d-1eeb-41f5-8ede-9d37a981e3e6": {
+			"type": "Bezier",
+			"theme": "default",
+			"sourceid": "9954edbe-8062-4ae4-97c4-18cbd88a76a6",
+			"targetid": "8e619ccb-710a-4c17-ab65-71b140767868",
+			"sourceType": "elements",
+			"targetType": "elements",
+			"labelLocation": 0.5,
+			"label": null
+		},
+		"9673f06c-1129-4f0f-8c9c-4f897afecf20": {
+			"type": "Bezier",
+			"theme": "default",
+			"sourceid": "947a381f-6f47-4a82-82c3-53d6afcee06c",
+			"targetid": "c125e30d-5184-4e01-871c-5a5dc12cb0e4",
+			"sourceType": "elements",
+			"targetType": "elements",
+			"labelLocation": 0.5,
+			"label": "<p>I do nothing. The trolley kills five people.<\/p><pre><code>Principle += 5<\/code><\/pre>"
+		},
+		"bb42fb48-e979-4bc2-a680-3163529dc1de": {
+			"type": "Bezier",
+			"theme": "default",
+			"sourceid": "1bfa7d80-83d1-4add-8f88-1972b5bf94d2",
+			"targetid": "dae4cdc0-dc1d-4f44-8f55-66bd1d0a0feb",
+			"sourceType": "elements",
+			"targetType": "elements",
+			"label": null
+		},
+		"d28b42cc-2c1f-4da4-a0bd-8a468d8a93e1": {
+			"type": "Bezier",
+			"theme": "default",
+			"sourceid": "25400628-10d9-4d40-a344-b7fa61c8169c",
+			"targetid": "384b4453-14bc-40af-9d09-495c2be610a9",
+			"sourceType": "elements",
+			"targetType": "elements",
+			"label": null
+		},
+		"3f26ff36-e079-491f-ae9e-b49592d85074": {
+			"sourceType": "elements",
+			"sourceid": "8e619ccb-710a-4c17-ab65-71b140767868",
+			"targetid": "54c5944d-ccf5-43f4-8aa1-f13dcdcd44d2",
+			"targetType": "elements",
+			"targetFace": "left",
+			"type": "Bezier",
+			"theme": "default",
+			"labelLocation": 0.5,
+			"label": "<p>Do Nothing<\/p>"
+		},
+		"6668849f-6fe3-4969-9b4d-1dd2087ed82d": {
+			"labelLocation": 0.5,
+			"type": "Bezier",
+			"targetType": "elements",
+			"sourceType": "elements",
+			"sourceid": "8f9d05a7-3a58-488b-9eb6-455f7fda5082",
+			"theme": "default",
+			"targetid": "b6d2b20f-6cdd-43f5-8d8d-9ab43bdc1726",
+			"label": null
+		},
+		"b55e81d9-23fd-472e-9cf7-50f542cd6f35": {
+			"sourceType": "elements",
+			"sourceid": "b6d2b20f-6cdd-43f5-8d8d-9ab43bdc1726",
+			"targetid": "9a512d94-f552-4d3e-9ea1-504de25a3023",
+			"labelLocation": 0.5078125,
+			"targetFace": "left",
+			"targetType": "elements",
+			"theme": "default",
+			"type": "Bezier",
+			"label": "<p>Intervene<\/p>"
+		},
+		"cc79521f-87c1-46ed-90e2-c6ca5782ceb1": {
+			"sourceType": "elements",
+			"sourceid": "b6d2b20f-6cdd-43f5-8d8d-9ab43bdc1726",
+			"targetid": "9a512d94-f552-4d3e-9ea1-504de25a3023",
+			"labelLocation": 0.44173177083333,
+			"targetFace": "left",
+			"targetType": "elements",
+			"theme": "default",
+			"type": "Bezier",
+			"label": "<p>Do Nothing<\/p><pre><code>saved_your_mom = true<\/code><\/pre>"
+		}
+	},
+	"branches": {},
+	"components": {
+		"4f41e84a-9ec3-4bb5-a434-80cc705587f3": {
+			"assets": {
+				"cover": {
+					"file": "delapouite\/subway",
+					"type": "icon"
+				}
+			},
+			"attributes": [],
+			"name": "Start_Trolley"
+		},
+		"65005bda-15d0-41c5-867f-68c118829f08": {
+			"root": true,
+			"children": [
+				"932b5871-2be5-421a-8e0d-182509d8e1d6",
+				"b20b2bd8-4972-4c3f-83df-83b2479fe83a",
+                "4f41e84a-9ec3-4bb5-a434-80cc705587f3"
+			],
+			"name": "Root"
+		},
+		"b20b2bd8-4972-4c3f-83df-83b2479fe83a": {
+			"assets": {
+				"cover": {
+					"file": "delapouite\/checkered-flag",
+					"type": "icon"
+				}
+			},
+			"attributes": [],
+			"name": "Scenario_Complete"
+		},
+		"932b5871-2be5-421a-8e0d-182509d8e1d6": {
+			"children": [
+				"e74a6f4b-f5ca-4738-8f52-98e3b6c45013",
+                "844cc5fc-dfe4-4317-80bf-bed75a47fdf3"
+			],
+			"name": "VictimConfiiguration"
+		},
+		"844cc5fc-dfe4-4317-80bf-bed75a47fdf3": {
+			"attributes": [],
+			"assets": {
+				"cover": {
+					"type": "icon",
+					"file": "delapouite\/button-finger"
+				}
+			},
+			"name": "Intervention_x1"
+		},
+		"e74a6f4b-f5ca-4738-8f52-98e3b6c45013": {
+			"attributes": [],
+			"assets": {
+				"cover": {
+					"type": "icon",
+					"file": "delapouite\/look-at"
+				}
+			},
+			"name": "Inaction_x1"
+		}
+	},
+	"attributes": {},
+	"assets": {
+		"647d0495-341f-42b2-8788-b47dace22bf8": {
+			"root": true,
+			"children": []
+		}
+	},
+	"variables": {
+		"41b3ad3c-33a2-4e26-b69f-56fbeb72bf5d": {
+			"name": "Empathy",
+			"type": "integer",
+			"cType": "global",
+			"value": 0
+		},
+		"698f24e9-4f94-4aa3-99d7-393752e5cf6e": {
+			"name": "saved_the_5",
+			"type": "boolean",
+			"cType": "global",
+			"value": false
+		},
+		"747d0495-341f-42b2-8788-b47dace22bf8": {
+			"root": true,
+			"children": [
+				"d7fdfffc-3e6e-439f-bbbc-fecb1351b282",
+				"41b3ad3c-33a2-4e26-b69f-56fbeb72bf5d",
+				"84240afa-7125-4591-9d9a-b52ca09f5eca",
+				"c86d3c88-890f-4f06-8da3-571576bd8b3c",
+				"698f24e9-4f94-4aa3-99d7-393752e5cf6e",
+                "a5a0e104-1ed8-4a35-9aaa-252b4fa4b37a"
+			]
+		},
+		"84240afa-7125-4591-9d9a-b52ca09f5eca": {
+			"name": "Principle",
+			"type": "integer",
+			"cType": "global",
+			"value": 0
+		},
+		"c86d3c88-890f-4f06-8da3-571576bd8b3c": {
+			"name": "Guilt",
+			"type": "integer",
+			"cType": "global",
+			"value": 0
+		},
+		"d7fdfffc-3e6e-439f-bbbc-fecb1351b282": {
+			"name": "Heroism",
+			"type": "integer",
+			"cType": "global",
+			"value": 0
+		},
+		"a5a0e104-1ed8-4a35-9aaa-252b4fa4b37a": {
+			"type": "boolean",
+			"name": "saved_your_mom",
+			"value": false,
+			"cType": "global"
+		}
+	},
+	"conditions": {},
+	"name": "CDM Tutorial - Trolley Dilemma",
+	"cover": null
+}

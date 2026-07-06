@@ -1,0 +1,298 @@
+[gd_scene format=3 uid="uid://cn0i8sule56xq"]
+
+[ext_resource type="Script" uid="uid://0blnhgxk828b" path="res://addons/telemetry_engine/keepsake_overlay.gd" id="1_emrcj"]
+
+[node name="KeepsakeOverlay" type="Control" unique_id=580052512]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_emrcj")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1694217061]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.039215688, 0.039215688, 0.039215688, 1)
+
+[node name="IntroContainer" type="CenterContainer" parent="." unique_id=1623795296]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="IntroVBox" type="VBoxContainer" parent="IntroContainer" unique_id=1098984180]
+layout_mode = 2
+alignment = 1
+
+[node name="IntroLabel" type="RichTextLabel" parent="IntroContainer/IntroVBox" unique_id=1957942876]
+custom_minimum_size = Vector2(620, 120)
+layout_mode = 2
+bbcode_enabled = true
+text = "[center]Your choices [b]matter[/b].[/center]"
+fit_content = true
+scroll_active = false
+
+[node name="OpenButton" type="Button" parent="IntroContainer/IntroVBox" unique_id=381244691]
+custom_minimum_size = Vector2(260, 48)
+layout_mode = 2
+text = "OPEN MY COLLECTION"
+
+[node name="RevealContainer" type="CenterContainer" parent="." unique_id=1899267464]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RevealVBox" type="VBoxContainer" parent="RevealContainer" unique_id=1232817163]
+custom_minimum_size = Vector2(560, 0.16)
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="RevealTitle" type="Label" parent="RevealContainer/RevealVBox" unique_id=1729591045]
+custom_minimum_size = Vector2(700, 50)
+layout_mode = 2
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="RevealBody" type="Label" parent="RevealContainer/RevealVBox" unique_id=951418052]
+custom_minimum_size = Vector2(700, 120)
+layout_mode = 2
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="CardContainer" type="Control" parent="." unique_id=885884894]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CardPanel" type="PanelContainer" parent="CardContainer" unique_id=885580166]
+custom_minimum_size = Vector2(396, 539)
+layout_mode = 0
+offset_left = 34.0
+offset_top = 34.0
+offset_right = 430.0
+offset_bottom = 573.0
+
+[node name="CardArtRoot" type="Control" parent="CardContainer/CardPanel" unique_id=1373626895]
+custom_minimum_size = Vector2(396, 539)
+layout_mode = 2
+
+[node name="BaseBackground" type="TextureRect" parent="CardContainer/CardPanel/CardArtRoot" unique_id=149485481]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="MainImage" type="TextureRect" parent="CardContainer/CardPanel/CardArtRoot" unique_id=718949829]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 7.0
+offset_top = 10.0
+offset_right = -389.0
+offset_bottom = -529.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="ImageFrame" type="TextureRect" parent="CardContainer/CardPanel/CardArtRoot" unique_id=1101706238]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TitleFrame" type="TextureRect" parent="CardContainer/CardPanel/CardArtRoot" unique_id=292687136]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TextBox" type="TextureRect" parent="CardContainer/CardPanel/CardArtRoot" unique_id=1999487559]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="DYKFrame" type="TextureRect" parent="CardContainer/CardPanel/CardArtRoot" unique_id=1448722234]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="LogoSeal" type="TextureRect" parent="CardContainer/CardPanel/CardArtRoot" unique_id=514198687]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="CardDetailTab" type="Label" parent="CardContainer/CardPanel/CardArtRoot" unique_id=732148184]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 80.0
+offset_top = 20.0
+offset_right = -76.0
+offset_bottom = -489.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+clip_text = true
+
+[node name="CardTitle" type="Label" parent="CardContainer/CardPanel/CardArtRoot" unique_id=612285372]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 35.0
+offset_top = 285.0
+offset_right = -31.0
+offset_bottom = -184.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+autowrap_mode = 3
+clip_text = true
+
+[node name="CardDescription" type="Label" parent="CardContainer/CardPanel/CardArtRoot" unique_id=1291964616]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 331.0
+offset_right = -20.0
+offset_bottom = -166.0
+grow_horizontal = 2
+grow_vertical = 2
+autowrap_mode = 3
+clip_text = true
+
+[node name="DetailText1" type="Label" parent="CardContainer/CardPanel/CardArtRoot" unique_id=104196449]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 90.0
+offset_top = 370.0
+offset_right = -56.0
+offset_bottom = -124.0
+grow_horizontal = 2
+grow_vertical = 2
+autowrap_mode = 3
+clip_text = true
+
+[node name="DetailText2" type="Label" parent="CardContainer/CardPanel/CardArtRoot" unique_id=1420471111]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 90.0
+offset_top = 425.0
+offset_right = -56.0
+offset_bottom = -69.0
+grow_horizontal = 2
+grow_vertical = 2
+autowrap_mode = 3
+clip_text = true
+
+[node name="DYKBarText" type="Label" parent="CardContainer/CardPanel/CardArtRoot" unique_id=1167203225]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 75.0
+offset_top = 490.0
+offset_right = -61.0
+offset_bottom = -9.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+autowrap_mode = 3
+clip_text = true
+
+[node name="ProgressContainer" type="VBoxContainer" parent="." unique_id=1994616979]
+visible = false
+custom_minimum_size = Vector2(20, 100)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 300.0
+offset_right = 60.0
+offset_bottom = 400.0
+
+[node name="DeckContainer" type="CenterContainer" parent="." unique_id=449726962]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DeckVBox" type="VBoxContainer" parent="DeckContainer" unique_id=1061211802]
+layout_mode = 2
+
+[node name="DeckTitle" type="Label" parent="DeckContainer/DeckVBox" unique_id=524718136]
+layout_mode = 2
+text = "Your collection is ready."
+
+[node name="CardsRow" type="HBoxContainer" parent="DeckContainer/DeckVBox" unique_id=906929530]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="ShareButton" type="Button" parent="DeckContainer/DeckVBox" unique_id=541718467]
+layout_mode = 2
+text = "SHARE DECK"
+
+[node name="ReplayButton" type="Button" parent="DeckContainer/DeckVBox" unique_id=980070847]
+layout_mode = 2
+text = "PLAY AGAIN"

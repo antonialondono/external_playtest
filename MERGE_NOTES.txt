@@ -1,0 +1,24 @@
+Merged from:
+- User main project: Trolley-Troubles-main.zip
+- Peta project: FW-Trolley-Troubles-main_CDM_peta.zip
+
+What was merged:
+1. Kept the user's TelemetryEngine addon and autoload configuration from project.godot.
+2. Added Peta's dynamic two-choice system from Arcweave JSON into main_scene.gd.
+3. Reconnected choice telemetry so each selected dynamic option still calls TelemetryEngine.record_narrative_choice().
+4. Kept the user's Arcweave tag constants and plugin files.
+5. Brought Peta's latest 2026-06-30 Arcweave JSON.
+6. Brought Peta's title menu copy/design and trolley collision adjustment.
+7. Replaced the trolley sprite with Peta's Trolley.png art but kept the lowercase Godot path: res://art/programmer/trolley.png.
+
+Do not replace this project.godot with Peta's project.godot, because Peta's file removes TelemetryEngine from autoload.
+
+First test in Godot:
+1. Open project.godot.
+2. Check Project > Project Settings > Autoload includes ArcweaveManager and TelemetryEngine.
+3. Run the project.
+4. Click a dynamic choice button during a trolley decision.
+5. In the Output panel, confirm you see:
+   - REAL CHOICE MADE
+   - Selected choices
+   - TelemetryEngine recorded event: moral_choice_made

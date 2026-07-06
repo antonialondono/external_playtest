@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://du75mpw4omda0"]
+
+[ext_resource type="Script" uid="uid://bo3rmq5fqju32" path="res://autoloads/arcweave_manager.gd" id="1_qrrax"]
+
+[node name="ArcweaveManager" type="Node" unique_id=2097135613]
+script = ExtResource("1_qrrax")
+arcweave_project_json = "res://resources/arcweave/2026-06-30/cdm-tutorial-trolley-dilemma-2026-06-30.json"

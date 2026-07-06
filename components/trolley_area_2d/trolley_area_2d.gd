@@ -1,0 +1,1 @@
+class_name TrolleyArea2D extends Area2D

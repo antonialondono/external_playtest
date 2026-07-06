@@ -1,0 +1,1 @@
+class_name TrolleyPathFollow extends PathFollow2D

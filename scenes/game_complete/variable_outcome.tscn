@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cuvpdvsuwp6h7"]
+
+[ext_resource type="Script" uid="uid://bcw4bip61dsfq" path="res://scenes/game_complete/variable_outcome.gd" id="1_y1jh5"]
+
+[node name="VariableOutcome" type="HBoxContainer" unique_id=1994520924]
+script = ExtResource("1_y1jh5")
+
+[node name="VariableNameLabel" type="Label" parent="." unique_id=47346075]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "VarName"
+
+[node name="ColonLabel" type="Label" parent="." unique_id=1324039575]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = ":"
+
+[node name="VariableValueLabel" type="Label" parent="." unique_id=324032659]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Value"
