@@ -291,7 +291,7 @@ alignment = 1
 
 [node name="ShareButton" type="Button" parent="DeckContainer/DeckVBox" unique_id=541718467]
 layout_mode = 2
-text = "SHARE DECK"
+text = "SHARE YOUR STORY"
 
 [node name="ReplayButton" type="Button" parent="DeckContainer/DeckVBox" unique_id=980070847]
 layout_mode = 2

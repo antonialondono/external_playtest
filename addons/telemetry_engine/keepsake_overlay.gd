@@ -1195,7 +1195,7 @@ func apply_deck_screen_layout() -> void:
 	cards_row.custom_minimum_size = Vector2(0, MINI_CARD_SIZE.y)
 	deck_button_spacer.custom_minimum_size = Vector2(1, 52)
 	share_button.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
-	share_button.custom_minimum_size = Vector2(220, 42)
+	share_button.custom_minimum_size = Vector2(280, 42)
 	replay_button.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
 	replay_button.custom_minimum_size = Vector2(220, 42)
 
