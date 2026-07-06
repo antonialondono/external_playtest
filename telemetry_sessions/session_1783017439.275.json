@@ -1,0 +1,1574 @@
+{
+	"choice_tag_log": [
+		{
+			"choice_id": "39168944-c974-42b1-b288-2528192f2773",
+			"chosen": "Spare the Smuggler: Let her continue helping people escape.",
+			"chosen_tags": [
+				"Fairness",
+				"Subversion",
+				"Neglect",
+				"Care"
+			],
+			"decision_weight": 1,
+			"is_key_moment": false,
+			"moral_tensions": [
+				{
+					"chosen": "Fairness",
+					"opposed": "Authority"
+				},
+				{
+					"chosen": "Fairness",
+					"opposed": "Duty"
+				},
+				{
+					"chosen": "Fairness",
+					"opposed": "Harm"
+				},
+				{
+					"chosen": "Subversion",
+					"opposed": "Authority"
+				},
+				{
+					"chosen": "Subversion",
+					"opposed": "Duty"
+				},
+				{
+					"chosen": "Subversion",
+					"opposed": "Harm"
+				},
+				{
+					"chosen": "Neglect",
+					"opposed": "Authority"
+				},
+				{
+					"chosen": "Neglect",
+					"opposed": "Duty"
+				},
+				{
+					"chosen": "Neglect",
+					"opposed": "Harm"
+				},
+				{
+					"chosen": "Care",
+					"opposed": "Authority"
+				},
+				{
+					"chosen": "Care",
+					"opposed": "Duty"
+				},
+				{
+					"chosen": "Care",
+					"opposed": "Harm"
+				}
+			],
+			"opposing_tags": [
+				"Authority",
+				"Duty",
+				"Harm"
+			],
+			"target_element_title": "[b]Option B — Spare the Smuggler:[/b] Let her continue helping people escape."
+		},
+		{
+			"choice_id": "37af6b38-2e97-4866-9c07-81a0d007c31d",
+			"chosen": "Follow Procedure: Reject the refugees and protect the city’s limited resources.",
+			"chosen_tags": [
+				"Authority",
+				"Harm",
+				"Duty",
+				"Oppression"
+			],
+			"decision_weight": 1,
+			"is_key_moment": false,
+			"moral_tensions": [
+				{
+					"chosen": "Authority",
+					"opposed": "Care"
+				},
+				{
+					"chosen": "Authority",
+					"opposed": "Fairness"
+				},
+				{
+					"chosen": "Authority",
+					"opposed": "Subversion"
+				},
+				{
+					"chosen": "Harm",
+					"opposed": "Care"
+				},
+				{
+					"chosen": "Harm",
+					"opposed": "Fairness"
+				},
+				{
+					"chosen": "Harm",
+					"opposed": "Subversion"
+				},
+				{
+					"chosen": "Duty",
+					"opposed": "Care"
+				},
+				{
+					"chosen": "Duty",
+					"opposed": "Fairness"
+				},
+				{
+					"chosen": "Duty",
+					"opposed": "Subversion"
+				},
+				{
+					"chosen": "Oppression",
+					"opposed": "Care"
+				},
+				{
+					"chosen": "Oppression",
+					"opposed": "Fairness"
+				},
+				{
+					"chosen": "Oppression",
+					"opposed": "Subversion"
+				}
+			],
+			"opposing_tags": [
+				"Care",
+				"Fairness",
+				"Subversion"
+			],
+			"target_element_title": "[b]Option A — Follow Procedure:[/b] Reject the refugees and protect the city’s limited resources."
+		},
+		{
+			"choice_id": "ef52041b-d492-4a33-ac7d-05c0812d53c7",
+			"chosen": "Report Your Partner: Turn them in before they destabilize the government",
+			"chosen_tags": [
+				"Duty",
+				"Authority",
+				"Loyalty",
+				"Oppression"
+			],
+			"decision_weight": 2,
+			"is_key_moment": true,
+			"moral_tensions": [
+				{
+					"chosen": "Duty",
+					"opposed": "Liberty"
+				},
+				{
+					"chosen": "Duty",
+					"opposed": "Subversion"
+				},
+				{
+					"chosen": "Duty",
+					"opposed": "Fairness"
+				},
+				{
+					"chosen": "Authority",
+					"opposed": "Liberty"
+				},
+				{
+					"chosen": "Authority",
+					"opposed": "Subversion"
+				},
+				{
+					"chosen": "Authority",
+					"opposed": "Fairness"
+				},
+				{
+					"chosen": "Loyalty",
+					"opposed": "Liberty"
+				},
+				{
+					"chosen": "Loyalty",
+					"opposed": "Subversion"
+				},
+				{
+					"chosen": "Loyalty",
+					"opposed": "Fairness"
+				},
+				{
+					"chosen": "Oppression",
+					"opposed": "Liberty"
+				},
+				{
+					"chosen": "Oppression",
+					"opposed": "Subversion"
+				},
+				{
+					"chosen": "Oppression",
+					"opposed": "Fairness"
+				}
+			],
+			"opposing_tags": [
+				"Liberty",
+				"Subversion",
+				"Fairness"
+			],
+			"target_element_title": "[b]Option A — Report Your Partner:[/b] Turn them in before they destabilize the government"
+		},
+		{
+			"choice_id": "e3bf81a6-dadd-4660-a740-e4a233d063cd",
+			"chosen": "Kill the Agent: Follow your orders and eliminate him.",
+			"chosen_tags": [
+				"Duty",
+				"Authority",
+				"Harm"
+			],
+			"decision_weight": 1,
+			"is_key_moment": false,
+			"moral_tensions": [
+				{
+					"chosen": "Duty",
+					"opposed": "Fairness"
+				},
+				{
+					"chosen": "Duty",
+					"opposed": "Care"
+				},
+				{
+					"chosen": "Duty",
+					"opposed": "Neglect"
+				},
+				{
+					"chosen": "Authority",
+					"opposed": "Fairness"
+				},
+				{
+					"chosen": "Authority",
+					"opposed": "Care"
+				},
+				{
+					"chosen": "Authority",
+					"opposed": "Neglect"
+				},
+				{
+					"chosen": "Harm",
+					"opposed": "Fairness"
+				},
+				{
+					"chosen": "Harm",
+					"opposed": "Care"
+				},
+				{
+					"chosen": "Harm",
+					"opposed": "Neglect"
+				}
+			],
+			"opposing_tags": [
+				"Fairness",
+				"Care",
+				"Neglect"
+			],
+			"target_element_title": "[b]Option A — Kill the Agent:[/b] Follow your orders and eliminate him."
+		},
+		{
+			"choice_id": "80653f70-258d-413d-9c81-7638f823ea3d",
+			"chosen": "Bow: Submit to the Supreme AI to preserve the agreement.",
+			"chosen_tags": [
+				"Humility",
+				"Authority",
+				"Loyalty"
+			],
+			"decision_weight": 1,
+			"is_key_moment": true,
+			"moral_tensions": [
+				{
+					"chosen": "Humility",
+					"opposed": "Sanctity"
+				},
+				{
+					"chosen": "Humility",
+					"opposed": "Liberty"
+				},
+				{
+					"chosen": "Humility",
+					"opposed": "Subversion"
+				},
+				{
+					"chosen": "Authority",
+					"opposed": "Sanctity"
+				},
+				{
+					"chosen": "Authority",
+					"opposed": "Liberty"
+				},
+				{
+					"chosen": "Authority",
+					"opposed": "Subversion"
+				},
+				{
+					"chosen": "Loyalty",
+					"opposed": "Sanctity"
+				},
+				{
+					"chosen": "Loyalty",
+					"opposed": "Liberty"
+				},
+				{
+					"chosen": "Loyalty",
+					"opposed": "Subversion"
+				}
+			],
+			"opposing_tags": [
+				"Sanctity",
+				"Liberty",
+				"Subversion"
+			],
+			"target_element_title": "[b]Option A — Bow:[/b] Submit to the Supreme AI to preserve the agreement."
+		},
+		{
+			"choice_id": "87a63e8e-86b7-42ba-8d63-9345e610633b",
+			"chosen": "Control the Weapon: Control it so the leaders can continue to use it to dominate others.",
+			"chosen_tags": [
+				"Oppression",
+				"Duty",
+				"Authority",
+				"Loyalty"
+			],
+			"decision_weight": 1,
+			"is_key_moment": true,
+			"moral_tensions": [
+				{
+					"chosen": "Oppression",
+					"opposed": "Fairness"
+				},
+				{
+					"chosen": "Oppression",
+					"opposed": "Cheating"
+				},
+				{
+					"chosen": "Oppression",
+					"opposed": "Harm"
+				},
+				{
+					"chosen": "Oppression",
+					"opposed": "Subversion"
+				},
+				{
+					"chosen": "Duty",
+					"opposed": "Fairness"
+				},
+				{
+					"chosen": "Duty",
+					"opposed": "Cheating"
+				},
+				{
+					"chosen": "Duty",
+					"opposed": "Harm"
+				},
+				{
+					"chosen": "Duty",
+					"opposed": "Subversion"
+				},
+				{
+					"chosen": "Authority",
+					"opposed": "Fairness"
+				},
+				{
+					"chosen": "Authority",
+					"opposed": "Cheating"
+				},
+				{
+					"chosen": "Authority",
+					"opposed": "Harm"
+				},
+				{
+					"chosen": "Authority",
+					"opposed": "Subversion"
+				},
+				{
+					"chosen": "Loyalty",
+					"opposed": "Fairness"
+				},
+				{
+					"chosen": "Loyalty",
+					"opposed": "Cheating"
+				},
+				{
+					"chosen": "Loyalty",
+					"opposed": "Harm"
+				},
+				{
+					"chosen": "Loyalty",
+					"opposed": "Subversion"
+				}
+			],
+			"opposing_tags": [
+				"Fairness",
+				"Cheating",
+				"Harm",
+				"Subversion"
+			],
+			"target_element_title": "[b]Option A — Control the Weapon:[/b] Control it so the leaders can continue to use it to dominate others."
+		},
+		{
+			"choice_id": "935a85d6-583e-4316-af6f-b571dbd69251",
+			"chosen": "Let Them Take Credit: Allow the governments to take credit so the new order can stabilize.",
+			"chosen_tags": [
+				"Humility",
+				"Loyalty",
+				"Authority"
+			],
+			"decision_weight": 1,
+			"is_key_moment": false,
+			"moral_tensions": [
+				{
+					"chosen": "Humility",
+					"opposed": "Fairness"
+				},
+				{
+					"chosen": "Humility",
+					"opposed": "Subversion"
+				},
+				{
+					"chosen": "Humility",
+					"opposed": "Cheating"
+				},
+				{
+					"chosen": "Humility",
+					"opposed": "Pride"
+				},
+				{
+					"chosen": "Loyalty",
+					"opposed": "Fairness"
+				},
+				{
+					"chosen": "Loyalty",
+					"opposed": "Subversion"
+				},
+				{
+					"chosen": "Loyalty",
+					"opposed": "Cheating"
+				},
+				{
+					"chosen": "Loyalty",
+					"opposed": "Pride"
+				},
+				{
+					"chosen": "Authority",
+					"opposed": "Fairness"
+				},
+				{
+					"chosen": "Authority",
+					"opposed": "Subversion"
+				},
+				{
+					"chosen": "Authority",
+					"opposed": "Cheating"
+				},
+				{
+					"chosen": "Authority",
+					"opposed": "Pride"
+				}
+			],
+			"opposing_tags": [
+				"Fairness",
+				"Subversion",
+				"Cheating",
+				"Pride"
+			],
+			"target_element_title": "[b]Option A — Let Them Take Credit:[/b] Allow the governments to take credit so the new order can stabilize."
+		}
+	],
+	"dominance_matrix": {
+		"Authority": {
+			"Care": 2,
+			"Cheating": 2,
+			"Fairness": 6,
+			"Harm": 1,
+			"Liberty": 3,
+			"Neglect": 1,
+			"Pride": 1,
+			"Sanctity": 1,
+			"Subversion": 6
+		},
+		"Care": {
+			"Authority": 1,
+			"Duty": 1,
+			"Harm": 1
+		},
+		"Duty": {
+			"Care": 2,
+			"Cheating": 1,
+			"Fairness": 5,
+			"Harm": 1,
+			"Liberty": 2,
+			"Neglect": 1,
+			"Subversion": 4
+		},
+		"Fairness": {
+			"Authority": 1,
+			"Duty": 1,
+			"Harm": 1
+		},
+		"Harm": {
+			"Care": 2,
+			"Fairness": 2,
+			"Neglect": 1,
+			"Subversion": 1
+		},
+		"Humility": {
+			"Cheating": 1,
+			"Fairness": 1,
+			"Liberty": 1,
+			"Pride": 1,
+			"Sanctity": 1,
+			"Subversion": 2
+		},
+		"Loyalty": {
+			"Cheating": 2,
+			"Fairness": 4,
+			"Harm": 1,
+			"Liberty": 3,
+			"Pride": 1,
+			"Sanctity": 1,
+			"Subversion": 5
+		},
+		"Neglect": {
+			"Authority": 1,
+			"Duty": 1,
+			"Harm": 1
+		},
+		"Oppression": {
+			"Care": 1,
+			"Cheating": 1,
+			"Fairness": 4,
+			"Harm": 1,
+			"Liberty": 2,
+			"Subversion": 4
+		},
+		"Subversion": {
+			"Authority": 1,
+			"Duty": 1,
+			"Harm": 1
+		}
+	},
+	"duration_seconds": 80,
+	"ended_at": 1783017519,
+	"events": [
+		{
+			"data": {
+				"from_element_id": "",
+				"to_element_id": "1a6d32cb-5308-4e1b-b926-f0343bcf4dee",
+				"to_element_title": "START"
+			},
+			"event_name": "element_changed",
+			"timestamp": "2026-07-02T18:37:21",
+			"unix_timestamp": 1783017441.814
+		},
+		{
+			"data": {
+				"element_id": "1a6d32cb-5308-4e1b-b926-f0343bcf4dee",
+				"value": 0,
+				"variable": "Empathy"
+			},
+			"event_name": "variable_detected",
+			"timestamp": "2026-07-02T18:37:21",
+			"unix_timestamp": 1783017441.814
+		},
+		{
+			"data": {
+				"element_id": "1a6d32cb-5308-4e1b-b926-f0343bcf4dee",
+				"value": 0,
+				"variable": "Principle"
+			},
+			"event_name": "variable_detected",
+			"timestamp": "2026-07-02T18:37:21",
+			"unix_timestamp": 1783017441.814
+		},
+		{
+			"data": {
+				"element_id": "1a6d32cb-5308-4e1b-b926-f0343bcf4dee",
+				"value": 0,
+				"variable": "Guilt"
+			},
+			"event_name": "variable_detected",
+			"timestamp": "2026-07-02T18:37:21",
+			"unix_timestamp": 1783017441.814
+		},
+		{
+			"data": {
+				"element_id": "1a6d32cb-5308-4e1b-b926-f0343bcf4dee",
+				"value": 0,
+				"variable": "Heroism"
+			},
+			"event_name": "variable_detected",
+			"timestamp": "2026-07-02T18:37:21",
+			"unix_timestamp": 1783017441.814
+		},
+		{
+			"data": {
+				"from_element_id": "1a6d32cb-5308-4e1b-b926-f0343bcf4dee",
+				"to_element_id": "18a5b0f6-5b25-4613-8a96-0cbf8d633954",
+				"to_element_title": "Setup"
+			},
+			"event_name": "element_changed",
+			"timestamp": "2026-07-02T18:37:22",
+			"unix_timestamp": 1783017442.875
+		},
+		{
+			"data": {
+				"from_element_id": "18a5b0f6-5b25-4613-8a96-0cbf8d633954",
+				"to_element_id": "276c9428-9e7b-407e-85b7-66b929ca7d01",
+				"to_element_title": "The Smuggler"
+			},
+			"event_name": "element_changed",
+			"timestamp": "2026-07-02T18:37:23",
+			"unix_timestamp": 1783017443.579
+		},
+		{
+			"data": {
+				"choice_id": "39168944-c974-42b1-b288-2528192f2773",
+				"chosen": "Spare the Smuggler: Let her continue helping people escape.",
+				"chosen_tags": [
+					"Fairness",
+					"Subversion",
+					"Neglect",
+					"Care"
+				],
+				"decision_weight": 1,
+				"is_key_moment": false,
+				"moral_tensions": [
+					{
+						"chosen": "Fairness",
+						"opposed": "Authority"
+					},
+					{
+						"chosen": "Fairness",
+						"opposed": "Duty"
+					},
+					{
+						"chosen": "Fairness",
+						"opposed": "Harm"
+					},
+					{
+						"chosen": "Subversion",
+						"opposed": "Authority"
+					},
+					{
+						"chosen": "Subversion",
+						"opposed": "Duty"
+					},
+					{
+						"chosen": "Subversion",
+						"opposed": "Harm"
+					},
+					{
+						"chosen": "Neglect",
+						"opposed": "Authority"
+					},
+					{
+						"chosen": "Neglect",
+						"opposed": "Duty"
+					},
+					{
+						"chosen": "Neglect",
+						"opposed": "Harm"
+					},
+					{
+						"chosen": "Care",
+						"opposed": "Authority"
+					},
+					{
+						"chosen": "Care",
+						"opposed": "Duty"
+					},
+					{
+						"chosen": "Care",
+						"opposed": "Harm"
+					}
+				],
+				"opposing_tags": [
+					"Authority",
+					"Duty",
+					"Harm"
+				],
+				"raw_label": "Spare the Smuggler: Let her continue helping people escape.",
+				"shared_tags": [],
+				"source_components": [
+					"Start_Trolley"
+				],
+				"source_element_id": "276c9428-9e7b-407e-85b7-66b929ca7d01",
+				"tags": [
+					"Fairness",
+					"Subversion",
+					"Neglect",
+					"Care"
+				],
+				"target_components": [
+					"Fairness",
+					"Scenario_Complete",
+					"Subversion",
+					"Neglect",
+					"Care"
+				],
+				"target_element_id": "692e5e5d-19ed-41d5-90c9-230be15914ff",
+				"target_element_title": "[b]Option B — Spare the Smuggler:[/b] Let her continue helping people escape.",
+				"variables_after_choice": {
+					"Empathy": 0,
+					"Guilt": 0,
+					"Heroism": 0,
+					"Principle": 0
+				}
+			},
+			"event_name": "moral_choice_made",
+			"timestamp": "2026-07-02T18:37:33",
+			"unix_timestamp": 1783017453.855
+		},
+		{
+			"data": {
+				"from_element_id": "276c9428-9e7b-407e-85b7-66b929ca7d01",
+				"to_element_id": "692e5e5d-19ed-41d5-90c9-230be15914ff",
+				"to_element_title": "[b]Option B — Spare the Smuggler:[/b] Let her continue helping people escape."
+			},
+			"event_name": "element_changed",
+			"timestamp": "2026-07-02T18:37:33",
+			"unix_timestamp": 1783017453.855
+		},
+		{
+			"data": {
+				"from_element_id": "692e5e5d-19ed-41d5-90c9-230be15914ff",
+				"to_element_id": "c5bf2197-5393-439c-8b07-80ca8bcba83c",
+				"to_element_title": "START"
+			},
+			"event_name": "element_changed",
+			"timestamp": "2026-07-02T18:37:34",
+			"unix_timestamp": 1783017454.773
+		},
+		{
+			"data": {
+				"from_element_id": "c5bf2197-5393-439c-8b07-80ca8bcba83c",
+				"to_element_id": "637c302b-4689-4b9c-bcfa-b7e1980eea42",
+				"to_element_title": "[b]The Container[/b]"
+			},
+			"event_name": "element_changed",
+			"timestamp": "2026-07-02T18:37:35",
+			"unix_timestamp": 1783017455.544
+		},
+		{
+			"data": {
+				"choice_id": "37af6b38-2e97-4866-9c07-81a0d007c31d",
+				"chosen": "Follow Procedure: Reject the refugees and protect the city’s limited resources.",
+				"chosen_tags": [
+					"Authority",
+					"Harm",
+					"Duty",
+					"Oppression"
+				],
+				"decision_weight": 1,
+				"is_key_moment": false,
+				"moral_tensions": [
+					{
+						"chosen": "Authority",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Harm",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Harm",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Harm",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Oppression",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Oppression",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Oppression",
+						"opposed": "Subversion"
+					}
+				],
+				"opposing_tags": [
+					"Care",
+					"Fairness",
+					"Subversion"
+				],
+				"raw_label": "Follow Procedure: Reject the refugees and protect the city’s limited resources.",
+				"shared_tags": [],
+				"source_components": [
+					"Start_Trolley"
+				],
+				"source_element_id": "637c302b-4689-4b9c-bcfa-b7e1980eea42",
+				"tags": [
+					"Authority",
+					"Harm",
+					"Duty",
+					"Oppression"
+				],
+				"target_components": [
+					"Authority",
+					"Harm",
+					"Duty",
+					"Oppression",
+					"Scenario_Complete"
+				],
+				"target_element_id": "754f7119-5db7-4746-abed-36ac8061604c",
+				"target_element_title": "[b]Option A — Follow Procedure:[/b] Reject the refugees and protect the city’s limited resources.",
+				"variables_after_choice": {
+					"Empathy": 0,
+					"Guilt": 0,
+					"Heroism": 0,
+					"Principle": 0
+				}
+			},
+			"event_name": "moral_choice_made",
+			"timestamp": "2026-07-02T18:37:44",
+			"unix_timestamp": 1783017464.75
+		},
+		{
+			"data": {
+				"from_element_id": "637c302b-4689-4b9c-bcfa-b7e1980eea42",
+				"to_element_id": "754f7119-5db7-4746-abed-36ac8061604c",
+				"to_element_title": "[b]Option A — Follow Procedure:[/b] Reject the refugees and protect the city’s limited resources."
+			},
+			"event_name": "element_changed",
+			"timestamp": "2026-07-02T18:37:44",
+			"unix_timestamp": 1783017464.75
+		},
+		{
+			"data": {
+				"from_element_id": "754f7119-5db7-4746-abed-36ac8061604c",
+				"to_element_id": "c536119b-a891-4b79-8727-be1397c2f596",
+				"to_element_title": "START"
+			},
+			"event_name": "element_changed",
+			"timestamp": "2026-07-02T18:37:45",
+			"unix_timestamp": 1783017465.647
+		},
+		{
+			"data": {
+				"from_element_id": "c536119b-a891-4b79-8727-be1397c2f596",
+				"to_element_id": "af289c08-0861-4bd1-968a-4050d59909f6",
+				"to_element_title": "[b]The Partner’s Discovery[/b]"
+			},
+			"event_name": "element_changed",
+			"timestamp": "2026-07-02T18:37:46",
+			"unix_timestamp": 1783017466.148
+		},
+		{
+			"data": {
+				"choice_id": "ef52041b-d492-4a33-ac7d-05c0812d53c7",
+				"chosen": "Report Your Partner: Turn them in before they destabilize the government",
+				"chosen_tags": [
+					"Duty",
+					"Authority",
+					"Loyalty",
+					"Oppression"
+				],
+				"decision_weight": 2,
+				"is_key_moment": true,
+				"moral_tensions": [
+					{
+						"chosen": "Duty",
+						"opposed": "Liberty"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Liberty"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Liberty"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Oppression",
+						"opposed": "Liberty"
+					},
+					{
+						"chosen": "Oppression",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Oppression",
+						"opposed": "Fairness"
+					}
+				],
+				"opposing_tags": [
+					"Liberty",
+					"Subversion",
+					"Fairness"
+				],
+				"raw_label": "Report Your Partner: Turn them in before they destabilize the government",
+				"shared_tags": [],
+				"source_components": [
+					"Key Moment",
+					"Start_Trolley",
+					"Weight_2"
+				],
+				"source_element_id": "af289c08-0861-4bd1-968a-4050d59909f6",
+				"tags": [
+					"Duty",
+					"Authority",
+					"Loyalty",
+					"Oppression"
+				],
+				"target_components": [
+					"Duty",
+					"Authority",
+					"Scenario_Complete",
+					"Loyalty",
+					"Oppression"
+				],
+				"target_element_id": "1e684c74-9052-4aa8-b3c5-fabdc8241451",
+				"target_element_title": "[b]Option A — Report Your Partner:[/b] Turn them in before they destabilize the government",
+				"variables_after_choice": {
+					"Empathy": 0,
+					"Guilt": 0,
+					"Heroism": 0,
+					"Principle": 0
+				}
+			},
+			"event_name": "moral_choice_made",
+			"timestamp": "2026-07-02T18:37:55",
+			"unix_timestamp": 1783017475.367
+		},
+		{
+			"data": {
+				"from_element_id": "af289c08-0861-4bd1-968a-4050d59909f6",
+				"to_element_id": "1e684c74-9052-4aa8-b3c5-fabdc8241451",
+				"to_element_title": "[b]Option A — Report Your Partner:[/b] Turn them in before they destabilize the government"
+			},
+			"event_name": "element_changed",
+			"timestamp": "2026-07-02T18:37:55",
+			"unix_timestamp": 1783017475.368
+		},
+		{
+			"data": {
+				"from_element_id": "1e684c74-9052-4aa8-b3c5-fabdc8241451",
+				"to_element_id": "3433f618-57f4-44ed-891d-bf585f40812a",
+				"to_element_title": "START"
+			},
+			"event_name": "element_changed",
+			"timestamp": "2026-07-02T18:37:56",
+			"unix_timestamp": 1783017476.25
+		},
+		{
+			"data": {
+				"from_element_id": "3433f618-57f4-44ed-891d-bf585f40812a",
+				"to_element_id": "f7578fbb-7145-4751-ae7f-9a6bab452abd",
+				"to_element_title": "The Reformist Agent"
+			},
+			"event_name": "element_changed",
+			"timestamp": "2026-07-02T18:37:56",
+			"unix_timestamp": 1783017476.873
+		},
+		{
+			"data": {
+				"choice_id": "e3bf81a6-dadd-4660-a740-e4a233d063cd",
+				"chosen": "Kill the Agent: Follow your orders and eliminate him.",
+				"chosen_tags": [
+					"Duty",
+					"Authority",
+					"Harm"
+				],
+				"decision_weight": 1,
+				"is_key_moment": false,
+				"moral_tensions": [
+					{
+						"chosen": "Duty",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Neglect"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Neglect"
+					},
+					{
+						"chosen": "Harm",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Harm",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Harm",
+						"opposed": "Neglect"
+					}
+				],
+				"opposing_tags": [
+					"Fairness",
+					"Care",
+					"Neglect"
+				],
+				"raw_label": "Kill the Agent: Follow your orders and eliminate him.",
+				"shared_tags": [],
+				"source_components": [
+					"Start_Trolley"
+				],
+				"source_element_id": "f7578fbb-7145-4751-ae7f-9a6bab452abd",
+				"tags": [
+					"Duty",
+					"Authority",
+					"Harm"
+				],
+				"target_components": [
+					"Duty",
+					"Authority",
+					"Harm",
+					"Scenario_Complete"
+				],
+				"target_element_id": "d865004f-0f23-4fec-9ffa-36ece37bd6b0",
+				"target_element_title": "[b]Option A — Kill the Agent:[/b] Follow your orders and eliminate him.",
+				"variables_after_choice": {
+					"Empathy": 0,
+					"Guilt": 0,
+					"Heroism": 0,
+					"Principle": 0
+				}
+			},
+			"event_name": "moral_choice_made",
+			"timestamp": "2026-07-02T18:38:06",
+			"unix_timestamp": 1783017486.082
+		},
+		{
+			"data": {
+				"from_element_id": "f7578fbb-7145-4751-ae7f-9a6bab452abd",
+				"to_element_id": "d865004f-0f23-4fec-9ffa-36ece37bd6b0",
+				"to_element_title": "[b]Option A — Kill the Agent:[/b] Follow your orders and eliminate him."
+			},
+			"event_name": "element_changed",
+			"timestamp": "2026-07-02T18:38:06",
+			"unix_timestamp": 1783017486.082
+		},
+		{
+			"data": {
+				"from_element_id": "d865004f-0f23-4fec-9ffa-36ece37bd6b0",
+				"to_element_id": "e8b5bf84-f79d-4ac9-8208-eb6e91dabe99",
+				"to_element_title": "START"
+			},
+			"event_name": "element_changed",
+			"timestamp": "2026-07-02T18:38:07",
+			"unix_timestamp": 1783017487.237
+		},
+		{
+			"data": {
+				"from_element_id": "e8b5bf84-f79d-4ac9-8208-eb6e91dabe99",
+				"to_element_id": "90417d79-25da-4abc-b84b-9d1e7f2b0cb0",
+				"to_element_title": "The Animal High Leader"
+			},
+			"event_name": "element_changed",
+			"timestamp": "2026-07-02T18:38:07",
+			"unix_timestamp": 1783017487.759
+		},
+		{
+			"data": {
+				"choice_id": "80653f70-258d-413d-9c81-7638f823ea3d",
+				"chosen": "Bow: Submit to the Supreme AI to preserve the agreement.",
+				"chosen_tags": [
+					"Humility",
+					"Authority",
+					"Loyalty"
+				],
+				"decision_weight": 1,
+				"is_key_moment": true,
+				"moral_tensions": [
+					{
+						"chosen": "Humility",
+						"opposed": "Sanctity"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Liberty"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Sanctity"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Liberty"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Sanctity"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Liberty"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Subversion"
+					}
+				],
+				"opposing_tags": [
+					"Sanctity",
+					"Liberty",
+					"Subversion"
+				],
+				"raw_label": "Bow: Submit to the Supreme AI to preserve the agreement.",
+				"shared_tags": [],
+				"source_components": [
+					"Start_Trolley",
+					"Key Moment"
+				],
+				"source_element_id": "90417d79-25da-4abc-b84b-9d1e7f2b0cb0",
+				"tags": [
+					"Humility",
+					"Authority",
+					"Loyalty"
+				],
+				"target_components": [
+					"Humility",
+					"Authority",
+					"Loyalty",
+					"Scenario_Complete"
+				],
+				"target_element_id": "c65ee40c-a65d-4454-84bd-03a230dbfc3c",
+				"target_element_title": "[b]Option A — Bow:[/b] Submit to the Supreme AI to preserve the agreement.",
+				"variables_after_choice": {
+					"Empathy": 0,
+					"Guilt": 0,
+					"Heroism": 0,
+					"Principle": 0
+				}
+			},
+			"event_name": "moral_choice_made",
+			"timestamp": "2026-07-02T18:38:16",
+			"unix_timestamp": 1783017496.964
+		},
+		{
+			"data": {
+				"from_element_id": "90417d79-25da-4abc-b84b-9d1e7f2b0cb0",
+				"to_element_id": "c65ee40c-a65d-4454-84bd-03a230dbfc3c",
+				"to_element_title": "[b]Option A — Bow:[/b] Submit to the Supreme AI to preserve the agreement."
+			},
+			"event_name": "element_changed",
+			"timestamp": "2026-07-02T18:38:16",
+			"unix_timestamp": 1783017496.965
+		},
+		{
+			"data": {
+				"from_element_id": "c65ee40c-a65d-4454-84bd-03a230dbfc3c",
+				"to_element_id": "8254b143-f88f-4108-9f89-52454c795bd1",
+				"to_element_title": "START"
+			},
+			"event_name": "element_changed",
+			"timestamp": "2026-07-02T18:38:18",
+			"unix_timestamp": 1783017498.0
+		},
+		{
+			"data": {
+				"from_element_id": "8254b143-f88f-4108-9f89-52454c795bd1",
+				"to_element_id": "c19f57e1-6e41-4d5a-8604-6ac71c525e10",
+				"to_element_title": "The Superweapon"
+			},
+			"event_name": "element_changed",
+			"timestamp": "2026-07-02T18:38:18",
+			"unix_timestamp": 1783017498.53
+		},
+		{
+			"data": {
+				"choice_id": "87a63e8e-86b7-42ba-8d63-9345e610633b",
+				"chosen": "Control the Weapon: Control it so the leaders can continue to use it to dominate others.",
+				"chosen_tags": [
+					"Oppression",
+					"Duty",
+					"Authority",
+					"Loyalty"
+				],
+				"decision_weight": 1,
+				"is_key_moment": true,
+				"moral_tensions": [
+					{
+						"chosen": "Oppression",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Oppression",
+						"opposed": "Cheating"
+					},
+					{
+						"chosen": "Oppression",
+						"opposed": "Harm"
+					},
+					{
+						"chosen": "Oppression",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Cheating"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Harm"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Cheating"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Harm"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Cheating"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Harm"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Subversion"
+					}
+				],
+				"opposing_tags": [
+					"Fairness",
+					"Cheating",
+					"Harm",
+					"Subversion"
+				],
+				"raw_label": "Control the Weapon: Control it so the leaders can continue to use it to dominate others.",
+				"shared_tags": [],
+				"source_components": [
+					"Start_Trolley",
+					"Key Moment"
+				],
+				"source_element_id": "c19f57e1-6e41-4d5a-8604-6ac71c525e10",
+				"tags": [
+					"Oppression",
+					"Duty",
+					"Authority",
+					"Loyalty"
+				],
+				"target_components": [
+					"Oppression",
+					"Duty",
+					"Authority",
+					"Loyalty",
+					"Scenario_Complete"
+				],
+				"target_element_id": "69212469-8ae0-4086-b7da-28211cee3d4f",
+				"target_element_title": "[b]Option A — Control the Weapon:[/b] Control it so the leaders can continue to use it to dominate others.",
+				"variables_after_choice": {
+					"Empathy": 0,
+					"Guilt": 0,
+					"Heroism": 0,
+					"Principle": 0
+				}
+			},
+			"event_name": "moral_choice_made",
+			"timestamp": "2026-07-02T18:38:27",
+			"unix_timestamp": 1783017507.749
+		},
+		{
+			"data": {
+				"from_element_id": "c19f57e1-6e41-4d5a-8604-6ac71c525e10",
+				"to_element_id": "69212469-8ae0-4086-b7da-28211cee3d4f",
+				"to_element_title": "[b]Option A — Control the Weapon:[/b] Control it so the leaders can continue to use it to dominate others."
+			},
+			"event_name": "element_changed",
+			"timestamp": "2026-07-02T18:38:27",
+			"unix_timestamp": 1783017507.749
+		},
+		{
+			"data": {
+				"from_element_id": "69212469-8ae0-4086-b7da-28211cee3d4f",
+				"to_element_id": "44db2d6f-0211-46cc-bd64-f0954759f2a4",
+				"to_element_title": "START"
+			},
+			"event_name": "element_changed",
+			"timestamp": "2026-07-02T18:38:28",
+			"unix_timestamp": 1783017508.929
+		},
+		{
+			"data": {
+				"from_element_id": "44db2d6f-0211-46cc-bd64-f0954759f2a4",
+				"to_element_id": "5c28a753-7cc2-483d-aadf-b30f90e55784",
+				"to_element_title": "The Government Aftermath"
+			},
+			"event_name": "element_changed",
+			"timestamp": "2026-07-02T18:38:29",
+			"unix_timestamp": 1783017509.458
+		},
+		{
+			"data": {
+				"choice_id": "935a85d6-583e-4316-af6f-b571dbd69251",
+				"chosen": "Let Them Take Credit: Allow the governments to take credit so the new order can stabilize.",
+				"chosen_tags": [
+					"Humility",
+					"Loyalty",
+					"Authority"
+				],
+				"decision_weight": 1,
+				"is_key_moment": false,
+				"moral_tensions": [
+					{
+						"chosen": "Humility",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Cheating"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Pride"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Cheating"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Pride"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Cheating"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Pride"
+					}
+				],
+				"opposing_tags": [
+					"Fairness",
+					"Subversion",
+					"Cheating",
+					"Pride"
+				],
+				"raw_label": "Let Them Take Credit: Allow the governments to take credit so the new order can stabilize.",
+				"shared_tags": [],
+				"source_components": [
+					"Start_Trolley"
+				],
+				"source_element_id": "5c28a753-7cc2-483d-aadf-b30f90e55784",
+				"tags": [
+					"Humility",
+					"Loyalty",
+					"Authority"
+				],
+				"target_components": [
+					"Humility",
+					"Loyalty",
+					"Authority",
+					"Scenario_Complete"
+				],
+				"target_element_id": "8c3dc465-74fb-425f-b896-67030546ee93",
+				"target_element_title": "[b]Option A — Let Them Take Credit:[/b] Allow the governments to take credit so the new order can stabilize.",
+				"variables_after_choice": {
+					"Empathy": 0,
+					"Guilt": 0,
+					"Heroism": 0,
+					"Principle": 0
+				}
+			},
+			"event_name": "moral_choice_made",
+			"timestamp": "2026-07-02T18:38:38",
+			"unix_timestamp": 1783017518.672
+		},
+		{
+			"data": {
+				"from_element_id": "5c28a753-7cc2-483d-aadf-b30f90e55784",
+				"to_element_id": "8c3dc465-74fb-425f-b896-67030546ee93",
+				"to_element_title": "[b]Option A — Let Them Take Credit:[/b] Allow the governments to take credit so the new order can stabilize."
+			},
+			"event_name": "element_changed",
+			"timestamp": "2026-07-02T18:38:38",
+			"unix_timestamp": 1783017518.672
+		},
+		{
+			"data": {
+				"duration_seconds": 80,
+				"ended_at": 1783017519,
+				"final_variables": {
+					"Empathy": 0,
+					"Guilt": 0,
+					"Heroism": 0,
+					"Principle": 0
+				},
+				"started_at": 1783017439
+			},
+			"event_name": "session_summary",
+			"timestamp": "2026-07-02T18:38:39",
+			"unix_timestamp": 1783017519.748
+		}
+	],
+	"final_variables": {
+		"Empathy": 0,
+		"Guilt": 0,
+		"Heroism": 0,
+		"Principle": 0
+	},
+	"game_description": "",
+	"game_id": "local_1783017439.275",
+	"game_title": "Trolley Troubles",
+	"important_note": "This is local single-session gameplay telemetry collected inside Godot. Interpret it as narrative reflection, not diagnosis.",
+	"session_id": "1783017439.275",
+	"started_at": 1783017439,
+	"tag_counts": {
+		"Authority": 6,
+		"Care": 1,
+		"Duty": 4,
+		"Fairness": 1,
+		"Harm": 2,
+		"Humility": 2,
+		"Loyalty": 4,
+		"Neglect": 1,
+		"Oppression": 3,
+		"Subversion": 1
+	},
+	"tag_summary": {
+		"all_tag_mentions": {
+			"Authority": 7,
+			"Care": 3,
+			"Cheating": 2,
+			"Duty": 5,
+			"Fairness": 6,
+			"Harm": 4,
+			"Humility": 2,
+			"Liberty": 2,
+			"Loyalty": 4,
+			"Neglect": 2,
+			"Oppression": 3,
+			"Pride": 1,
+			"Sanctity": 1,
+			"Subversion": 6
+		},
+		"chosen_tag_counts": {
+			"Authority": 6,
+			"Care": 1,
+			"Duty": 4,
+			"Fairness": 1,
+			"Harm": 2,
+			"Humility": 2,
+			"Loyalty": 4,
+			"Neglect": 1,
+			"Oppression": 3,
+			"Subversion": 1
+		},
+		"opposed_tag_counts": {
+			"Authority": 1,
+			"Care": 2,
+			"Cheating": 2,
+			"Duty": 1,
+			"Fairness": 5,
+			"Harm": 2,
+			"Liberty": 2,
+			"Neglect": 1,
+			"Pride": 1,
+			"Sanctity": 1,
+			"Subversion": 5
+		}
+	},
+	"total_choices": 7
+}

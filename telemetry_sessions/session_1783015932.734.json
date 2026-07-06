@@ -1,0 +1,334 @@
+{
+	"choice_tag_log": [
+		{
+			"choice_id": "39168944-c974-42b1-b288-2528192f2773",
+			"chosen": "Spare the Smuggler: Let her continue helping people escape.",
+			"chosen_tags": [
+				"Fairness",
+				"Subversion",
+				"Neglect",
+				"Care"
+			],
+			"decision_weight": 1,
+			"is_key_moment": false,
+			"moral_tensions": [
+				{
+					"chosen": "Fairness",
+					"opposed": "Authority"
+				},
+				{
+					"chosen": "Fairness",
+					"opposed": "Duty"
+				},
+				{
+					"chosen": "Fairness",
+					"opposed": "Harm"
+				},
+				{
+					"chosen": "Subversion",
+					"opposed": "Authority"
+				},
+				{
+					"chosen": "Subversion",
+					"opposed": "Duty"
+				},
+				{
+					"chosen": "Subversion",
+					"opposed": "Harm"
+				},
+				{
+					"chosen": "Neglect",
+					"opposed": "Authority"
+				},
+				{
+					"chosen": "Neglect",
+					"opposed": "Duty"
+				},
+				{
+					"chosen": "Neglect",
+					"opposed": "Harm"
+				},
+				{
+					"chosen": "Care",
+					"opposed": "Authority"
+				},
+				{
+					"chosen": "Care",
+					"opposed": "Duty"
+				},
+				{
+					"chosen": "Care",
+					"opposed": "Harm"
+				}
+			],
+			"opposing_tags": [
+				"Authority",
+				"Duty",
+				"Harm"
+			],
+			"target_element_title": "[b]Option B — Spare the Smuggler:[/b] Let her continue helping people escape."
+		}
+	],
+	"dominance_matrix": {
+		"Care": {
+			"Authority": 1,
+			"Duty": 1,
+			"Harm": 1
+		},
+		"Fairness": {
+			"Authority": 1,
+			"Duty": 1,
+			"Harm": 1
+		},
+		"Neglect": {
+			"Authority": 1,
+			"Duty": 1,
+			"Harm": 1
+		},
+		"Subversion": {
+			"Authority": 1,
+			"Duty": 1,
+			"Harm": 1
+		}
+	},
+	"duration_seconds": 19,
+	"ended_at": 1783015951,
+	"events": [
+		{
+			"data": {
+				"from_element_id": "",
+				"to_element_id": "1a6d32cb-5308-4e1b-b926-f0343bcf4dee",
+				"to_element_title": "START"
+			},
+			"event_name": "element_changed",
+			"timestamp": "2026-07-02T18:12:14",
+			"unix_timestamp": 1783015934.26
+		},
+		{
+			"data": {
+				"element_id": "1a6d32cb-5308-4e1b-b926-f0343bcf4dee",
+				"value": 0,
+				"variable": "Empathy"
+			},
+			"event_name": "variable_detected",
+			"timestamp": "2026-07-02T18:12:14",
+			"unix_timestamp": 1783015934.26
+		},
+		{
+			"data": {
+				"element_id": "1a6d32cb-5308-4e1b-b926-f0343bcf4dee",
+				"value": 0,
+				"variable": "Principle"
+			},
+			"event_name": "variable_detected",
+			"timestamp": "2026-07-02T18:12:14",
+			"unix_timestamp": 1783015934.26
+		},
+		{
+			"data": {
+				"element_id": "1a6d32cb-5308-4e1b-b926-f0343bcf4dee",
+				"value": 0,
+				"variable": "Guilt"
+			},
+			"event_name": "variable_detected",
+			"timestamp": "2026-07-02T18:12:14",
+			"unix_timestamp": 1783015934.26
+		},
+		{
+			"data": {
+				"element_id": "1a6d32cb-5308-4e1b-b926-f0343bcf4dee",
+				"value": 0,
+				"variable": "Heroism"
+			},
+			"event_name": "variable_detected",
+			"timestamp": "2026-07-02T18:12:14",
+			"unix_timestamp": 1783015934.26
+		},
+		{
+			"data": {
+				"from_element_id": "1a6d32cb-5308-4e1b-b926-f0343bcf4dee",
+				"to_element_id": "18a5b0f6-5b25-4613-8a96-0cbf8d633954",
+				"to_element_title": "Setup"
+			},
+			"event_name": "element_changed",
+			"timestamp": "2026-07-02T18:12:16",
+			"unix_timestamp": 1783015936.227
+		},
+		{
+			"data": {
+				"from_element_id": "18a5b0f6-5b25-4613-8a96-0cbf8d633954",
+				"to_element_id": "276c9428-9e7b-407e-85b7-66b929ca7d01",
+				"to_element_title": "The Smuggler"
+			},
+			"event_name": "element_changed",
+			"timestamp": "2026-07-02T18:12:16",
+			"unix_timestamp": 1783015936.763
+		},
+		{
+			"data": {
+				"choice_id": "39168944-c974-42b1-b288-2528192f2773",
+				"chosen": "Spare the Smuggler: Let her continue helping people escape.",
+				"chosen_tags": [
+					"Fairness",
+					"Subversion",
+					"Neglect",
+					"Care"
+				],
+				"decision_weight": 1,
+				"is_key_moment": false,
+				"moral_tensions": [
+					{
+						"chosen": "Fairness",
+						"opposed": "Authority"
+					},
+					{
+						"chosen": "Fairness",
+						"opposed": "Duty"
+					},
+					{
+						"chosen": "Fairness",
+						"opposed": "Harm"
+					},
+					{
+						"chosen": "Subversion",
+						"opposed": "Authority"
+					},
+					{
+						"chosen": "Subversion",
+						"opposed": "Duty"
+					},
+					{
+						"chosen": "Subversion",
+						"opposed": "Harm"
+					},
+					{
+						"chosen": "Neglect",
+						"opposed": "Authority"
+					},
+					{
+						"chosen": "Neglect",
+						"opposed": "Duty"
+					},
+					{
+						"chosen": "Neglect",
+						"opposed": "Harm"
+					},
+					{
+						"chosen": "Care",
+						"opposed": "Authority"
+					},
+					{
+						"chosen": "Care",
+						"opposed": "Duty"
+					},
+					{
+						"chosen": "Care",
+						"opposed": "Harm"
+					}
+				],
+				"opposing_tags": [
+					"Authority",
+					"Duty",
+					"Harm"
+				],
+				"raw_label": "Spare the Smuggler: Let her continue helping people escape.",
+				"shared_tags": [],
+				"source_components": [
+					"Start_Trolley"
+				],
+				"source_element_id": "276c9428-9e7b-407e-85b7-66b929ca7d01",
+				"tags": [
+					"Fairness",
+					"Subversion",
+					"Neglect",
+					"Care"
+				],
+				"target_components": [
+					"Fairness",
+					"Scenario_Complete",
+					"Subversion",
+					"Neglect",
+					"Care"
+				],
+				"target_element_id": "692e5e5d-19ed-41d5-90c9-230be15914ff",
+				"target_element_title": "[b]Option B — Spare the Smuggler:[/b] Let her continue helping people escape.",
+				"variables_after_choice": {
+					"Empathy": 0,
+					"Guilt": 0,
+					"Heroism": 0,
+					"Principle": 0
+				}
+			},
+			"event_name": "moral_choice_made",
+			"timestamp": "2026-07-02T18:12:27",
+			"unix_timestamp": 1783015947.545
+		},
+		{
+			"data": {
+				"from_element_id": "276c9428-9e7b-407e-85b7-66b929ca7d01",
+				"to_element_id": "692e5e5d-19ed-41d5-90c9-230be15914ff",
+				"to_element_title": "[b]Option B — Spare the Smuggler:[/b] Let her continue helping people escape."
+			},
+			"event_name": "element_changed",
+			"timestamp": "2026-07-02T18:12:27",
+			"unix_timestamp": 1783015947.545
+		},
+		{
+			"data": {
+				"duration_seconds": 19,
+				"ended_at": 1783015951,
+				"final_variables": {
+					"Empathy": 0,
+					"Guilt": 0,
+					"Heroism": 0,
+					"Principle": 0
+				},
+				"started_at": 1783015932
+			},
+			"event_name": "session_summary",
+			"timestamp": "2026-07-02T18:12:31",
+			"unix_timestamp": 1783015951.331
+		}
+	],
+	"final_variables": {
+		"Empathy": 0,
+		"Guilt": 0,
+		"Heroism": 0,
+		"Principle": 0
+	},
+	"game_description": "",
+	"game_id": "local_1783015932.734",
+	"game_title": "Trolley Troubles",
+	"important_note": "This is local single-session gameplay telemetry collected inside Godot. Interpret it as narrative reflection, not diagnosis.",
+	"session_id": "1783015932.734",
+	"started_at": 1783015932,
+	"tag_counts": {
+		"Care": 1,
+		"Fairness": 1,
+		"Neglect": 1,
+		"Subversion": 1
+	},
+	"tag_summary": {
+		"all_tag_mentions": {
+			"Authority": 1,
+			"Care": 1,
+			"Duty": 1,
+			"Fairness": 1,
+			"Harm": 1,
+			"Neglect": 1,
+			"Subversion": 1
+		},
+		"chosen_tag_counts": {
+			"Care": 1,
+			"Fairness": 1,
+			"Neglect": 1,
+			"Subversion": 1
+		},
+		"opposed_tag_counts": {
+			"Authority": 1,
+			"Duty": 1,
+			"Harm": 1
+		}
+	},
+	"total_choices": 1
+}

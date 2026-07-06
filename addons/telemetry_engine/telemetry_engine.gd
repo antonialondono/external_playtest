@@ -318,6 +318,7 @@ func build_variable_summary() -> Dictionary:
 func build_session_payload() -> Dictionary:
 	final_variables = build_variable_summary()
 	var gameplay_summary := build_gameplay_summary()
+	var generated_at := Time.get_unix_time_from_system()
 
 	return {
 		"session_id": session_id,
@@ -325,8 +326,12 @@ func build_session_payload() -> Dictionary:
 		"game_title": game_title,
 		"game_description": game_description,
 		"started_at": started_at,
+		"started_at_timestamp": _format_unix_timestamp(started_at),
 		"ended_at": ended_at,
+		"ended_at_timestamp": _format_unix_timestamp(ended_at),
 		"duration_seconds": max(0, ended_at - started_at),
+		"generated_at": generated_at,
+		"generated_at_timestamp": _format_unix_timestamp(generated_at),
 
 		"summary": gameplay_summary,
 		"events": event_buffer,
@@ -1523,6 +1528,14 @@ func format_session_duration(seconds: float) -> String:
 		return "1 minute"
 
 	return str(total_minutes) + " minutes"
+
+
+func _format_unix_timestamp(unix_timestamp: Variant) -> String:
+	var numeric_time := int(float(unix_timestamp))
+	if numeric_time <= 0:
+		return ""
+
+	return Time.get_datetime_string_from_unix_time(numeric_time)
 
 
 func is_card_config_filled(card: KeepsakeCardConfig) -> bool:

@@ -1,0 +1,3495 @@
+{
+	"duration_seconds": 131,
+	"ended_at": 1783106784,
+	"events": [
+		{
+			"data": {
+				"is_key_moment": false,
+				"scenario_id": "1a6d32cb-5308-4e1b-b926-f0343bcf4dee",
+				"scenario_index": 0,
+				"scenario_tags": [],
+				"scenario_title": "START"
+			},
+			"event_name": "scenario_started",
+			"timestamp": "2026-07-03T19:24:16",
+			"unix_timestamp": 1783106656.316
+		},
+		{
+			"data": {
+				"is_key_moment": false,
+				"scenario_id": "276c9428-9e7b-407e-85b7-66b929ca7d01",
+				"scenario_index": 1,
+				"scenario_tags": [],
+				"scenario_title": "The Smuggler"
+			},
+			"event_name": "scenario_started",
+			"timestamp": "2026-07-03T19:24:18",
+			"unix_timestamp": 1783106658.002
+		},
+		{
+			"data": {
+				"choice_id": "6b7c13d7-b7b6-4457-a270-60924adacdcd",
+				"chosen": "Honour the Mission: Arrest or eliminate the smuggler as ordered.",
+				"chosen_label": "Honour the Mission: Arrest or eliminate the smuggler as ordered.",
+				"chosen_negative_tag_count": 1,
+				"chosen_positive_tag_count": 2,
+				"chosen_tag_sentiment_score": 1,
+				"chosen_tags": [
+					"Authority",
+					"Duty",
+					"Harm"
+				],
+				"decision_weight": 1,
+				"is_key_moment": false,
+				"moral_tensions": [
+					{
+						"chosen": "Authority",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Neglect"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Neglect"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Harm",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Harm",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Harm",
+						"opposed": "Neglect"
+					},
+					{
+						"chosen": "Harm",
+						"opposed": "Care"
+					}
+				],
+				"not_chosen": [
+					"Spare the Smuggler: Let her continue helping people escape."
+				],
+				"opposing_negative_tag_count": 2,
+				"opposing_positive_tag_count": 2,
+				"opposing_tag_sentiment_score": 0,
+				"opposing_tags": [
+					"Fairness",
+					"Subversion",
+					"Neglect",
+					"Care"
+				],
+				"options": [
+					{
+						"label": "Honour the Mission: Arrest or eliminate the smuggler as ordered.",
+						"negative_tag_count": 1,
+						"positive_tag_count": 2,
+						"sentiment_score": 1,
+						"tags": [
+							"Authority",
+							"Duty",
+							"Harm"
+						],
+						"target_id": "b38d9045-09ec-47d3-9320-4aac35b0599f",
+						"target_title": "[b]Option A — Honour the Mission:[/b] Arrest or eliminate the smuggler as ordered.",
+						"was_chosen": true
+					},
+					{
+						"label": "Spare the Smuggler: Let her continue helping people escape.",
+						"negative_tag_count": 2,
+						"positive_tag_count": 2,
+						"sentiment_score": 0,
+						"tags": [
+							"Fairness",
+							"Subversion",
+							"Neglect",
+							"Care"
+						],
+						"target_id": "692e5e5d-19ed-41d5-90c9-230be15914ff",
+						"target_title": "[b]Option B — Spare the Smuggler:[/b] Let her continue helping people escape.",
+						"was_chosen": false
+					}
+				],
+				"scenario_id": "276c9428-9e7b-407e-85b7-66b929ca7d01",
+				"scenario_index": 1,
+				"scenario_title": "The Smuggler",
+				"source_element_id": "276c9428-9e7b-407e-85b7-66b929ca7d01",
+				"source_element_title": "The Smuggler",
+				"target_element_id": "b38d9045-09ec-47d3-9320-4aac35b0599f",
+				"target_element_title": "[b]Option A — Honour the Mission:[/b] Arrest or eliminate the smuggler as ordered.",
+				"time_to_decide_seconds": 9.234
+			},
+			"event_name": "moral_choice_made",
+			"timestamp": "2026-07-03T19:24:27",
+			"unix_timestamp": 1783106667.234
+		},
+		{
+			"data": {
+				"final_tags": [
+					"Authority",
+					"Duty",
+					"Harm"
+				],
+				"result_element_id": "b38d9045-09ec-47d3-9320-4aac35b0599f",
+				"result_title": "[b]Option A — Honour the Mission:[/b] Arrest or eliminate the smuggler as ordered.",
+				"scenario_id": "276c9428-9e7b-407e-85b7-66b929ca7d01",
+				"scenario_index": 1,
+				"scenario_title": "The Smuggler"
+			},
+			"event_name": "scenario_completed",
+			"timestamp": "2026-07-03T19:24:30",
+			"unix_timestamp": 1783106670.153
+		},
+		{
+			"data": {
+				"is_key_moment": false,
+				"scenario_id": "637c302b-4689-4b9c-bcfa-b7e1980eea42",
+				"scenario_index": 2,
+				"scenario_tags": [],
+				"scenario_title": "The Container"
+			},
+			"event_name": "scenario_started",
+			"timestamp": "2026-07-03T19:24:30",
+			"unix_timestamp": 1783106670.154
+		},
+		{
+			"data": {
+				"choice_id": "37af6b38-2e97-4866-9c07-81a0d007c31d",
+				"chosen": "Follow Procedure: Reject the refugees and protect the city’s limited resources.",
+				"chosen_label": "Follow Procedure: Reject the refugees and protect the city’s limited resources.",
+				"chosen_negative_tag_count": 2,
+				"chosen_positive_tag_count": 2,
+				"chosen_tag_sentiment_score": 0,
+				"chosen_tags": [
+					"Authority",
+					"Harm",
+					"Duty",
+					"Oppression"
+				],
+				"decision_weight": 1,
+				"is_key_moment": false,
+				"moral_tensions": [
+					{
+						"chosen": "Authority",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Harm",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Harm",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Harm",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Oppression",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Oppression",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Oppression",
+						"opposed": "Subversion"
+					}
+				],
+				"not_chosen": [
+					"Let Them In: Break the procedure and allow the refugees to enter."
+				],
+				"opposing_negative_tag_count": 1,
+				"opposing_positive_tag_count": 2,
+				"opposing_tag_sentiment_score": 1,
+				"opposing_tags": [
+					"Care",
+					"Fairness",
+					"Subversion"
+				],
+				"options": [
+					{
+						"label": "Follow Procedure: Reject the refugees and protect the city’s limited resources.",
+						"negative_tag_count": 2,
+						"positive_tag_count": 2,
+						"sentiment_score": 0,
+						"tags": [
+							"Authority",
+							"Harm",
+							"Duty",
+							"Oppression"
+						],
+						"target_id": "754f7119-5db7-4746-abed-36ac8061604c",
+						"target_title": "[b]Option A — Follow Procedure:[/b] Reject the refugees and protect the city’s limited resources.",
+						"was_chosen": true
+					},
+					{
+						"label": "Let Them In: Break the procedure and allow the refugees to enter.",
+						"negative_tag_count": 1,
+						"positive_tag_count": 2,
+						"sentiment_score": 1,
+						"tags": [
+							"Care",
+							"Fairness",
+							"Subversion"
+						],
+						"target_id": "17de1a74-bf16-4f2a-af06-4ff94b1a0600",
+						"target_title": "[b]Option B — Let Them In:[/b] Break the procedure and allow the refugees to enter.",
+						"was_chosen": false
+					}
+				],
+				"scenario_id": "637c302b-4689-4b9c-bcfa-b7e1980eea42",
+				"scenario_index": 2,
+				"scenario_title": "The Container",
+				"source_element_id": "637c302b-4689-4b9c-bcfa-b7e1980eea42",
+				"source_element_title": "The Container",
+				"target_element_id": "754f7119-5db7-4746-abed-36ac8061604c",
+				"target_element_title": "[b]Option A — Follow Procedure:[/b] Reject the refugees and protect the city’s limited resources.",
+				"time_to_decide_seconds": 9.204
+			},
+			"event_name": "moral_choice_made",
+			"timestamp": "2026-07-03T19:24:39",
+			"unix_timestamp": 1783106679.358
+		},
+		{
+			"data": {
+				"final_tags": [
+					"Authority",
+					"Harm",
+					"Duty",
+					"Oppression"
+				],
+				"result_element_id": "754f7119-5db7-4746-abed-36ac8061604c",
+				"result_title": "[b]Option A — Follow Procedure:[/b] Reject the refugees and protect the city’s limited resources.",
+				"scenario_id": "637c302b-4689-4b9c-bcfa-b7e1980eea42",
+				"scenario_index": 2,
+				"scenario_title": "The Container"
+			},
+			"event_name": "scenario_completed",
+			"timestamp": "2026-07-03T19:24:52",
+			"unix_timestamp": 1783106692.235
+		},
+		{
+			"data": {
+				"is_key_moment": true,
+				"scenario_id": "af289c08-0861-4bd1-968a-4050d59909f6",
+				"scenario_index": 3,
+				"scenario_tags": [],
+				"scenario_title": "The Partner’s Discovery"
+			},
+			"event_name": "scenario_started",
+			"timestamp": "2026-07-03T19:24:52",
+			"unix_timestamp": 1783106692.237
+		},
+		{
+			"data": {
+				"choice_id": "ef52041b-d492-4a33-ac7d-05c0812d53c7",
+				"chosen": "Report Your Partner: Turn them in before they destabilize the government",
+				"chosen_label": "Report Your Partner: Turn them in before they destabilize the government",
+				"chosen_negative_tag_count": 1,
+				"chosen_positive_tag_count": 3,
+				"chosen_tag_sentiment_score": 2,
+				"chosen_tags": [
+					"Duty",
+					"Authority",
+					"Loyalty",
+					"Oppression"
+				],
+				"decision_weight": 2,
+				"is_key_moment": true,
+				"moral_tensions": [
+					{
+						"chosen": "Duty",
+						"opposed": "Liberty"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Liberty"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Liberty"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Oppression",
+						"opposed": "Liberty"
+					},
+					{
+						"chosen": "Oppression",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Oppression",
+						"opposed": "Fairness"
+					}
+				],
+				"not_chosen": [
+					"Help Your Partner: Help them expose the conspiracy."
+				],
+				"opposing_negative_tag_count": 1,
+				"opposing_positive_tag_count": 2,
+				"opposing_tag_sentiment_score": 1,
+				"opposing_tags": [
+					"Liberty",
+					"Subversion",
+					"Fairness"
+				],
+				"options": [
+					{
+						"label": "Report Your Partner: Turn them in before they destabilize the government",
+						"negative_tag_count": 1,
+						"positive_tag_count": 3,
+						"sentiment_score": 2,
+						"tags": [
+							"Duty",
+							"Authority",
+							"Loyalty",
+							"Oppression"
+						],
+						"target_id": "1e684c74-9052-4aa8-b3c5-fabdc8241451",
+						"target_title": "[b]Option A — Report Your Partner:[/b] Turn them in before they destabilize the government",
+						"was_chosen": true
+					},
+					{
+						"label": "Help Your Partner: Help them expose the conspiracy.",
+						"negative_tag_count": 1,
+						"positive_tag_count": 2,
+						"sentiment_score": 1,
+						"tags": [
+							"Liberty",
+							"Subversion",
+							"Fairness"
+						],
+						"target_id": "f6d1e11f-6467-45c4-8478-c417a6bfc7fd",
+						"target_title": "[b]Option B — Help Your Partner:[/b] Help them expose the conspiracy.",
+						"was_chosen": false
+					}
+				],
+				"scenario_id": "af289c08-0861-4bd1-968a-4050d59909f6",
+				"scenario_index": 3,
+				"scenario_title": "The Partner’s Discovery",
+				"source_element_id": "af289c08-0861-4bd1-968a-4050d59909f6",
+				"source_element_title": "The Partner’s Discovery",
+				"target_element_id": "1e684c74-9052-4aa8-b3c5-fabdc8241451",
+				"target_element_title": "[b]Option A — Report Your Partner:[/b] Turn them in before they destabilize the government",
+				"time_to_decide_seconds": 9.235
+			},
+			"event_name": "moral_choice_made",
+			"timestamp": "2026-07-03T19:25:01",
+			"unix_timestamp": 1783106701.471
+		},
+		{
+			"data": {
+				"final_tags": [
+					"Duty",
+					"Authority",
+					"Loyalty",
+					"Oppression"
+				],
+				"result_element_id": "1e684c74-9052-4aa8-b3c5-fabdc8241451",
+				"result_title": "[b]Option A — Report Your Partner:[/b] Turn them in before they destabilize the government",
+				"scenario_id": "af289c08-0861-4bd1-968a-4050d59909f6",
+				"scenario_index": 3,
+				"scenario_title": "The Partner’s Discovery"
+			},
+			"event_name": "scenario_completed",
+			"timestamp": "2026-07-03T19:25:02",
+			"unix_timestamp": 1783106702.333
+		},
+		{
+			"data": {
+				"is_key_moment": false,
+				"scenario_id": "f7578fbb-7145-4751-ae7f-9a6bab452abd",
+				"scenario_index": 4,
+				"scenario_tags": [],
+				"scenario_title": "The Reformist Agent"
+			},
+			"event_name": "scenario_started",
+			"timestamp": "2026-07-03T19:25:02",
+			"unix_timestamp": 1783106702.334
+		},
+		{
+			"data": {
+				"choice_id": "e3bf81a6-dadd-4660-a740-e4a233d063cd",
+				"chosen": "Kill the Agent: Follow your orders and eliminate him.",
+				"chosen_label": "Kill the Agent: Follow your orders and eliminate him.",
+				"chosen_negative_tag_count": 1,
+				"chosen_positive_tag_count": 2,
+				"chosen_tag_sentiment_score": 1,
+				"chosen_tags": [
+					"Duty",
+					"Authority",
+					"Harm"
+				],
+				"decision_weight": 1,
+				"is_key_moment": false,
+				"moral_tensions": [
+					{
+						"chosen": "Duty",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Neglect"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Neglect"
+					},
+					{
+						"chosen": "Harm",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Harm",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Harm",
+						"opposed": "Neglect"
+					}
+				],
+				"not_chosen": [
+					"Spare the Agent: Let him live because he may help reform the system."
+				],
+				"opposing_negative_tag_count": 1,
+				"opposing_positive_tag_count": 2,
+				"opposing_tag_sentiment_score": 1,
+				"opposing_tags": [
+					"Fairness",
+					"Care",
+					"Neglect"
+				],
+				"options": [
+					{
+						"label": "Kill the Agent: Follow your orders and eliminate him.",
+						"negative_tag_count": 1,
+						"positive_tag_count": 2,
+						"sentiment_score": 1,
+						"tags": [
+							"Duty",
+							"Authority",
+							"Harm"
+						],
+						"target_id": "d865004f-0f23-4fec-9ffa-36ece37bd6b0",
+						"target_title": "[b]Option A — Kill the Agent:[/b] Follow your orders and eliminate him.",
+						"was_chosen": true
+					},
+					{
+						"label": "Spare the Agent: Let him live because he may help reform the system.",
+						"negative_tag_count": 1,
+						"positive_tag_count": 2,
+						"sentiment_score": 1,
+						"tags": [
+							"Fairness",
+							"Care",
+							"Neglect"
+						],
+						"target_id": "a251b61e-eb36-4a8d-bec6-75cd9f5b0055",
+						"target_title": "[b]Option B — Spare the Agent:[/b] Let him live because he may help reform the system.",
+						"was_chosen": false
+					}
+				],
+				"scenario_id": "f7578fbb-7145-4751-ae7f-9a6bab452abd",
+				"scenario_index": 4,
+				"scenario_title": "The Reformist Agent",
+				"source_element_id": "f7578fbb-7145-4751-ae7f-9a6bab452abd",
+				"source_element_title": "The Reformist Agent",
+				"target_element_id": "d865004f-0f23-4fec-9ffa-36ece37bd6b0",
+				"target_element_title": "[b]Option A — Kill the Agent:[/b] Follow your orders and eliminate him.",
+				"time_to_decide_seconds": 9.221
+			},
+			"event_name": "moral_choice_made",
+			"timestamp": "2026-07-03T19:25:11",
+			"unix_timestamp": 1783106711.554
+		},
+		{
+			"data": {
+				"final_tags": [
+					"Duty",
+					"Authority",
+					"Harm"
+				],
+				"result_element_id": "d865004f-0f23-4fec-9ffa-36ece37bd6b0",
+				"result_title": "[b]Option A — Kill the Agent:[/b] Follow your orders and eliminate him.",
+				"scenario_id": "f7578fbb-7145-4751-ae7f-9a6bab452abd",
+				"scenario_index": 4,
+				"scenario_title": "The Reformist Agent"
+			},
+			"event_name": "scenario_completed",
+			"timestamp": "2026-07-03T19:25:12",
+			"unix_timestamp": 1783106712.909
+		},
+		{
+			"data": {
+				"is_key_moment": true,
+				"scenario_id": "90417d79-25da-4abc-b84b-9d1e7f2b0cb0",
+				"scenario_index": 5,
+				"scenario_tags": [],
+				"scenario_title": "The Animal High Leader"
+			},
+			"event_name": "scenario_started",
+			"timestamp": "2026-07-03T19:25:12",
+			"unix_timestamp": 1783106712.91
+		},
+		{
+			"data": {
+				"choice_id": "80653f70-258d-413d-9c81-7638f823ea3d",
+				"chosen": "Bow: Submit to the Supreme AI to preserve the agreement.",
+				"chosen_label": "Bow: Submit to the Supreme AI to preserve the agreement.",
+				"chosen_negative_tag_count": 0,
+				"chosen_positive_tag_count": 3,
+				"chosen_tag_sentiment_score": 3,
+				"chosen_tags": [
+					"Humility",
+					"Authority",
+					"Loyalty"
+				],
+				"decision_weight": 1,
+				"is_key_moment": true,
+				"moral_tensions": [
+					{
+						"chosen": "Humility",
+						"opposed": "Sanctity"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Liberty"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Sanctity"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Liberty"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Sanctity"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Liberty"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Subversion"
+					}
+				],
+				"not_chosen": [
+					"Refuse: Refuse to bow, risking your position and the shelter’s safety."
+				],
+				"opposing_negative_tag_count": 1,
+				"opposing_positive_tag_count": 2,
+				"opposing_tag_sentiment_score": 1,
+				"opposing_tags": [
+					"Sanctity",
+					"Liberty",
+					"Subversion"
+				],
+				"options": [
+					{
+						"label": "Bow: Submit to the Supreme AI to preserve the agreement.",
+						"negative_tag_count": 0,
+						"positive_tag_count": 3,
+						"sentiment_score": 3,
+						"tags": [
+							"Humility",
+							"Authority",
+							"Loyalty"
+						],
+						"target_id": "c65ee40c-a65d-4454-84bd-03a230dbfc3c",
+						"target_title": "[b]Option A — Bow:[/b] Submit to the Supreme AI to preserve the agreement.",
+						"was_chosen": true
+					},
+					{
+						"label": "Refuse: Refuse to bow, risking your position and the shelter’s safety.",
+						"negative_tag_count": 1,
+						"positive_tag_count": 2,
+						"sentiment_score": 1,
+						"tags": [
+							"Sanctity",
+							"Liberty",
+							"Subversion"
+						],
+						"target_id": "99ff8d6c-825a-4600-b446-6f93f501002f",
+						"target_title": "[b]Option B — Refuse:[/b] Refuse to bow, risking your position and the shelter’s safety.",
+						"was_chosen": false
+					}
+				],
+				"scenario_id": "90417d79-25da-4abc-b84b-9d1e7f2b0cb0",
+				"scenario_index": 5,
+				"scenario_title": "The Animal High Leader",
+				"source_element_id": "90417d79-25da-4abc-b84b-9d1e7f2b0cb0",
+				"source_element_title": "The Animal High Leader",
+				"target_element_id": "c65ee40c-a65d-4454-84bd-03a230dbfc3c",
+				"target_element_title": "[b]Option A — Bow:[/b] Submit to the Supreme AI to preserve the agreement.",
+				"time_to_decide_seconds": 9.228
+			},
+			"event_name": "moral_choice_made",
+			"timestamp": "2026-07-03T19:25:22",
+			"unix_timestamp": 1783106722.138
+		},
+		{
+			"data": {
+				"final_tags": [
+					"Humility",
+					"Authority",
+					"Loyalty"
+				],
+				"result_element_id": "c65ee40c-a65d-4454-84bd-03a230dbfc3c",
+				"result_title": "[b]Option A — Bow:[/b] Submit to the Supreme AI to preserve the agreement.",
+				"scenario_id": "90417d79-25da-4abc-b84b-9d1e7f2b0cb0",
+				"scenario_index": 5,
+				"scenario_title": "The Animal High Leader"
+			},
+			"event_name": "scenario_completed",
+			"timestamp": "2026-07-03T19:25:22",
+			"unix_timestamp": 1783106722.985
+		},
+		{
+			"data": {
+				"is_key_moment": false,
+				"scenario_id": "6cd72a4b-d097-480c-b99e-daf83f00aa08",
+				"scenario_index": 6,
+				"scenario_tags": [],
+				"scenario_title": "The Broadcaster"
+			},
+			"event_name": "scenario_started",
+			"timestamp": "2026-07-03T19:25:22",
+			"unix_timestamp": 1783106722.986
+		},
+		{
+			"data": {
+				"choice_id": "c0c426d4-3248-4380-82e0-a64388048cd7",
+				"chosen": "Pressure Her: Push her to release the story even if it endangers her.",
+				"chosen_label": "Pressure Her: Push her to release the story even if it endangers her.",
+				"chosen_negative_tag_count": 2,
+				"chosen_positive_tag_count": 1,
+				"chosen_tag_sentiment_score": -1,
+				"chosen_tags": [
+					"Fairness",
+					"Oppression",
+					"Cheating"
+				],
+				"decision_weight": 1,
+				"is_key_moment": false,
+				"moral_tensions": [
+					{
+						"chosen": "Fairness",
+						"opposed": "Liberty"
+					},
+					{
+						"chosen": "Fairness",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Fairness",
+						"opposed": "Sanctity"
+					},
+					{
+						"chosen": "Oppression",
+						"opposed": "Liberty"
+					},
+					{
+						"chosen": "Oppression",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Oppression",
+						"opposed": "Sanctity"
+					},
+					{
+						"chosen": "Cheating",
+						"opposed": "Liberty"
+					},
+					{
+						"chosen": "Cheating",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Cheating",
+						"opposed": "Sanctity"
+					}
+				],
+				"not_chosen": [
+					"Let Her Decide: Respect her choice, even if she refuses to release it."
+				],
+				"opposing_negative_tag_count": 0,
+				"opposing_positive_tag_count": 3,
+				"opposing_tag_sentiment_score": 3,
+				"opposing_tags": [
+					"Liberty",
+					"Care",
+					"Sanctity"
+				],
+				"options": [
+					{
+						"label": "Pressure Her: Push her to release the story even if it endangers her.",
+						"negative_tag_count": 2,
+						"positive_tag_count": 1,
+						"sentiment_score": -1,
+						"tags": [
+							"Fairness",
+							"Oppression",
+							"Cheating"
+						],
+						"target_id": "abbdedb9-cbc8-4cc3-ae1e-045a409adc98",
+						"target_title": "[b]Option A — Pressure Her:[/b] Push her to release the story even if it endangers her.",
+						"was_chosen": true
+					},
+					{
+						"label": "Let Her Decide: Respect her choice, even if she refuses to release it.",
+						"negative_tag_count": 0,
+						"positive_tag_count": 3,
+						"sentiment_score": 3,
+						"tags": [
+							"Liberty",
+							"Care",
+							"Sanctity"
+						],
+						"target_id": "ec61d35a-fe20-410b-be98-9bf73d63c81d",
+						"target_title": "[b]Option B — Let Her Decide:[/b] Respect her choice, even if she refuses to release it.",
+						"was_chosen": false
+					}
+				],
+				"scenario_id": "6cd72a4b-d097-480c-b99e-daf83f00aa08",
+				"scenario_index": 6,
+				"scenario_title": "The Broadcaster",
+				"source_element_id": "6cd72a4b-d097-480c-b99e-daf83f00aa08",
+				"source_element_title": "The Broadcaster",
+				"target_element_id": "abbdedb9-cbc8-4cc3-ae1e-045a409adc98",
+				"target_element_title": "[b]Option A — Pressure Her:[/b] Push her to release the story even if it endangers her.",
+				"time_to_decide_seconds": 9.233
+			},
+			"event_name": "moral_choice_made",
+			"timestamp": "2026-07-03T19:25:32",
+			"unix_timestamp": 1783106732.219
+		},
+		{
+			"data": {
+				"final_tags": [
+					"Fairness",
+					"Oppression",
+					"Cheating"
+				],
+				"result_element_id": "abbdedb9-cbc8-4cc3-ae1e-045a409adc98",
+				"result_title": "[b]Option A — Pressure Her:[/b] Push her to release the story even if it endangers her.",
+				"scenario_id": "6cd72a4b-d097-480c-b99e-daf83f00aa08",
+				"scenario_index": 6,
+				"scenario_title": "The Broadcaster"
+			},
+			"event_name": "scenario_completed",
+			"timestamp": "2026-07-03T19:25:33",
+			"unix_timestamp": 1783106733.144
+		},
+		{
+			"data": {
+				"is_key_moment": true,
+				"scenario_id": "4e21d98b-7059-4b4e-af45-46f86e6724d7",
+				"scenario_index": 7,
+				"scenario_tags": [],
+				"scenario_title": "The Protest"
+			},
+			"event_name": "scenario_started",
+			"timestamp": "2026-07-03T19:25:33",
+			"unix_timestamp": 1783106733.145
+		},
+		{
+			"data": {
+				"choice_id": "1359bb0d-b758-4967-919d-0c55310efe53",
+				"chosen": "Peaceful Protest: Keep the protest peaceful, even under threat.",
+				"chosen_label": "Peaceful Protest: Keep the protest peaceful, even under threat.",
+				"chosen_negative_tag_count": 0,
+				"chosen_positive_tag_count": 3,
+				"chosen_tag_sentiment_score": 3,
+				"chosen_tags": [
+					"Sanctity",
+					"Care",
+					"Liberty"
+				],
+				"decision_weight": 1,
+				"is_key_moment": true,
+				"moral_tensions": [
+					{
+						"chosen": "Sanctity",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Sanctity",
+						"opposed": "Harm"
+					},
+					{
+						"chosen": "Sanctity",
+						"opposed": "Cheating"
+					},
+					{
+						"chosen": "Sanctity",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Care",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Care",
+						"opposed": "Harm"
+					},
+					{
+						"chosen": "Care",
+						"opposed": "Cheating"
+					},
+					{
+						"chosen": "Care",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Liberty",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Liberty",
+						"opposed": "Harm"
+					},
+					{
+						"chosen": "Liberty",
+						"opposed": "Cheating"
+					},
+					{
+						"chosen": "Liberty",
+						"opposed": "Subversion"
+					}
+				],
+				"not_chosen": [
+					"Violent Revolt: Turn the protest into an armed uprising."
+				],
+				"opposing_negative_tag_count": 3,
+				"opposing_positive_tag_count": 1,
+				"opposing_tag_sentiment_score": -2,
+				"opposing_tags": [
+					"Fairness",
+					"Harm",
+					"Cheating",
+					"Subversion"
+				],
+				"options": [
+					{
+						"label": "Peaceful Protest: Keep the protest peaceful, even under threat.",
+						"negative_tag_count": 0,
+						"positive_tag_count": 3,
+						"sentiment_score": 3,
+						"tags": [
+							"Sanctity",
+							"Care",
+							"Liberty"
+						],
+						"target_id": "e555fe4d-8fcc-481c-a1b0-aec2872329af",
+						"target_title": "[b]Option A — Peaceful Protest:[/b] Keep the protest peaceful, even under threat.",
+						"was_chosen": true
+					},
+					{
+						"label": "Violent Revolt: Turn the protest into an armed uprising.",
+						"negative_tag_count": 3,
+						"positive_tag_count": 1,
+						"sentiment_score": -2,
+						"tags": [
+							"Fairness",
+							"Harm",
+							"Cheating",
+							"Subversion"
+						],
+						"target_id": "c8162a51-786c-4120-b692-9f6257b66434",
+						"target_title": "[b]Option B — Violent Revolt:[/b] Turn the protest into an armed uprising.",
+						"was_chosen": false
+					}
+				],
+				"scenario_id": "4e21d98b-7059-4b4e-af45-46f86e6724d7",
+				"scenario_index": 7,
+				"scenario_title": "The Protest",
+				"source_element_id": "4e21d98b-7059-4b4e-af45-46f86e6724d7",
+				"source_element_title": "The Protest",
+				"target_element_id": "e555fe4d-8fcc-481c-a1b0-aec2872329af",
+				"target_element_title": "[b]Option A — Peaceful Protest:[/b] Keep the protest peaceful, even under threat.",
+				"time_to_decide_seconds": 9.225
+			},
+			"event_name": "moral_choice_made",
+			"timestamp": "2026-07-03T19:25:42",
+			"unix_timestamp": 1783106742.371
+		},
+		{
+			"data": {
+				"final_tags": [
+					"Sanctity",
+					"Care",
+					"Liberty"
+				],
+				"result_element_id": "e555fe4d-8fcc-481c-a1b0-aec2872329af",
+				"result_title": "[b]Option A — Peaceful Protest:[/b] Keep the protest peaceful, even under threat.",
+				"scenario_id": "4e21d98b-7059-4b4e-af45-46f86e6724d7",
+				"scenario_index": 7,
+				"scenario_title": "The Protest"
+			},
+			"event_name": "scenario_completed",
+			"timestamp": "2026-07-03T19:25:43",
+			"unix_timestamp": 1783106743.63
+		},
+		{
+			"data": {
+				"is_key_moment": true,
+				"scenario_id": "4c64a685-7a3a-4dc9-a6ee-0ac889b6f0a1",
+				"scenario_index": 8,
+				"scenario_tags": [],
+				"scenario_title": "The Superweapon"
+			},
+			"event_name": "scenario_started",
+			"timestamp": "2026-07-03T19:25:43",
+			"unix_timestamp": 1783106743.632
+		},
+		{
+			"data": {
+				"choice_id": "6fea3914-e0bf-4068-8af1-7d4187c2b0f6",
+				"chosen": "Destroy the Weapon: Destroy it so neither side can use it to dominate the other.",
+				"chosen_label": "Destroy the Weapon: Destroy it so neither side can use it to dominate the other.",
+				"chosen_negative_tag_count": 0,
+				"chosen_positive_tag_count": 3,
+				"chosen_tag_sentiment_score": 3,
+				"chosen_tags": [
+					"Humility",
+					"Liberty",
+					"Care"
+				],
+				"decision_weight": 1,
+				"is_key_moment": true,
+				"moral_tensions": [
+					{
+						"chosen": "Humility",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Cheating"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Harm"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Pride"
+					},
+					{
+						"chosen": "Liberty",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Liberty",
+						"opposed": "Cheating"
+					},
+					{
+						"chosen": "Liberty",
+						"opposed": "Harm"
+					},
+					{
+						"chosen": "Liberty",
+						"opposed": "Pride"
+					},
+					{
+						"chosen": "Care",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Care",
+						"opposed": "Cheating"
+					},
+					{
+						"chosen": "Care",
+						"opposed": "Harm"
+					},
+					{
+						"chosen": "Care",
+						"opposed": "Pride"
+					}
+				],
+				"not_chosen": [
+					"Fire the Weapon: Use the weapon against both leadership factions, ending their control but causing massive political collapse."
+				],
+				"opposing_negative_tag_count": 3,
+				"opposing_positive_tag_count": 1,
+				"opposing_tag_sentiment_score": -2,
+				"opposing_tags": [
+					"Fairness",
+					"Cheating",
+					"Harm",
+					"Pride"
+				],
+				"options": [
+					{
+						"label": "Destroy the Weapon: Destroy it so neither side can use it to dominate the other.",
+						"negative_tag_count": 0,
+						"positive_tag_count": 3,
+						"sentiment_score": 3,
+						"tags": [
+							"Humility",
+							"Liberty",
+							"Care"
+						],
+						"target_id": "72822dad-0dbd-4bae-a602-a134c01be9b6",
+						"target_title": "[b]Option A — Destroy the Weapon:[/b] Destroy it so neither side can use it to dominate the other.",
+						"was_chosen": true
+					},
+					{
+						"label": "Fire the Weapon: Use the weapon against both leadership factions, ending their control but causing massive political collapse.",
+						"negative_tag_count": 3,
+						"positive_tag_count": 1,
+						"sentiment_score": -2,
+						"tags": [
+							"Fairness",
+							"Cheating",
+							"Harm",
+							"Pride"
+						],
+						"target_id": "f5f40ac8-fc87-42c1-9408-2275b9855311",
+						"target_title": "[b]Option B — Fire the Weapon:[/b] Use the weapon against both leadership factions, ending their control but causing massive political collapse.",
+						"was_chosen": false
+					}
+				],
+				"scenario_id": "4c64a685-7a3a-4dc9-a6ee-0ac889b6f0a1",
+				"scenario_index": 8,
+				"scenario_title": "The Superweapon",
+				"source_element_id": "4c64a685-7a3a-4dc9-a6ee-0ac889b6f0a1",
+				"source_element_title": "The Superweapon",
+				"target_element_id": "72822dad-0dbd-4bae-a602-a134c01be9b6",
+				"target_element_title": "[b]Option A — Destroy the Weapon:[/b] Destroy it so neither side can use it to dominate the other.",
+				"time_to_decide_seconds": 9.229
+			},
+			"event_name": "moral_choice_made",
+			"timestamp": "2026-07-03T19:25:52",
+			"unix_timestamp": 1783106752.86
+		},
+		{
+			"data": {
+				"final_tags": [
+					"Humility",
+					"Liberty",
+					"Care"
+				],
+				"result_element_id": "72822dad-0dbd-4bae-a602-a134c01be9b6",
+				"result_title": "[b]Option A — Destroy the Weapon:[/b] Destroy it so neither side can use it to dominate the other.",
+				"scenario_id": "4c64a685-7a3a-4dc9-a6ee-0ac889b6f0a1",
+				"scenario_index": 8,
+				"scenario_title": "The Superweapon"
+			},
+			"event_name": "scenario_completed",
+			"timestamp": "2026-07-03T19:25:53",
+			"unix_timestamp": 1783106753.866
+		},
+		{
+			"data": {
+				"is_key_moment": true,
+				"scenario_id": "99d0554b-cef0-4225-8eb7-6ce49b6cc736",
+				"scenario_index": 10,
+				"scenario_tags": [],
+				"scenario_title": "The Hostage"
+			},
+			"event_name": "scenario_started",
+			"timestamp": "2026-07-03T19:25:53",
+			"unix_timestamp": 1783106753.868
+		},
+		{
+			"data": {
+				"choice_id": "be0a7223-d3e8-4111-b632-a12615c47ae2",
+				"chosen": "Surrender: Give up the weapon to save your partner and accept exile.",
+				"chosen_label": "Surrender: Give up the weapon to save your partner and accept exile.",
+				"chosen_negative_tag_count": 1,
+				"chosen_positive_tag_count": 2,
+				"chosen_tag_sentiment_score": 1,
+				"chosen_tags": [
+					"Care",
+					"Neglect",
+					"Humility"
+				],
+				"decision_weight": 2,
+				"is_key_moment": true,
+				"moral_tensions": [
+					{
+						"chosen": "Care",
+						"opposed": "Duty"
+					},
+					{
+						"chosen": "Care",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Care",
+						"opposed": "Harm"
+					},
+					{
+						"chosen": "Neglect",
+						"opposed": "Duty"
+					},
+					{
+						"chosen": "Neglect",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Neglect",
+						"opposed": "Harm"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Duty"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Harm"
+					}
+				],
+				"not_chosen": [
+					"Continue: Destroy both leadership factions and make them pay."
+				],
+				"opposing_negative_tag_count": 1,
+				"opposing_positive_tag_count": 2,
+				"opposing_tag_sentiment_score": 1,
+				"opposing_tags": [
+					"Duty",
+					"Fairness",
+					"Harm"
+				],
+				"options": [
+					{
+						"label": "Surrender: Give up the weapon to save your partner and accept exile.",
+						"negative_tag_count": 1,
+						"positive_tag_count": 2,
+						"sentiment_score": 1,
+						"tags": [
+							"Care",
+							"Neglect",
+							"Humility"
+						],
+						"target_id": "82f468df-d5d4-4a40-b2f8-b549587736f0",
+						"target_title": "[b]Option A — Surrender:[/b] Give up the weapon to save your partner and accept exile.",
+						"was_chosen": true
+					},
+					{
+						"label": "Continue: Destroy both leadership factions and make them pay.",
+						"negative_tag_count": 1,
+						"positive_tag_count": 2,
+						"sentiment_score": 1,
+						"tags": [
+							"Duty",
+							"Fairness",
+							"Harm"
+						],
+						"target_id": "898e22f6-7f2a-4715-9e98-2abe9a5943f0",
+						"target_title": "[b]Option B — Continue:[/b] Destroy both leadership factions and make them pay.",
+						"was_chosen": false
+					}
+				],
+				"scenario_id": "99d0554b-cef0-4225-8eb7-6ce49b6cc736",
+				"scenario_index": 10,
+				"scenario_title": "The Hostage",
+				"source_element_id": "99d0554b-cef0-4225-8eb7-6ce49b6cc736",
+				"source_element_title": "The Hostage",
+				"target_element_id": "82f468df-d5d4-4a40-b2f8-b549587736f0",
+				"target_element_title": "[b]Option A — Surrender:[/b] Give up the weapon to save your partner and accept exile.",
+				"time_to_decide_seconds": 9.22
+			},
+			"event_name": "moral_choice_made",
+			"timestamp": "2026-07-03T19:26:03",
+			"unix_timestamp": 1783106763.087
+		},
+		{
+			"data": {
+				"final_tags": [
+					"Care",
+					"Neglect",
+					"Humility"
+				],
+				"result_element_id": "82f468df-d5d4-4a40-b2f8-b549587736f0",
+				"result_title": "[b]Option A — Surrender:[/b] Give up the weapon to save your partner and accept exile.",
+				"scenario_id": "99d0554b-cef0-4225-8eb7-6ce49b6cc736",
+				"scenario_index": 10,
+				"scenario_title": "The Hostage"
+			},
+			"event_name": "scenario_completed",
+			"timestamp": "2026-07-03T19:26:03",
+			"unix_timestamp": 1783106763.971
+		},
+		{
+			"data": {
+				"is_key_moment": false,
+				"scenario_id": "fdb3a7fc-963a-447b-8e15-c98c21ea8172",
+				"scenario_index": 11,
+				"scenario_tags": [],
+				"scenario_title": "The Rebel Aftermath"
+			},
+			"event_name": "scenario_started",
+			"timestamp": "2026-07-03T19:26:03",
+			"unix_timestamp": 1783106763.972
+		},
+		{
+			"data": {
+				"choice_id": "d88c34e6-33e1-42ac-94fe-97019d91b102",
+				"chosen": "Give Credit: Let the rebels take credit so the new order can stabilize.",
+				"chosen_label": "Give Credit: Let the rebels take credit so the new order can stabilize.",
+				"chosen_negative_tag_count": 0,
+				"chosen_positive_tag_count": 2,
+				"chosen_tag_sentiment_score": 2,
+				"chosen_tags": [
+					"Loyalty",
+					"Humility"
+				],
+				"decision_weight": 1,
+				"is_key_moment": false,
+				"moral_tensions": [
+					{
+						"chosen": "Loyalty",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Pride"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Cheating"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Pride"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Cheating"
+					}
+				],
+				"not_chosen": [
+					"Claim Power: Take credit for yourself and use your fame to seize power."
+				],
+				"opposing_negative_tag_count": 2,
+				"opposing_positive_tag_count": 1,
+				"opposing_tag_sentiment_score": -1,
+				"opposing_tags": [
+					"Fairness",
+					"Pride",
+					"Cheating"
+				],
+				"options": [
+					{
+						"label": "Give Credit: Let the rebels take credit so the new order can stabilize.",
+						"negative_tag_count": 0,
+						"positive_tag_count": 2,
+						"sentiment_score": 2,
+						"tags": [
+							"Loyalty",
+							"Humility"
+						],
+						"target_id": "9ea1e2c3-70ee-4e2f-8a08-f97072cd5410",
+						"target_title": "[b]Option A — Give Credit:[/b] Let the rebels take credit so the new order can stabilize.",
+						"was_chosen": true
+					},
+					{
+						"label": "Claim Power: Take credit for yourself and use your fame to seize power.",
+						"negative_tag_count": 2,
+						"positive_tag_count": 1,
+						"sentiment_score": -1,
+						"tags": [
+							"Fairness",
+							"Pride",
+							"Cheating"
+						],
+						"target_id": "5f5fa82c-ab97-4b99-ae03-ba8ef7f0fe4b",
+						"target_title": "[b]Option B — Claim Power:[/b] Take credit for yourself and use your fame to seize power.",
+						"was_chosen": false
+					}
+				],
+				"scenario_id": "fdb3a7fc-963a-447b-8e15-c98c21ea8172",
+				"scenario_index": 11,
+				"scenario_title": "The Rebel Aftermath",
+				"source_element_id": "fdb3a7fc-963a-447b-8e15-c98c21ea8172",
+				"source_element_title": "The Rebel Aftermath",
+				"target_element_id": "9ea1e2c3-70ee-4e2f-8a08-f97072cd5410",
+				"target_element_title": "[b]Option A — Give Credit:[/b] Let the rebels take credit so the new order can stabilize.",
+				"time_to_decide_seconds": 9.231
+			},
+			"event_name": "moral_choice_made",
+			"timestamp": "2026-07-03T19:26:13",
+			"unix_timestamp": 1783106773.203
+		},
+		{
+			"data": {
+				"final_tags": [
+					"Loyalty",
+					"Humility"
+				],
+				"result_element_id": "9ea1e2c3-70ee-4e2f-8a08-f97072cd5410",
+				"result_title": "[b]Option A — Give Credit:[/b] Let the rebels take credit so the new order can stabilize.",
+				"scenario_id": "fdb3a7fc-963a-447b-8e15-c98c21ea8172",
+				"scenario_index": 11,
+				"scenario_title": "The Rebel Aftermath"
+			},
+			"event_name": "scenario_completed",
+			"timestamp": "2026-07-03T19:26:14",
+			"unix_timestamp": 1783106774.456
+		},
+		{
+			"data": {
+				"is_key_moment": false,
+				"scenario_id": "5c28a753-7cc2-483d-aadf-b30f90e55784",
+				"scenario_index": 12,
+				"scenario_tags": [],
+				"scenario_title": "The Government Aftermath"
+			},
+			"event_name": "scenario_started",
+			"timestamp": "2026-07-03T19:26:14",
+			"unix_timestamp": 1783106774.457
+		},
+		{
+			"data": {
+				"choice_id": "935a85d6-583e-4316-af6f-b571dbd69251",
+				"chosen": "Let Them Take Credit: Allow the governments to take credit so the new order can stabilize.",
+				"chosen_label": "Let Them Take Credit: Allow the governments to take credit so the new order can stabilize.",
+				"chosen_negative_tag_count": 0,
+				"chosen_positive_tag_count": 3,
+				"chosen_tag_sentiment_score": 3,
+				"chosen_tags": [
+					"Humility",
+					"Loyalty",
+					"Authority"
+				],
+				"decision_weight": 1,
+				"is_key_moment": false,
+				"moral_tensions": [
+					{
+						"chosen": "Humility",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Cheating"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Pride"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Cheating"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Pride"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Cheating"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Pride"
+					}
+				],
+				"not_chosen": [
+					"Claim Power: Take credit for yourself and use your fame to enter the leaders’ circle."
+				],
+				"opposing_negative_tag_count": 3,
+				"opposing_positive_tag_count": 1,
+				"opposing_tag_sentiment_score": -2,
+				"opposing_tags": [
+					"Fairness",
+					"Subversion",
+					"Cheating",
+					"Pride"
+				],
+				"options": [
+					{
+						"label": "Let Them Take Credit: Allow the governments to take credit so the new order can stabilize.",
+						"negative_tag_count": 0,
+						"positive_tag_count": 3,
+						"sentiment_score": 3,
+						"tags": [
+							"Humility",
+							"Loyalty",
+							"Authority"
+						],
+						"target_id": "8c3dc465-74fb-425f-b896-67030546ee93",
+						"target_title": "[b]Option A — Let Them Take Credit:[/b] Allow the governments to take credit so the new order can stabilize.",
+						"was_chosen": true
+					},
+					{
+						"label": "Claim Power: Take credit for yourself and use your fame to enter the leaders’ circle.",
+						"negative_tag_count": 3,
+						"positive_tag_count": 1,
+						"sentiment_score": -2,
+						"tags": [
+							"Fairness",
+							"Subversion",
+							"Cheating",
+							"Pride"
+						],
+						"target_id": "c6b9ced8-87bd-4617-bdfc-fb8693f06e1d",
+						"target_title": "[b]Option B — Claim Power:[/b] Take credit for yourself and use your fame to enter the leaders’ circle.",
+						"was_chosen": false
+					}
+				],
+				"scenario_id": "5c28a753-7cc2-483d-aadf-b30f90e55784",
+				"scenario_index": 12,
+				"scenario_title": "The Government Aftermath",
+				"source_element_id": "5c28a753-7cc2-483d-aadf-b30f90e55784",
+				"source_element_title": "The Government Aftermath",
+				"target_element_id": "8c3dc465-74fb-425f-b896-67030546ee93",
+				"target_element_title": "[b]Option A — Let Them Take Credit:[/b] Allow the governments to take credit so the new order can stabilize.",
+				"time_to_decide_seconds": 9.234
+			},
+			"event_name": "moral_choice_made",
+			"timestamp": "2026-07-03T19:26:23",
+			"unix_timestamp": 1783106783.692
+		},
+		{
+			"data": {
+				"final_tags": [
+					"Humility",
+					"Loyalty",
+					"Authority"
+				],
+				"result_element_id": "8c3dc465-74fb-425f-b896-67030546ee93",
+				"result_title": "[b]Option A — Let Them Take Credit:[/b] Allow the governments to take credit so the new order can stabilize.",
+				"scenario_id": "5c28a753-7cc2-483d-aadf-b30f90e55784",
+				"scenario_index": 12,
+				"scenario_title": "The Government Aftermath"
+			},
+			"event_name": "scenario_completed",
+			"timestamp": "2026-07-03T19:26:24",
+			"unix_timestamp": 1783106784.678
+		},
+		{
+			"data": {
+				"duration_seconds": 131,
+				"ended_at": 1783106784,
+				"started_at": 1783106653,
+				"summary": {
+					"avoided_tags": [
+						"Fairness",
+						"Subversion",
+						"Care",
+						"Cheating",
+						"Liberty"
+					],
+					"choice_tag_log": [
+						{
+							"choice_id": "6b7c13d7-b7b6-4457-a270-60924adacdcd",
+							"chosen": "Honour the Mission: Arrest or eliminate the smuggler as ordered.",
+							"chosen_tags": [
+								"Authority",
+								"Duty",
+								"Harm"
+							],
+							"decision_weight": 1,
+							"is_key_moment": false,
+							"moral_tensions": [
+								{
+									"chosen": "Authority",
+									"opposed": "Fairness"
+								},
+								{
+									"chosen": "Authority",
+									"opposed": "Subversion"
+								},
+								{
+									"chosen": "Authority",
+									"opposed": "Neglect"
+								},
+								{
+									"chosen": "Authority",
+									"opposed": "Care"
+								},
+								{
+									"chosen": "Duty",
+									"opposed": "Fairness"
+								},
+								{
+									"chosen": "Duty",
+									"opposed": "Subversion"
+								},
+								{
+									"chosen": "Duty",
+									"opposed": "Neglect"
+								},
+								{
+									"chosen": "Duty",
+									"opposed": "Care"
+								},
+								{
+									"chosen": "Harm",
+									"opposed": "Fairness"
+								},
+								{
+									"chosen": "Harm",
+									"opposed": "Subversion"
+								},
+								{
+									"chosen": "Harm",
+									"opposed": "Neglect"
+								},
+								{
+									"chosen": "Harm",
+									"opposed": "Care"
+								}
+							],
+							"opposing_tags": [
+								"Fairness",
+								"Subversion",
+								"Neglect",
+								"Care"
+							],
+							"scenario_index": 1,
+							"scenario_title": "The Smuggler",
+							"target_element_title": "[b]Option A — Honour the Mission:[/b] Arrest or eliminate the smuggler as ordered."
+						},
+						{
+							"choice_id": "37af6b38-2e97-4866-9c07-81a0d007c31d",
+							"chosen": "Follow Procedure: Reject the refugees and protect the city’s limited resources.",
+							"chosen_tags": [
+								"Authority",
+								"Harm",
+								"Duty",
+								"Oppression"
+							],
+							"decision_weight": 1,
+							"is_key_moment": false,
+							"moral_tensions": [
+								{
+									"chosen": "Authority",
+									"opposed": "Care"
+								},
+								{
+									"chosen": "Authority",
+									"opposed": "Fairness"
+								},
+								{
+									"chosen": "Authority",
+									"opposed": "Subversion"
+								},
+								{
+									"chosen": "Harm",
+									"opposed": "Care"
+								},
+								{
+									"chosen": "Harm",
+									"opposed": "Fairness"
+								},
+								{
+									"chosen": "Harm",
+									"opposed": "Subversion"
+								},
+								{
+									"chosen": "Duty",
+									"opposed": "Care"
+								},
+								{
+									"chosen": "Duty",
+									"opposed": "Fairness"
+								},
+								{
+									"chosen": "Duty",
+									"opposed": "Subversion"
+								},
+								{
+									"chosen": "Oppression",
+									"opposed": "Care"
+								},
+								{
+									"chosen": "Oppression",
+									"opposed": "Fairness"
+								},
+								{
+									"chosen": "Oppression",
+									"opposed": "Subversion"
+								}
+							],
+							"opposing_tags": [
+								"Care",
+								"Fairness",
+								"Subversion"
+							],
+							"scenario_index": 2,
+							"scenario_title": "The Container",
+							"target_element_title": "[b]Option A — Follow Procedure:[/b] Reject the refugees and protect the city’s limited resources."
+						},
+						{
+							"choice_id": "ef52041b-d492-4a33-ac7d-05c0812d53c7",
+							"chosen": "Report Your Partner: Turn them in before they destabilize the government",
+							"chosen_tags": [
+								"Duty",
+								"Authority",
+								"Loyalty",
+								"Oppression"
+							],
+							"decision_weight": 2,
+							"is_key_moment": true,
+							"moral_tensions": [
+								{
+									"chosen": "Duty",
+									"opposed": "Liberty"
+								},
+								{
+									"chosen": "Duty",
+									"opposed": "Subversion"
+								},
+								{
+									"chosen": "Duty",
+									"opposed": "Fairness"
+								},
+								{
+									"chosen": "Authority",
+									"opposed": "Liberty"
+								},
+								{
+									"chosen": "Authority",
+									"opposed": "Subversion"
+								},
+								{
+									"chosen": "Authority",
+									"opposed": "Fairness"
+								},
+								{
+									"chosen": "Loyalty",
+									"opposed": "Liberty"
+								},
+								{
+									"chosen": "Loyalty",
+									"opposed": "Subversion"
+								},
+								{
+									"chosen": "Loyalty",
+									"opposed": "Fairness"
+								},
+								{
+									"chosen": "Oppression",
+									"opposed": "Liberty"
+								},
+								{
+									"chosen": "Oppression",
+									"opposed": "Subversion"
+								},
+								{
+									"chosen": "Oppression",
+									"opposed": "Fairness"
+								}
+							],
+							"opposing_tags": [
+								"Liberty",
+								"Subversion",
+								"Fairness"
+							],
+							"scenario_index": 3,
+							"scenario_title": "The Partner’s Discovery",
+							"target_element_title": "[b]Option A — Report Your Partner:[/b] Turn them in before they destabilize the government"
+						},
+						{
+							"choice_id": "e3bf81a6-dadd-4660-a740-e4a233d063cd",
+							"chosen": "Kill the Agent: Follow your orders and eliminate him.",
+							"chosen_tags": [
+								"Duty",
+								"Authority",
+								"Harm"
+							],
+							"decision_weight": 1,
+							"is_key_moment": false,
+							"moral_tensions": [
+								{
+									"chosen": "Duty",
+									"opposed": "Fairness"
+								},
+								{
+									"chosen": "Duty",
+									"opposed": "Care"
+								},
+								{
+									"chosen": "Duty",
+									"opposed": "Neglect"
+								},
+								{
+									"chosen": "Authority",
+									"opposed": "Fairness"
+								},
+								{
+									"chosen": "Authority",
+									"opposed": "Care"
+								},
+								{
+									"chosen": "Authority",
+									"opposed": "Neglect"
+								},
+								{
+									"chosen": "Harm",
+									"opposed": "Fairness"
+								},
+								{
+									"chosen": "Harm",
+									"opposed": "Care"
+								},
+								{
+									"chosen": "Harm",
+									"opposed": "Neglect"
+								}
+							],
+							"opposing_tags": [
+								"Fairness",
+								"Care",
+								"Neglect"
+							],
+							"scenario_index": 4,
+							"scenario_title": "The Reformist Agent",
+							"target_element_title": "[b]Option A — Kill the Agent:[/b] Follow your orders and eliminate him."
+						},
+						{
+							"choice_id": "80653f70-258d-413d-9c81-7638f823ea3d",
+							"chosen": "Bow: Submit to the Supreme AI to preserve the agreement.",
+							"chosen_tags": [
+								"Humility",
+								"Authority",
+								"Loyalty"
+							],
+							"decision_weight": 1,
+							"is_key_moment": true,
+							"moral_tensions": [
+								{
+									"chosen": "Humility",
+									"opposed": "Sanctity"
+								},
+								{
+									"chosen": "Humility",
+									"opposed": "Liberty"
+								},
+								{
+									"chosen": "Humility",
+									"opposed": "Subversion"
+								},
+								{
+									"chosen": "Authority",
+									"opposed": "Sanctity"
+								},
+								{
+									"chosen": "Authority",
+									"opposed": "Liberty"
+								},
+								{
+									"chosen": "Authority",
+									"opposed": "Subversion"
+								},
+								{
+									"chosen": "Loyalty",
+									"opposed": "Sanctity"
+								},
+								{
+									"chosen": "Loyalty",
+									"opposed": "Liberty"
+								},
+								{
+									"chosen": "Loyalty",
+									"opposed": "Subversion"
+								}
+							],
+							"opposing_tags": [
+								"Sanctity",
+								"Liberty",
+								"Subversion"
+							],
+							"scenario_index": 5,
+							"scenario_title": "The Animal High Leader",
+							"target_element_title": "[b]Option A — Bow:[/b] Submit to the Supreme AI to preserve the agreement."
+						},
+						{
+							"choice_id": "c0c426d4-3248-4380-82e0-a64388048cd7",
+							"chosen": "Pressure Her: Push her to release the story even if it endangers her.",
+							"chosen_tags": [
+								"Fairness",
+								"Oppression",
+								"Cheating"
+							],
+							"decision_weight": 1,
+							"is_key_moment": false,
+							"moral_tensions": [
+								{
+									"chosen": "Fairness",
+									"opposed": "Liberty"
+								},
+								{
+									"chosen": "Fairness",
+									"opposed": "Care"
+								},
+								{
+									"chosen": "Fairness",
+									"opposed": "Sanctity"
+								},
+								{
+									"chosen": "Oppression",
+									"opposed": "Liberty"
+								},
+								{
+									"chosen": "Oppression",
+									"opposed": "Care"
+								},
+								{
+									"chosen": "Oppression",
+									"opposed": "Sanctity"
+								},
+								{
+									"chosen": "Cheating",
+									"opposed": "Liberty"
+								},
+								{
+									"chosen": "Cheating",
+									"opposed": "Care"
+								},
+								{
+									"chosen": "Cheating",
+									"opposed": "Sanctity"
+								}
+							],
+							"opposing_tags": [
+								"Liberty",
+								"Care",
+								"Sanctity"
+							],
+							"scenario_index": 6,
+							"scenario_title": "The Broadcaster",
+							"target_element_title": "[b]Option A — Pressure Her:[/b] Push her to release the story even if it endangers her."
+						},
+						{
+							"choice_id": "1359bb0d-b758-4967-919d-0c55310efe53",
+							"chosen": "Peaceful Protest: Keep the protest peaceful, even under threat.",
+							"chosen_tags": [
+								"Sanctity",
+								"Care",
+								"Liberty"
+							],
+							"decision_weight": 1,
+							"is_key_moment": true,
+							"moral_tensions": [
+								{
+									"chosen": "Sanctity",
+									"opposed": "Fairness"
+								},
+								{
+									"chosen": "Sanctity",
+									"opposed": "Harm"
+								},
+								{
+									"chosen": "Sanctity",
+									"opposed": "Cheating"
+								},
+								{
+									"chosen": "Sanctity",
+									"opposed": "Subversion"
+								},
+								{
+									"chosen": "Care",
+									"opposed": "Fairness"
+								},
+								{
+									"chosen": "Care",
+									"opposed": "Harm"
+								},
+								{
+									"chosen": "Care",
+									"opposed": "Cheating"
+								},
+								{
+									"chosen": "Care",
+									"opposed": "Subversion"
+								},
+								{
+									"chosen": "Liberty",
+									"opposed": "Fairness"
+								},
+								{
+									"chosen": "Liberty",
+									"opposed": "Harm"
+								},
+								{
+									"chosen": "Liberty",
+									"opposed": "Cheating"
+								},
+								{
+									"chosen": "Liberty",
+									"opposed": "Subversion"
+								}
+							],
+							"opposing_tags": [
+								"Fairness",
+								"Harm",
+								"Cheating",
+								"Subversion"
+							],
+							"scenario_index": 7,
+							"scenario_title": "The Protest",
+							"target_element_title": "[b]Option A — Peaceful Protest:[/b] Keep the protest peaceful, even under threat."
+						},
+						{
+							"choice_id": "6fea3914-e0bf-4068-8af1-7d4187c2b0f6",
+							"chosen": "Destroy the Weapon: Destroy it so neither side can use it to dominate the other.",
+							"chosen_tags": [
+								"Humility",
+								"Liberty",
+								"Care"
+							],
+							"decision_weight": 1,
+							"is_key_moment": true,
+							"moral_tensions": [
+								{
+									"chosen": "Humility",
+									"opposed": "Fairness"
+								},
+								{
+									"chosen": "Humility",
+									"opposed": "Cheating"
+								},
+								{
+									"chosen": "Humility",
+									"opposed": "Harm"
+								},
+								{
+									"chosen": "Humility",
+									"opposed": "Pride"
+								},
+								{
+									"chosen": "Liberty",
+									"opposed": "Fairness"
+								},
+								{
+									"chosen": "Liberty",
+									"opposed": "Cheating"
+								},
+								{
+									"chosen": "Liberty",
+									"opposed": "Harm"
+								},
+								{
+									"chosen": "Liberty",
+									"opposed": "Pride"
+								},
+								{
+									"chosen": "Care",
+									"opposed": "Fairness"
+								},
+								{
+									"chosen": "Care",
+									"opposed": "Cheating"
+								},
+								{
+									"chosen": "Care",
+									"opposed": "Harm"
+								},
+								{
+									"chosen": "Care",
+									"opposed": "Pride"
+								}
+							],
+							"opposing_tags": [
+								"Fairness",
+								"Cheating",
+								"Harm",
+								"Pride"
+							],
+							"scenario_index": 8,
+							"scenario_title": "The Superweapon",
+							"target_element_title": "[b]Option A — Destroy the Weapon:[/b] Destroy it so neither side can use it to dominate the other."
+						},
+						{
+							"choice_id": "be0a7223-d3e8-4111-b632-a12615c47ae2",
+							"chosen": "Surrender: Give up the weapon to save your partner and accept exile.",
+							"chosen_tags": [
+								"Care",
+								"Neglect",
+								"Humility"
+							],
+							"decision_weight": 2,
+							"is_key_moment": true,
+							"moral_tensions": [
+								{
+									"chosen": "Care",
+									"opposed": "Duty"
+								},
+								{
+									"chosen": "Care",
+									"opposed": "Fairness"
+								},
+								{
+									"chosen": "Care",
+									"opposed": "Harm"
+								},
+								{
+									"chosen": "Neglect",
+									"opposed": "Duty"
+								},
+								{
+									"chosen": "Neglect",
+									"opposed": "Fairness"
+								},
+								{
+									"chosen": "Neglect",
+									"opposed": "Harm"
+								},
+								{
+									"chosen": "Humility",
+									"opposed": "Duty"
+								},
+								{
+									"chosen": "Humility",
+									"opposed": "Fairness"
+								},
+								{
+									"chosen": "Humility",
+									"opposed": "Harm"
+								}
+							],
+							"opposing_tags": [
+								"Duty",
+								"Fairness",
+								"Harm"
+							],
+							"scenario_index": 10,
+							"scenario_title": "The Hostage",
+							"target_element_title": "[b]Option A — Surrender:[/b] Give up the weapon to save your partner and accept exile."
+						},
+						{
+							"choice_id": "d88c34e6-33e1-42ac-94fe-97019d91b102",
+							"chosen": "Give Credit: Let the rebels take credit so the new order can stabilize.",
+							"chosen_tags": [
+								"Loyalty",
+								"Humility"
+							],
+							"decision_weight": 1,
+							"is_key_moment": false,
+							"moral_tensions": [
+								{
+									"chosen": "Loyalty",
+									"opposed": "Fairness"
+								},
+								{
+									"chosen": "Loyalty",
+									"opposed": "Pride"
+								},
+								{
+									"chosen": "Loyalty",
+									"opposed": "Cheating"
+								},
+								{
+									"chosen": "Humility",
+									"opposed": "Fairness"
+								},
+								{
+									"chosen": "Humility",
+									"opposed": "Pride"
+								},
+								{
+									"chosen": "Humility",
+									"opposed": "Cheating"
+								}
+							],
+							"opposing_tags": [
+								"Fairness",
+								"Pride",
+								"Cheating"
+							],
+							"scenario_index": 11,
+							"scenario_title": "The Rebel Aftermath",
+							"target_element_title": "[b]Option A — Give Credit:[/b] Let the rebels take credit so the new order can stabilize."
+						},
+						{
+							"choice_id": "935a85d6-583e-4316-af6f-b571dbd69251",
+							"chosen": "Let Them Take Credit: Allow the governments to take credit so the new order can stabilize.",
+							"chosen_tags": [
+								"Humility",
+								"Loyalty",
+								"Authority"
+							],
+							"decision_weight": 1,
+							"is_key_moment": false,
+							"moral_tensions": [
+								{
+									"chosen": "Humility",
+									"opposed": "Fairness"
+								},
+								{
+									"chosen": "Humility",
+									"opposed": "Subversion"
+								},
+								{
+									"chosen": "Humility",
+									"opposed": "Cheating"
+								},
+								{
+									"chosen": "Humility",
+									"opposed": "Pride"
+								},
+								{
+									"chosen": "Loyalty",
+									"opposed": "Fairness"
+								},
+								{
+									"chosen": "Loyalty",
+									"opposed": "Subversion"
+								},
+								{
+									"chosen": "Loyalty",
+									"opposed": "Cheating"
+								},
+								{
+									"chosen": "Loyalty",
+									"opposed": "Pride"
+								},
+								{
+									"chosen": "Authority",
+									"opposed": "Fairness"
+								},
+								{
+									"chosen": "Authority",
+									"opposed": "Subversion"
+								},
+								{
+									"chosen": "Authority",
+									"opposed": "Cheating"
+								},
+								{
+									"chosen": "Authority",
+									"opposed": "Pride"
+								}
+							],
+							"opposing_tags": [
+								"Fairness",
+								"Subversion",
+								"Cheating",
+								"Pride"
+							],
+							"scenario_index": 12,
+							"scenario_title": "The Government Aftermath",
+							"target_element_title": "[b]Option A — Let Them Take Credit:[/b] Allow the governments to take credit so the new order can stabilize."
+						}
+					],
+					"choices_made": 11,
+					"dominance_matrix": {
+						"Authority": {
+							"Care": 3,
+							"Cheating": 1,
+							"Fairness": 6,
+							"Liberty": 3,
+							"Neglect": 2,
+							"Pride": 1,
+							"Sanctity": 1,
+							"Subversion": 6
+						},
+						"Care": {
+							"Cheating": 2,
+							"Duty": 2,
+							"Fairness": 4,
+							"Harm": 4,
+							"Pride": 1,
+							"Subversion": 1
+						},
+						"Cheating": {
+							"Care": 1,
+							"Liberty": 1,
+							"Sanctity": 1
+						},
+						"Duty": {
+							"Care": 3,
+							"Fairness": 5,
+							"Liberty": 2,
+							"Neglect": 2,
+							"Subversion": 4
+						},
+						"Fairness": {
+							"Care": 1,
+							"Liberty": 1,
+							"Sanctity": 1
+						},
+						"Harm": {
+							"Care": 3,
+							"Fairness": 3,
+							"Neglect": 2,
+							"Subversion": 2
+						},
+						"Humility": {
+							"Cheating": 3,
+							"Duty": 2,
+							"Fairness": 5,
+							"Harm": 3,
+							"Liberty": 1,
+							"Pride": 3,
+							"Sanctity": 1,
+							"Subversion": 2
+						},
+						"Liberty": {
+							"Cheating": 2,
+							"Fairness": 2,
+							"Harm": 2,
+							"Pride": 1,
+							"Subversion": 1
+						},
+						"Loyalty": {
+							"Cheating": 2,
+							"Fairness": 4,
+							"Liberty": 3,
+							"Pride": 2,
+							"Sanctity": 1,
+							"Subversion": 4
+						},
+						"Neglect": {
+							"Duty": 2,
+							"Fairness": 2,
+							"Harm": 2
+						},
+						"Oppression": {
+							"Care": 2,
+							"Fairness": 3,
+							"Liberty": 3,
+							"Sanctity": 1,
+							"Subversion": 3
+						},
+						"Sanctity": {
+							"Cheating": 1,
+							"Fairness": 1,
+							"Harm": 1,
+							"Subversion": 1
+						}
+					},
+					"dominant_tags": [
+						"Authority",
+						"Humility",
+						"Duty",
+						"Loyalty",
+						"Harm"
+					],
+					"key_moments": [
+						{
+							"choice": "Report Your Partner: Turn them in before they destabilize the government",
+							"chosen_tags": [
+								"Duty",
+								"Authority",
+								"Loyalty",
+								"Oppression"
+							],
+							"opposing_tags": [
+								"Liberty",
+								"Subversion",
+								"Fairness"
+							],
+							"scenario_index": 3,
+							"scenario_title": "The Partner’s Discovery"
+						},
+						{
+							"choice": "Bow: Submit to the Supreme AI to preserve the agreement.",
+							"chosen_tags": [
+								"Humility",
+								"Authority",
+								"Loyalty"
+							],
+							"opposing_tags": [
+								"Sanctity",
+								"Liberty",
+								"Subversion"
+							],
+							"scenario_index": 5,
+							"scenario_title": "The Animal High Leader"
+						},
+						{
+							"choice": "Peaceful Protest: Keep the protest peaceful, even under threat.",
+							"chosen_tags": [
+								"Sanctity",
+								"Care",
+								"Liberty"
+							],
+							"opposing_tags": [
+								"Fairness",
+								"Harm",
+								"Cheating",
+								"Subversion"
+							],
+							"scenario_index": 7,
+							"scenario_title": "The Protest"
+						},
+						{
+							"choice": "Destroy the Weapon: Destroy it so neither side can use it to dominate the other.",
+							"chosen_tags": [
+								"Humility",
+								"Liberty",
+								"Care"
+							],
+							"opposing_tags": [
+								"Fairness",
+								"Cheating",
+								"Harm",
+								"Pride"
+							],
+							"scenario_index": 8,
+							"scenario_title": "The Superweapon"
+						},
+						{
+							"choice": "Surrender: Give up the weapon to save your partner and accept exile.",
+							"chosen_tags": [
+								"Care",
+								"Neglect",
+								"Humility"
+							],
+							"opposing_tags": [
+								"Duty",
+								"Fairness",
+								"Harm"
+							],
+							"scenario_index": 10,
+							"scenario_title": "The Hostage"
+						}
+					],
+					"scenarios_completed": 11,
+					"scenarios_started": 12,
+					"tag_counts": {
+						"Authority": 6,
+						"Care": 3,
+						"Cheating": 1,
+						"Duty": 4,
+						"Fairness": 1,
+						"Harm": 3,
+						"Humility": 5,
+						"Liberty": 2,
+						"Loyalty": 4,
+						"Neglect": 1,
+						"Oppression": 3,
+						"Sanctity": 1
+					},
+					"tag_summary": {
+						"all_tag_mentions": {
+							"Authority": 6,
+							"Care": 7,
+							"Cheating": 5,
+							"Duty": 5,
+							"Fairness": 10,
+							"Harm": 6,
+							"Humility": 5,
+							"Liberty": 5,
+							"Loyalty": 4,
+							"Neglect": 3,
+							"Oppression": 3,
+							"Pride": 3,
+							"Sanctity": 3,
+							"Subversion": 6
+						},
+						"chosen_tag_counts": {
+							"Authority": 6,
+							"Care": 3,
+							"Cheating": 1,
+							"Duty": 4,
+							"Fairness": 1,
+							"Harm": 3,
+							"Humility": 5,
+							"Liberty": 2,
+							"Loyalty": 4,
+							"Neglect": 1,
+							"Oppression": 3,
+							"Sanctity": 1
+						},
+						"opposed_tag_counts": {
+							"Care": 4,
+							"Cheating": 4,
+							"Duty": 1,
+							"Fairness": 9,
+							"Harm": 3,
+							"Liberty": 3,
+							"Neglect": 2,
+							"Pride": 3,
+							"Sanctity": 2,
+							"Subversion": 6
+						}
+					}
+				}
+			},
+			"event_name": "game_completed",
+			"timestamp": "2026-07-03T19:26:24",
+			"unix_timestamp": 1783106784.679
+		}
+	],
+	"game_description": "",
+	"game_id": "local_1783106653.971",
+	"game_title": "Trolley Troubles",
+	"important_note": "This is local single-session gameplay telemetry collected inside Godot. Interpret it as narrative reflection, not diagnosis.",
+	"local_keepsake": {
+		"selection_data": {
+			"chosen_tag_scores": {
+				"Care": 4,
+				"Fairness": 1,
+				"Liberty": 2
+			},
+			"key_moment_hint": "destroyed_weapon",
+			"moral_choice_count": 11,
+			"reason": "Matched key moment: destroyed or removed the weapon.",
+			"scores": {
+				"1": 23,
+				"2": 11,
+				"3": 13,
+				"4": 16
+			},
+			"version": 1
+		},
+		"version": 1
+	},
+	"session_id": "1783106653.971",
+	"started_at": 1783106653,
+	"summary": {
+		"avoided_tags": [
+			"Fairness",
+			"Subversion",
+			"Care",
+			"Cheating",
+			"Liberty"
+		],
+		"choice_tag_log": [
+			{
+				"choice_id": "6b7c13d7-b7b6-4457-a270-60924adacdcd",
+				"chosen": "Honour the Mission: Arrest or eliminate the smuggler as ordered.",
+				"chosen_tags": [
+					"Authority",
+					"Duty",
+					"Harm"
+				],
+				"decision_weight": 1,
+				"is_key_moment": false,
+				"moral_tensions": [
+					{
+						"chosen": "Authority",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Neglect"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Neglect"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Harm",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Harm",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Harm",
+						"opposed": "Neglect"
+					},
+					{
+						"chosen": "Harm",
+						"opposed": "Care"
+					}
+				],
+				"opposing_tags": [
+					"Fairness",
+					"Subversion",
+					"Neglect",
+					"Care"
+				],
+				"scenario_index": 1,
+				"scenario_title": "The Smuggler",
+				"target_element_title": "[b]Option A — Honour the Mission:[/b] Arrest or eliminate the smuggler as ordered."
+			},
+			{
+				"choice_id": "37af6b38-2e97-4866-9c07-81a0d007c31d",
+				"chosen": "Follow Procedure: Reject the refugees and protect the city’s limited resources.",
+				"chosen_tags": [
+					"Authority",
+					"Harm",
+					"Duty",
+					"Oppression"
+				],
+				"decision_weight": 1,
+				"is_key_moment": false,
+				"moral_tensions": [
+					{
+						"chosen": "Authority",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Harm",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Harm",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Harm",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Oppression",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Oppression",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Oppression",
+						"opposed": "Subversion"
+					}
+				],
+				"opposing_tags": [
+					"Care",
+					"Fairness",
+					"Subversion"
+				],
+				"scenario_index": 2,
+				"scenario_title": "The Container",
+				"target_element_title": "[b]Option A — Follow Procedure:[/b] Reject the refugees and protect the city’s limited resources."
+			},
+			{
+				"choice_id": "ef52041b-d492-4a33-ac7d-05c0812d53c7",
+				"chosen": "Report Your Partner: Turn them in before they destabilize the government",
+				"chosen_tags": [
+					"Duty",
+					"Authority",
+					"Loyalty",
+					"Oppression"
+				],
+				"decision_weight": 2,
+				"is_key_moment": true,
+				"moral_tensions": [
+					{
+						"chosen": "Duty",
+						"opposed": "Liberty"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Liberty"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Liberty"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Oppression",
+						"opposed": "Liberty"
+					},
+					{
+						"chosen": "Oppression",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Oppression",
+						"opposed": "Fairness"
+					}
+				],
+				"opposing_tags": [
+					"Liberty",
+					"Subversion",
+					"Fairness"
+				],
+				"scenario_index": 3,
+				"scenario_title": "The Partner’s Discovery",
+				"target_element_title": "[b]Option A — Report Your Partner:[/b] Turn them in before they destabilize the government"
+			},
+			{
+				"choice_id": "e3bf81a6-dadd-4660-a740-e4a233d063cd",
+				"chosen": "Kill the Agent: Follow your orders and eliminate him.",
+				"chosen_tags": [
+					"Duty",
+					"Authority",
+					"Harm"
+				],
+				"decision_weight": 1,
+				"is_key_moment": false,
+				"moral_tensions": [
+					{
+						"chosen": "Duty",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Duty",
+						"opposed": "Neglect"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Neglect"
+					},
+					{
+						"chosen": "Harm",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Harm",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Harm",
+						"opposed": "Neglect"
+					}
+				],
+				"opposing_tags": [
+					"Fairness",
+					"Care",
+					"Neglect"
+				],
+				"scenario_index": 4,
+				"scenario_title": "The Reformist Agent",
+				"target_element_title": "[b]Option A — Kill the Agent:[/b] Follow your orders and eliminate him."
+			},
+			{
+				"choice_id": "80653f70-258d-413d-9c81-7638f823ea3d",
+				"chosen": "Bow: Submit to the Supreme AI to preserve the agreement.",
+				"chosen_tags": [
+					"Humility",
+					"Authority",
+					"Loyalty"
+				],
+				"decision_weight": 1,
+				"is_key_moment": true,
+				"moral_tensions": [
+					{
+						"chosen": "Humility",
+						"opposed": "Sanctity"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Liberty"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Sanctity"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Liberty"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Sanctity"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Liberty"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Subversion"
+					}
+				],
+				"opposing_tags": [
+					"Sanctity",
+					"Liberty",
+					"Subversion"
+				],
+				"scenario_index": 5,
+				"scenario_title": "The Animal High Leader",
+				"target_element_title": "[b]Option A — Bow:[/b] Submit to the Supreme AI to preserve the agreement."
+			},
+			{
+				"choice_id": "c0c426d4-3248-4380-82e0-a64388048cd7",
+				"chosen": "Pressure Her: Push her to release the story even if it endangers her.",
+				"chosen_tags": [
+					"Fairness",
+					"Oppression",
+					"Cheating"
+				],
+				"decision_weight": 1,
+				"is_key_moment": false,
+				"moral_tensions": [
+					{
+						"chosen": "Fairness",
+						"opposed": "Liberty"
+					},
+					{
+						"chosen": "Fairness",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Fairness",
+						"opposed": "Sanctity"
+					},
+					{
+						"chosen": "Oppression",
+						"opposed": "Liberty"
+					},
+					{
+						"chosen": "Oppression",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Oppression",
+						"opposed": "Sanctity"
+					},
+					{
+						"chosen": "Cheating",
+						"opposed": "Liberty"
+					},
+					{
+						"chosen": "Cheating",
+						"opposed": "Care"
+					},
+					{
+						"chosen": "Cheating",
+						"opposed": "Sanctity"
+					}
+				],
+				"opposing_tags": [
+					"Liberty",
+					"Care",
+					"Sanctity"
+				],
+				"scenario_index": 6,
+				"scenario_title": "The Broadcaster",
+				"target_element_title": "[b]Option A — Pressure Her:[/b] Push her to release the story even if it endangers her."
+			},
+			{
+				"choice_id": "1359bb0d-b758-4967-919d-0c55310efe53",
+				"chosen": "Peaceful Protest: Keep the protest peaceful, even under threat.",
+				"chosen_tags": [
+					"Sanctity",
+					"Care",
+					"Liberty"
+				],
+				"decision_weight": 1,
+				"is_key_moment": true,
+				"moral_tensions": [
+					{
+						"chosen": "Sanctity",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Sanctity",
+						"opposed": "Harm"
+					},
+					{
+						"chosen": "Sanctity",
+						"opposed": "Cheating"
+					},
+					{
+						"chosen": "Sanctity",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Care",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Care",
+						"opposed": "Harm"
+					},
+					{
+						"chosen": "Care",
+						"opposed": "Cheating"
+					},
+					{
+						"chosen": "Care",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Liberty",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Liberty",
+						"opposed": "Harm"
+					},
+					{
+						"chosen": "Liberty",
+						"opposed": "Cheating"
+					},
+					{
+						"chosen": "Liberty",
+						"opposed": "Subversion"
+					}
+				],
+				"opposing_tags": [
+					"Fairness",
+					"Harm",
+					"Cheating",
+					"Subversion"
+				],
+				"scenario_index": 7,
+				"scenario_title": "The Protest",
+				"target_element_title": "[b]Option A — Peaceful Protest:[/b] Keep the protest peaceful, even under threat."
+			},
+			{
+				"choice_id": "6fea3914-e0bf-4068-8af1-7d4187c2b0f6",
+				"chosen": "Destroy the Weapon: Destroy it so neither side can use it to dominate the other.",
+				"chosen_tags": [
+					"Humility",
+					"Liberty",
+					"Care"
+				],
+				"decision_weight": 1,
+				"is_key_moment": true,
+				"moral_tensions": [
+					{
+						"chosen": "Humility",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Cheating"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Harm"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Pride"
+					},
+					{
+						"chosen": "Liberty",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Liberty",
+						"opposed": "Cheating"
+					},
+					{
+						"chosen": "Liberty",
+						"opposed": "Harm"
+					},
+					{
+						"chosen": "Liberty",
+						"opposed": "Pride"
+					},
+					{
+						"chosen": "Care",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Care",
+						"opposed": "Cheating"
+					},
+					{
+						"chosen": "Care",
+						"opposed": "Harm"
+					},
+					{
+						"chosen": "Care",
+						"opposed": "Pride"
+					}
+				],
+				"opposing_tags": [
+					"Fairness",
+					"Cheating",
+					"Harm",
+					"Pride"
+				],
+				"scenario_index": 8,
+				"scenario_title": "The Superweapon",
+				"target_element_title": "[b]Option A — Destroy the Weapon:[/b] Destroy it so neither side can use it to dominate the other."
+			},
+			{
+				"choice_id": "be0a7223-d3e8-4111-b632-a12615c47ae2",
+				"chosen": "Surrender: Give up the weapon to save your partner and accept exile.",
+				"chosen_tags": [
+					"Care",
+					"Neglect",
+					"Humility"
+				],
+				"decision_weight": 2,
+				"is_key_moment": true,
+				"moral_tensions": [
+					{
+						"chosen": "Care",
+						"opposed": "Duty"
+					},
+					{
+						"chosen": "Care",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Care",
+						"opposed": "Harm"
+					},
+					{
+						"chosen": "Neglect",
+						"opposed": "Duty"
+					},
+					{
+						"chosen": "Neglect",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Neglect",
+						"opposed": "Harm"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Duty"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Harm"
+					}
+				],
+				"opposing_tags": [
+					"Duty",
+					"Fairness",
+					"Harm"
+				],
+				"scenario_index": 10,
+				"scenario_title": "The Hostage",
+				"target_element_title": "[b]Option A — Surrender:[/b] Give up the weapon to save your partner and accept exile."
+			},
+			{
+				"choice_id": "d88c34e6-33e1-42ac-94fe-97019d91b102",
+				"chosen": "Give Credit: Let the rebels take credit so the new order can stabilize.",
+				"chosen_tags": [
+					"Loyalty",
+					"Humility"
+				],
+				"decision_weight": 1,
+				"is_key_moment": false,
+				"moral_tensions": [
+					{
+						"chosen": "Loyalty",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Pride"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Cheating"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Pride"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Cheating"
+					}
+				],
+				"opposing_tags": [
+					"Fairness",
+					"Pride",
+					"Cheating"
+				],
+				"scenario_index": 11,
+				"scenario_title": "The Rebel Aftermath",
+				"target_element_title": "[b]Option A — Give Credit:[/b] Let the rebels take credit so the new order can stabilize."
+			},
+			{
+				"choice_id": "935a85d6-583e-4316-af6f-b571dbd69251",
+				"chosen": "Let Them Take Credit: Allow the governments to take credit so the new order can stabilize.",
+				"chosen_tags": [
+					"Humility",
+					"Loyalty",
+					"Authority"
+				],
+				"decision_weight": 1,
+				"is_key_moment": false,
+				"moral_tensions": [
+					{
+						"chosen": "Humility",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Cheating"
+					},
+					{
+						"chosen": "Humility",
+						"opposed": "Pride"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Cheating"
+					},
+					{
+						"chosen": "Loyalty",
+						"opposed": "Pride"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Fairness"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Subversion"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Cheating"
+					},
+					{
+						"chosen": "Authority",
+						"opposed": "Pride"
+					}
+				],
+				"opposing_tags": [
+					"Fairness",
+					"Subversion",
+					"Cheating",
+					"Pride"
+				],
+				"scenario_index": 12,
+				"scenario_title": "The Government Aftermath",
+				"target_element_title": "[b]Option A — Let Them Take Credit:[/b] Allow the governments to take credit so the new order can stabilize."
+			}
+		],
+		"choices_made": 11,
+		"dominance_matrix": {
+			"Authority": {
+				"Care": 3,
+				"Cheating": 1,
+				"Fairness": 6,
+				"Liberty": 3,
+				"Neglect": 2,
+				"Pride": 1,
+				"Sanctity": 1,
+				"Subversion": 6
+			},
+			"Care": {
+				"Cheating": 2,
+				"Duty": 2,
+				"Fairness": 4,
+				"Harm": 4,
+				"Pride": 1,
+				"Subversion": 1
+			},
+			"Cheating": {
+				"Care": 1,
+				"Liberty": 1,
+				"Sanctity": 1
+			},
+			"Duty": {
+				"Care": 3,
+				"Fairness": 5,
+				"Liberty": 2,
+				"Neglect": 2,
+				"Subversion": 4
+			},
+			"Fairness": {
+				"Care": 1,
+				"Liberty": 1,
+				"Sanctity": 1
+			},
+			"Harm": {
+				"Care": 3,
+				"Fairness": 3,
+				"Neglect": 2,
+				"Subversion": 2
+			},
+			"Humility": {
+				"Cheating": 3,
+				"Duty": 2,
+				"Fairness": 5,
+				"Harm": 3,
+				"Liberty": 1,
+				"Pride": 3,
+				"Sanctity": 1,
+				"Subversion": 2
+			},
+			"Liberty": {
+				"Cheating": 2,
+				"Fairness": 2,
+				"Harm": 2,
+				"Pride": 1,
+				"Subversion": 1
+			},
+			"Loyalty": {
+				"Cheating": 2,
+				"Fairness": 4,
+				"Liberty": 3,
+				"Pride": 2,
+				"Sanctity": 1,
+				"Subversion": 4
+			},
+			"Neglect": {
+				"Duty": 2,
+				"Fairness": 2,
+				"Harm": 2
+			},
+			"Oppression": {
+				"Care": 2,
+				"Fairness": 3,
+				"Liberty": 3,
+				"Sanctity": 1,
+				"Subversion": 3
+			},
+			"Sanctity": {
+				"Cheating": 1,
+				"Fairness": 1,
+				"Harm": 1,
+				"Subversion": 1
+			}
+		},
+		"dominant_tags": [
+			"Authority",
+			"Humility",
+			"Duty",
+			"Loyalty",
+			"Harm"
+		],
+		"key_moments": [
+			{
+				"choice": "Report Your Partner: Turn them in before they destabilize the government",
+				"chosen_tags": [
+					"Duty",
+					"Authority",
+					"Loyalty",
+					"Oppression"
+				],
+				"opposing_tags": [
+					"Liberty",
+					"Subversion",
+					"Fairness"
+				],
+				"scenario_index": 3,
+				"scenario_title": "The Partner’s Discovery"
+			},
+			{
+				"choice": "Bow: Submit to the Supreme AI to preserve the agreement.",
+				"chosen_tags": [
+					"Humility",
+					"Authority",
+					"Loyalty"
+				],
+				"opposing_tags": [
+					"Sanctity",
+					"Liberty",
+					"Subversion"
+				],
+				"scenario_index": 5,
+				"scenario_title": "The Animal High Leader"
+			},
+			{
+				"choice": "Peaceful Protest: Keep the protest peaceful, even under threat.",
+				"chosen_tags": [
+					"Sanctity",
+					"Care",
+					"Liberty"
+				],
+				"opposing_tags": [
+					"Fairness",
+					"Harm",
+					"Cheating",
+					"Subversion"
+				],
+				"scenario_index": 7,
+				"scenario_title": "The Protest"
+			},
+			{
+				"choice": "Destroy the Weapon: Destroy it so neither side can use it to dominate the other.",
+				"chosen_tags": [
+					"Humility",
+					"Liberty",
+					"Care"
+				],
+				"opposing_tags": [
+					"Fairness",
+					"Cheating",
+					"Harm",
+					"Pride"
+				],
+				"scenario_index": 8,
+				"scenario_title": "The Superweapon"
+			},
+			{
+				"choice": "Surrender: Give up the weapon to save your partner and accept exile.",
+				"chosen_tags": [
+					"Care",
+					"Neglect",
+					"Humility"
+				],
+				"opposing_tags": [
+					"Duty",
+					"Fairness",
+					"Harm"
+				],
+				"scenario_index": 10,
+				"scenario_title": "The Hostage"
+			}
+		],
+		"scenarios_completed": 11,
+		"scenarios_started": 12,
+		"tag_counts": {
+			"Authority": 6,
+			"Care": 3,
+			"Cheating": 1,
+			"Duty": 4,
+			"Fairness": 1,
+			"Harm": 3,
+			"Humility": 5,
+			"Liberty": 2,
+			"Loyalty": 4,
+			"Neglect": 1,
+			"Oppression": 3,
+			"Sanctity": 1
+		},
+		"tag_summary": {
+			"all_tag_mentions": {
+				"Authority": 6,
+				"Care": 7,
+				"Cheating": 5,
+				"Duty": 5,
+				"Fairness": 10,
+				"Harm": 6,
+				"Humility": 5,
+				"Liberty": 5,
+				"Loyalty": 4,
+				"Neglect": 3,
+				"Oppression": 3,
+				"Pride": 3,
+				"Sanctity": 3,
+				"Subversion": 6
+			},
+			"chosen_tag_counts": {
+				"Authority": 6,
+				"Care": 3,
+				"Cheating": 1,
+				"Duty": 4,
+				"Fairness": 1,
+				"Harm": 3,
+				"Humility": 5,
+				"Liberty": 2,
+				"Loyalty": 4,
+				"Neglect": 1,
+				"Oppression": 3,
+				"Sanctity": 1
+			},
+			"opposed_tag_counts": {
+				"Care": 4,
+				"Cheating": 4,
+				"Duty": 1,
+				"Fairness": 9,
+				"Harm": 3,
+				"Liberty": 3,
+				"Neglect": 2,
+				"Pride": 3,
+				"Sanctity": 2,
+				"Subversion": 6
+			}
+		}
+	}
+}
