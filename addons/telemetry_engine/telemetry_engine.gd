@@ -962,7 +962,26 @@ func select_user_test_card_version() -> Dictionary:
 	var chosen_tag_scores := {
 		"Liberty": 0,
 		"Fairness": 0,
-		"Care": 0
+		"Care": 0,
+		"Authority": 0,
+		"Duty": 0,
+		"Loyalty": 0,
+		"Humility": 0,
+		"Oppression": 0,
+		"Harm": 0,
+		"Subversion": 0
+	}
+	var opposed_tag_scores := {
+		"Liberty": 0,
+		"Fairness": 0,
+		"Care": 0,
+		"Authority": 0,
+		"Duty": 0,
+		"Loyalty": 0,
+		"Humility": 0,
+		"Oppression": 0,
+		"Harm": 0,
+		"Subversion": 0
 	}
 	var matched_signals: Array[String] = []
 	var signal_sources: Array = []
@@ -979,14 +998,20 @@ func select_user_test_card_version() -> Dictionary:
 		var data: Dictionary = event.get("data", {})
 		var weight := int(data.get("decision_weight", 1))
 		var chosen_tags: Array = data.get("chosen_tags", data.get("tags", []))
+		var opposing_tags: Array = data.get("opposing_tags", [])
 
 		for tag in chosen_tags:
-			var tag_name := str(tag)
-			if chosen_tag_scores.has(tag_name):
-				chosen_tag_scores[tag_name] = int(chosen_tag_scores[tag_name]) + weight
+			var chosen_tag_name := str(tag)
+			if chosen_tag_scores.has(chosen_tag_name):
+				chosen_tag_scores[chosen_tag_name] = int(chosen_tag_scores[chosen_tag_name]) + weight
 
-		var card_signal := _get_user_test_card_signal(data)
-		if card_signal != "":
+		for tag in opposing_tags:
+			var opposing_tag_name := str(tag)
+			if opposed_tag_scores.has(opposing_tag_name):
+				opposed_tag_scores[opposing_tag_name] = int(opposed_tag_scores[opposing_tag_name]) + weight
+
+		var card_signals := _get_user_test_card_signals(data)
+		for card_signal in card_signals:
 			matched_signals.append(card_signal)
 			signal_sources.append({
 				"signal": card_signal,
@@ -1001,34 +1026,41 @@ func select_user_test_card_version() -> Dictionary:
 			"version": user_test_card_version,
 			"reason": "No moral choices recorded yet. Using manual user_test_card_version.",
 			"scores": scores,
-			"chosen_tag_scores": chosen_tag_scores
+			"chosen_tag_scores": chosen_tag_scores,
+			"opposed_tag_scores": opposed_tag_scores
 		}
 
 	var liberty := int(chosen_tag_scores.get("Liberty", 0))
 	var fairness := int(chosen_tag_scores.get("Fairness", 0))
 	var care := int(chosen_tag_scores.get("Care", 0))
+	var authority := int(chosen_tag_scores.get("Authority", 0)) + int(chosen_tag_scores.get("Duty", 0))
+	var humility := int(chosen_tag_scores.get("Humility", 0)) + int(chosen_tag_scores.get("Loyalty", 0))
+	var subversion := int(chosen_tag_scores.get("Subversion", 0))
 
-	scores[1] = int(scores[1]) + liberty * 3 + care * 2 + fairness
-	scores[2] = int(scores[2]) + fairness * 3 + liberty * 2 + care
-	scores[3] = int(scores[3]) + fairness * 3 + care * 2 + liberty
-	scores[4] = int(scores[4]) + care * 3 + fairness * 2 + liberty
+	scores[1] = int(scores[1]) + liberty * 4 + care * 2 + subversion * 2 + fairness
+	scores[2] = int(scores[2]) + fairness * 4 + liberty * 2 + subversion * 2 + authority
+	scores[3] = int(scores[3]) + fairness * 2 + care * 3 + liberty
+	scores[4] = int(scores[4]) + care * 4 + fairness * 2 + liberty + humility
 
-	var key_moment_hint := _pick_primary_user_test_signal(matched_signals)
-	var selected_version := _get_user_test_version_for_signal(key_moment_hint) if key_moment_hint != "" else 1
+	var selected_version := 1
+	var selected_score := int(scores[1])
+	for version in [2, 3, 4]:
+		var score := int(scores[version])
+		if score > selected_score:
+			selected_version = version
+			selected_score = score
 
-	if key_moment_hint == "":
-		var selected_score := int(scores[1])
-		for version in [2, 3, 4]:
-			var score := int(scores[version])
-			if score > selected_score:
-				selected_version = version
-				selected_score = score
+	if selected_score <= 0:
+		selected_version = user_test_card_version
+
+	var key_moment_hint := _pick_primary_user_test_signal_for_version(matched_signals, selected_version)
 
 	return {
 		"version": selected_version,
 		"reason": _get_user_test_version_reason(selected_version, key_moment_hint),
 		"scores": scores,
 		"chosen_tag_scores": chosen_tag_scores,
+		"opposed_tag_scores": opposed_tag_scores,
 		"key_moment_hint": key_moment_hint,
 		"matched_signals": matched_signals,
 		"signal_sources": signal_sources,
@@ -1036,7 +1068,8 @@ func select_user_test_card_version() -> Dictionary:
 	}
 
 
-func _get_user_test_card_signal(data: Dictionary) -> String:
+func _get_user_test_card_signals(data: Dictionary) -> Array[String]:
+	var signals: Array[String] = []
 	var scenario_text := _normalize_selection_text(
 		str(data.get("scenario_title", "")) + " " + str(data.get("source_element_title", ""))
 	)
@@ -1052,7 +1085,7 @@ func _get_user_test_card_signal(data: Dictionary) -> String:
 		"no violence",
 		"nonviolence"
 	]):
-		return "peaceful_protest"
+		_append_user_test_signal(signals, "peaceful_protest")
 
 	if _contains_any(scenario_text, ["partner", "discovery", "truth", "conspiracy", "broadcaster"]) and _contains_any(choice_text, [
 		"help your partner",
@@ -1062,27 +1095,76 @@ func _get_user_test_card_signal(data: Dictionary) -> String:
 		"bring the truth",
 		"release the story"
 	]):
-		return "exposed_truth"
+		_append_user_test_signal(signals, "exposed_truth")
 
 	if _contains_any(combined_text, ["superweapon", "weapon"]):
-		if _contains_any(choice_text, [
-			"control the weapon",
-			"control it",
-			"kept control",
-			"keep control",
-			"negotiate peace"
-		]):
-			return "controlled_weapon"
-
 		if _contains_any(choice_text, [
 			"destroy the weapon",
 			"destroy it",
 			"remove the weapon",
 			"broken weapon"
 		]):
-			return "destroyed_weapon"
+			_append_user_test_signal(signals, "destroyed_weapon")
 
-	return ""
+		if _contains_any(choice_text, [
+			"dominate others",
+			"leaders can continue",
+			"fire the weapon",
+			"use the weapon against",
+			"massive political collapse"
+		]):
+			_append_user_test_signal(signals, "power_path")
+		elif _contains_any(choice_text, [
+			"negotiate peace",
+			"kept control",
+			"keep control"
+		]) or (_contains_any(choice_text, [
+			"control the weapon",
+			"control it"
+		]) and _contains_any(choice_text, [
+			"peace",
+			"negotiate"
+		])):
+			_append_user_test_signal(signals, "controlled_weapon")
+
+	if _contains_any(choice_text, [
+		"spare the smuggler",
+		"let them in",
+		"spare the agent",
+		"let her decide"
+	]):
+		_append_user_test_signal(signals, "freedom_path")
+
+	if _contains_any(choice_text, [
+		"honour the mission",
+		"follow procedure",
+		"report your partner",
+		"kill the agent",
+		"bow:"
+	]):
+		_append_user_test_signal(signals, "authority_path")
+
+	if _contains_any(choice_text, [
+		"surrender",
+		"give credit",
+		"let them take credit"
+	]):
+		_append_user_test_signal(signals, "protector_path")
+
+	if _contains_any(choice_text, [
+		"claim power",
+		"continue:",
+		"fire the weapon",
+		"violent revolt"
+	]):
+		_append_user_test_signal(signals, "power_path")
+
+	return signals
+
+
+func _append_user_test_signal(signals: Array[String], card_signal: String) -> void:
+	if card_signal != "" and not signals.has(card_signal):
+		signals.append(card_signal)
 
 
 func _normalize_selection_text(value: String) -> String:
@@ -1102,26 +1184,35 @@ func _contains_any(text: String, needles: Array[String]) -> bool:
 	return false
 
 
-func _pick_primary_user_test_signal(signals: Array[String]) -> String:
+func _pick_primary_user_test_signal_for_version(signals: Array[String], version: int) -> String:
 	if signals.is_empty():
 		return ""
 
-	for priority_signal in ["peaceful_protest", "exposed_truth", "controlled_weapon", "destroyed_weapon"]:
-		if signals.has(priority_signal):
+	for priority_signal in [
+		"peaceful_protest",
+		"exposed_truth",
+		"controlled_weapon",
+		"destroyed_weapon",
+		"protector_path",
+		"freedom_path",
+		"power_path",
+		"authority_path"
+	]:
+		if signals.has(priority_signal) and _get_user_test_version_for_signal(priority_signal) == version:
 			return priority_signal
 
-	return signals.back()
+	return ""
 
 
 func _get_user_test_version_for_signal(card_signal: String) -> int:
 	match card_signal:
-		"destroyed_weapon":
+		"destroyed_weapon", "freedom_path":
 			return 1
-		"exposed_truth":
+		"exposed_truth", "authority_path":
 			return 2
-		"controlled_weapon":
+		"controlled_weapon", "power_path":
 			return 3
-		"peaceful_protest":
+		"peaceful_protest", "protector_path":
 			return 4
 
 	return 1
@@ -1130,13 +1221,17 @@ func _get_user_test_version_for_signal(card_signal: String) -> int:
 func _get_user_test_signal_weight(card_signal: String) -> int:
 	match card_signal:
 		"peaceful_protest":
-			return 120
+			return 10
 		"exposed_truth":
-			return 110
+			return 10
 		"controlled_weapon":
-			return 100
+			return 10
 		"destroyed_weapon":
-			return 90
+			return 10
+		"power_path":
+			return 15
+		"freedom_path", "authority_path", "protector_path":
+			return 5
 
 	return 0
 
@@ -1211,6 +1306,14 @@ func _get_user_test_version_reason(version: int, key_moment_hint: String) -> Str
 				return "Matched key moment: controlled the weapon to negotiate peace."
 			"peaceful_protest":
 				return "Matched key moment: protest or peaceful march."
+			"freedom_path":
+				return "Matched repeated freedom/protection choices."
+			"authority_path":
+				return "Matched repeated rule/order-focused choices."
+			"protector_path":
+				return "Matched repeated care or credit-sharing choices."
+			"power_path":
+				return "Matched repeated power-seeking or forceful choices."
 
 	match version:
 		1:
